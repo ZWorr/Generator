@@ -75,7 +75,7 @@ double BSKLNBaseRESPXSec2014::XSec(
   //Whats this? does it effect how I get mx?
   const ProcessInfo &  proc_info  = interaction -> ProcInfo();
 
-  LOG("AhrensDMEL", pDEBUG) << "Using v^" << fVelMode << " dependence";
+  LOG("BSKLNBaseDMRESPXSec2014", pDEBUG) << "Using v^" << fVelMode << " dependence";
 
 //____________________________________________________________________________
 //Get Kinematic Parameters:
@@ -84,7 +84,7 @@ double BSKLNBaseRESPXSec2014::XSec(
   double W  = kinematics.W();
   //q^(2) momentum transfer
   double q2 = kinematics.q2();
-  //DM mass mx
+  //DM mass: mx
   double mchi   = init_state.GetProbeP4(kRfHitNucRest)->M();
   //E1:
   double E      = init_state.ProbeE(kRfHitNucRest);
@@ -207,11 +207,6 @@ if(fUsingDisResJoin) {
   }
 
 
-#ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
-  LOG("BSKLNBaseDMRESPXSec2014", pDEBUG)
-    << "Kinematical params V = " << V << ", U = " << U;
-#endif
-
 //_________________________________________________________________________
 //Common Adjustment Factor in RS: G[V,A](q^2) = (1 - q^2/4m^2)^(1/2-N) (  1/ (1 - q^2/m[V,A]^2)  )^2
   // Calculate the Feynman-Kislinger-Ravndall parameters
@@ -252,10 +247,6 @@ if(fUsingDisResJoin) {
   }
   //JN end of new form factors code
 
-  #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
-    LOG("FKR", pDEBUG)
-      << "FKR params for RES = " << resname << " : " << fFKR;
-  #endif
 //____________________________________________________________________________
 //Define FKR kinematic factors:
 
@@ -380,6 +371,19 @@ if (fVelMode == 0) {
      }
   xsec = TMath::Max(0.,xsec);
 //____________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+//____________________________________________________________________________
 //Breit-Wigner:
 
   // Check whether the cross section is to be weighted with a Breit-Wigner distribution
@@ -389,32 +393,17 @@ if (fVelMode == 0) {
      bw = utils::bwfunc::BreitWignerL(W,LR,MR,WR,NR);
   }
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
-  LOG("BSKLNBaseRESPXSec2014", pDEBUG)
+  LOG("BSKLNBaseDMRESPXSec2014", pDEBUG)
       << "BreitWigner(RES=" << resname << ", W=" << W << ") = " << bw;
 #endif
   xsec *= bw;
 
-  //____________________________________________________________________________
-
-
-
-
-
-
-
-
-
-
-
-
-
-//phase space changes? find under interactions
-
-  //____________________________________________________________________________
-  //Not need for DM?
+//____________________________________________________________________________
+//____________________________________________________________________________
+//Jacobian:
 
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
-  LOG("BSKLNBaseRESPXSec2014", pINFO)
+  LOG("BSKLNBaseDMRESPXSec2014", pINFO)
       << "\n d2xsec/dQ2dW"  << "[" << interaction->AsString()
       << "](W=" << W << ", q2=" << q2 << ", E=" << E << ") = " << xsec;
 #endif
@@ -425,10 +414,6 @@ if (fVelMode == 0) {
      double J = utils::kinematics::Jacobian(interaction,kPSWQ2fE,kps); //src/framework/utils/kineutils.cxx?
      xsec *= J;
   }
-
-  // Apply given scaling factor
-  if      (is_CC) { xsec *= fXSecScaleCC; }
-  else if (is_NC) { xsec *= fXSecScaleNC; } //basically NC case for DM
 
   // If requested return the free nucleon xsec even for input nuclear tgt
   if ( interaction->TestBit(kIAssumeFreeNucleon) ) return xsec;
@@ -442,7 +427,8 @@ if (fVelMode == 0) {
   xsec*=NNucl; // nuclear xsec (no nuclear suppression factor)
 
 //_________________________________________________________________________
-//do we need pauli blocking?
+//____________________________________________________________________________
+//Pauli Blocking:
 
   if ( fUsePauliBlocking && A!=1 )
   {
@@ -508,17 +494,49 @@ if (fVelMode == 0) {
 
 
 
+//______________________________________________________________________________
+
+double BSKLNBaseDMRESPXSec2014::Integral(const Interaction * interaction) const
+{
+  double xsec = fXSecIntegrator->Integrate(this,interaction);
+  return xsec;
+}
+
+//____________________________________________________________________________
+//Update for DM?????????????????????????
+
+bool BSKLNBaseDMRESPXSec2014::ValidProcess(const Interaction * interaction) const
+{
+  if(interaction->TestBit(kISkipProcessChk)) return true;
+
+  const InitialState & init_state = interaction->InitState();
+  const ProcessInfo &  proc_info  = interaction->ProcInfo();
+  const XclsTag &      xcls       = interaction->ExclTag();
+
+  if(!proc_info.IsResonant()) return false;
+  if(!xcls.KnownResonance())  return false;
+
+  int  hitnuc = init_state.Tgt().HitNucPdg();
+  bool is_pn = (pdg::IsProton(hitnuc) || pdg::IsNeutron(hitnuc));
+
+  if (!is_pn) return false;
+
+//____________?????????????
+  int  probe   = init_state.ProbePdg();
+  bool is_dm   = proc_info.IsDarkMatter();
+  //______????????????????
+  bool nu_weak = (pdg::IsNeutralLepton(probe) && is_weak);
+  bool l_em    = (pdg::IsChargedLepton(probe) && is_em  );
+
+  if (!nu_weak && !l_em) return false;
+
+  return true;
+}
+//____________________________________________________________________________
 
 
 
-
-
-
-
-
-
-
-//______________added for DM V and A charges
+//______________added DM V and A charges
 //____________________________________________________________________________
 void RSHelicityAmplModelDMI::Configure(string config)
 {
@@ -547,57 +565,6 @@ void RSHelicityAmplModelDMI::LoadConfig(void)
   fMedMass = PDGLibrary::Instance()->Find(kPdgMediator)->Mass();
 }
 
-
-//______________________________________________________________________________
-//______________ DM Adjusted:
-
-double BSKLNBaseDMRESPXSec2014::Integral(const Interaction * interaction) const
-{
-  double xsec = fXSecIntegrator->Integrate(this,interaction);
-  return xsec;
-}
-
-//____________________________________________________________________________
-bool BSKLNBaseDMRESPXSec2014::ValidProcess(const Interaction * interaction) const
-{
-  if(interaction->TestBit(kISkipProcessChk)) return true;
-
-  const InitialState & init_state = interaction->InitState();
-  const ProcessInfo &  proc_info  = interaction->ProcInfo();
-  const XclsTag &      xcls       = interaction->ExclTag();
-
-  if(!proc_info.IsResonant()) return false;
-  if(!xcls.KnownResonance())  return false;
-
-  int  hitnuc = init_state.Tgt().HitNucPdg();
-  bool is_pn = (pdg::IsProton(hitnuc) || pdg::IsNeutron(hitnuc));
-
-  if (!is_pn) return false;
-
-
-
-
-
-
-//____________?????
-  int  probe   = init_state.ProbePdg();
-  bool is_em   = proc_info.IsEM();
-  bool nu_weak = (pdg::IsNeutralLepton(probe) && is_weak);
-  bool l_em    = (pdg::IsChargedLepton(probe) && is_em  );
-
-  if (!nu_weak && !l_em) return false;
-
-  return true;
-}
-
-
-
-
-
-
-
-
-
 //____________________________________________________________________________
 void BSKLNBaseDMRESPXSec2014::Configure(const Registry & config)
 {
@@ -617,70 +584,45 @@ void BSKLNBaseDMRESPXSec2014::LoadConfig(void)
 {
 
 
-
-
-  //____________??
-  // Cross section scaling factors
-  this->GetParam( "RES-CC-XSecScale", fXSecScaleCC ) ;
-  this->GetParam( "RES-NC-XSecScale", fXSecScaleNC ) ;
-
-
-
-
-
-
   // Load all configuration data or set defaults
+//For Kinematic Expressions:
+  this->GetParam( "RES-Zeta"   , fZeta  ) ;   ///< FKR parameter Zeta
+  this->GetParam( "RES-Omega"  , fOmega ) ;   ///< FKR parameter Omega
 
-  this->GetParam( "RES-Zeta"   , fZeta  ) ;
-  this->GetParam( "RES-Omega"  , fOmega ) ;
-  this->GetParam( "minibooneGA", fGA    ) ;
-  this->GetParam( "minibooneGV", fGV    ) ;
-
+//For Form Factors:
+  this->GetParam( "minibooneGA", fGA    ) ;   //< axial transition form factor
+  this->GetParam( "minibooneGV", fGV    ) ;   //< vector transition form factor
   double ma, mv ;
   this->GetParam( "RES-Ma", ma ) ;
   this->GetParam( "RES-Mv", mv ) ;
-  fMa2 = TMath::Power(ma,2);
-  fMv2 = TMath::Power(mv,2);
+  fMa2 = TMath::Power(ma,2);    ///< (axial mass)^2
+  fMv2 = TMath::Power(mv,2);     ///< (vector mass)^2
 
-  this->GetParamDef( "BreitWignerWeight", fWghtBW, true ) ;
-  this->GetParamDef( "BreitWignerNorm",   fNormBW, true);
-  double thw ;
-
-
+//For Breit-Wigner Distributions
+  this->GetParamDef( "BreitWignerWeight", fWghtBW, true ) ; //< weight with resonance breit-wigner?
+  this->GetParamDef( "BreitWignerNorm",   fNormBW, true);   //< normalize resonance breit-wigner to 1?
 
 
-
-
-
-  //____________??
-  this->GetParam( "WeinbergAngle", thw ) ;
-  fSin48w = TMath::Power( TMath::Sin(thw), 4 );
-  double Vud;
-  this->GetParam("CKM-Vud", Vud );
-  fVud2 = TMath::Power( Vud, 2 );
-  this->GetParam("FermiMomentumTable", fKFTable);
-  this->GetParam("RFG-UseParametrization", fUseRFGParametrization);
-  this->GetParam("UsePauliBlockingForRES", fUsePauliBlocking);
+//For Pauli-Blocking
+  this->GetParam("FermiMomentumTable", fKFTable); //< table of Fermi momentum (kF) constants for various nuclei
+  this->GetParam("RFG-UseParametrization", fUseRFGParametrization); //< use parametrization for fermi momentum insted of table?
+  this->GetParam("UsePauliBlockingForRES", fUsePauliBlocking);  //< account for Pauli blocking?
 
 
 
-
-
-
-
-
-  //_________________________________________________________________________
+//_________________________________________________________________________
 // Load all the sub-algorithms needed
 
+//Helicity amplitude calculations
   fHAmplModelDMp    = 0;
   fHAmplModelDMn    = 0;
 
   AlgFactory * algf = AlgFactory::Instance();
 
   fHAmplModelDMp = dynamic_cast<const RSHelicityAmplModelDMI *> (
-      algf->GetAlgorithm("genie::RSHelicityAmplModelDMp","Default"));
+      algf->GetAlgorithm("genie::RSHelicityAmplModelDMp","Default")); //DM + p
   fHAmplModelDMn = dynamic_cast<const RSHelicityAmplModelDMI *> (
-      algf->GetAlgorithm("genie::RSHelicityAmplModelDMn","Default"));
+      algf->GetAlgorithm("genie::RSHelicityAmplModelDMn","Default")); //DM + n
 
   assert( fHAmplModelDMp );
   assert( fHAmplModelDMn );
@@ -688,10 +630,10 @@ void BSKLNBaseDMRESPXSec2014::LoadConfig(void)
 //_________________________________________________________________________
 
   // Use algorithm within a DIS/RES join scheme. If yes get Wcut
-  this->GetParam( "UseDRJoinScheme", fUsingDisResJoin ) ;
+  this->GetParam( "UseDRJoinScheme", fUsingDisResJoin ) ; //< use a DIS/RES joining scheme
   fWcut = 999999;
   if(fUsingDisResJoin) {
-    this->GetParam( "Wcut", fWcut ) ;
+    this->GetParam( "Wcut", fWcut ) ; //< apply DIS/RES joining scheme < Wcut
   }
 
   // NeuGEN limits in the allowed resonance phase space:
@@ -700,10 +642,10 @@ void BSKLNBaseDMRESPXSec2014::LoadConfig(void)
   // problem with huge xsec increase at low Q2 and high W.
   // In correspondence with Hugh, Rein said that the underlying problem
   // are unphysical assumptions in the model.
-  this->GetParamDef( "MaxNWidthForN2Res", fN2ResMaxNWidths, 2.0 ) ;
-  this->GetParamDef( "MaxNWidthForN0Res", fN0ResMaxNWidths, 6.0 ) ;
-  this->GetParamDef( "MaxNWidthForGNRes", fGnResMaxNWidths, 4.0 ) ;
-//_________________________________________________________________________
+  this->GetParamDef( "MaxNWidthForN2Res", fN2ResMaxNWidths, 2.0 ) ; //< limits allowed phase space for n=2 res
+  this->GetParamDef( "MaxNWidthForN0Res", fN0ResMaxNWidths, 6.0 ) ; //< limits allowed phase space for n=0 res
+  this->GetParamDef( "MaxNWidthForGNRes", fGnResMaxNWidths, 4.0 ) ; //< limits allowed phase space for other res
+
 //_________________________________________________________________________
   // Load the differential cross section integrator
   fXSecIntegrator =
