@@ -21,11 +21,11 @@ Zachary W. Orr, Colorado State University
 #include "Framework/Numerical/Spline.h"
 #include "Framework/ParticleData/PDGCodes.h"
 #include "Framework/ParticleData/PDGUtils.h"
-#include "Framework/Utils/KineUtils.h"
+#include "Framework/Utils/KineUtils.h"//
 #include "Framework/Numerical/MathUtils.h"
 #include "Framework/Utils/Range1.h"
 #include "Framework/Utils/BWFunc.h"
-#include "Physics/XSectionIntegration/XSecIntegratorI.h"
+#include "Physics/XSectionIntegration/XSecIntegratorI.h"//
 #include "Physics/NuclearState/FermiMomentumTablePool.h"
 #include "Physics/NuclearState/FermiMomentumTable.h"
 #include "Physics/NuclearState/NuclearUtils.h"
