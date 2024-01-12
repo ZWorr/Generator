@@ -71,8 +71,6 @@ double BSKLNBaseRESPXSec2014::XSec(
   const InitialState & init_state = interaction -> InitState();
   const Kinematics & kinematics = interaction -> Kine();
   const Target & target = init_state.Tgt();
-
-  //Whats this? does it effect how I get mx?
   const ProcessInfo &  proc_info  = interaction -> ProcInfo();
 
   LOG("BSKLNBaseDMRESPXSec2014", pDEBUG) << "Using v^" << fVelMode << " dependence";
@@ -106,7 +104,7 @@ double BSKLNBaseRESPXSec2014::XSec(
       bool is_dmbar  = pdg::IsAntiDarkMatter    (probepdgc);
       bool is_p      = pdg::IsProton  (nucpdgc);
       bool is_n      = pdg::IsNeutron (nucpdgc);
-      bool is_DM     = proc_info.IsDM();
+      bool is_DM     = proc_info.IsDarkMatterResonant();
 
   //Need break for is not DM
     if(!is_DM) {
@@ -384,7 +382,7 @@ if (fVelMode == 0) {
 
 
 //____________________________________________________________________________
-//Breit-Wigner:
+//Breit-Wigner:Un-changede from resonant neutrino case
 
   // Check whether the cross section is to be weighted with a Breit-Wigner distribution
   // (default: true)
@@ -400,7 +398,7 @@ if (fVelMode == 0) {
 
 //____________________________________________________________________________
 //____________________________________________________________________________
-//Jacobian:
+//Jacobian: Updated for resonant DM case.
 
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
   LOG("BSKLNBaseDMRESPXSec2014", pINFO)
@@ -411,24 +409,25 @@ if (fVelMode == 0) {
   // The algorithm computes d^2xsec/dWdQ2
   // Check whether variable tranformation is needed
   if ( kps != kPSWQ2fE ) {
-     double J = utils::kinematics::Jacobian(interaction,kPSWQ2fE,kps); //src/framework/utils/kineutils.cxx?
-     xsec *= J;
-  }
-
-  // If requested return the free nucleon xsec even for input nuclear tgt
-  if ( interaction->TestBit(kIAssumeFreeNucleon) ) return xsec;
-
-  int Z = target.Z();
-  int A = target.A();
-  int N = A-Z;
-
-  // Take into account the number of scattering centers in the target
-  int NNucl = (is_p) ? Z : N;
+     double J = utils::kinematics::Jacobian(interaction,kPSWQ2fE,kps);          //Jacobian function is calculated in KineUtils.cxx
+     xsec *= J;                                                                 //passing "interaction" and "kps" where
+  }                                                                             //the calculation goes FROM {W,Q2} TO "kps"}
+                                                                                //since the calculation is done in {W,Q2} ps.
+  // If requested return the free nucleon xsec even for input nuclear tgt       //kps and kPSWQ2fE should be values held in KinePhaseSpace.h
+  if ( interaction->TestBit(kIAssumeFreeNucleon) ) return xsec;                 //Interaction is held in Interaction.cxx(h) where we have introduced
+                                                                                //RESDM for resonant DM interactions with ScatteringType kScDarkMatterResonant
+  int Z = target.Z();                                                           //which is stored in ScatteringType.h
+  int A = target.A();                                                           //These Values are then passed to KineUtils to calculate the Jacobian.
+  int N = A-Z;                                                                  //Within KineUtils, the limits are determined in KPhaseSpace
+                                                                                //KPhaseSpace determines the limits based on the ProcessInfo tags of the scattering types
+                                                                                //which, here, is "IsDarkMatterResonant"
+  // Take into account the number of scattering centers in the target           //so, we must now update KPhaseSpace.cxx for IsDarkMatterResonant (done)
+  int NNucl = (is_p) ? Z : N;                                                   //Then, as KPhaseSpace calculates kinematic limits, KineUtils should be updated to account for those limits
   xsec*=NNucl; // nuclear xsec (no nuclear suppression factor)
 
 //_________________________________________________________________________
 //____________________________________________________________________________
-//Pauli Blocking:
+//Pauli Blocking: Un-changed from resonant neutrino case
 
   if ( fUsePauliBlocking && A!=1 )
   {
@@ -503,17 +502,16 @@ double BSKLNBaseDMRESPXSec2014::Integral(const Interaction * interaction) const
 }
 
 //____________________________________________________________________________
-//Update for DM?????????????????????????
-
 bool BSKLNBaseDMRESPXSec2014::ValidProcess(const Interaction * interaction) const
 {
   if(interaction->TestBit(kISkipProcessChk)) return true;
 
   const InitialState & init_state = interaction->InitState();
-  const ProcessInfo &  proc_info  = interaction->ProcInfo();
-  const XclsTag &      xcls       = interaction->ExclTag();
-
-  if(!proc_info.IsResonant()) return false;
+  const ProcessInfo &  proc_info  = interaction->ProcInfo();                      //ProcessInfo.cxx(h) has been updated to include
+  const XclsTag &      xcls       = interaction->ExclTag();                       //IsDarkMatterResonant and IsDarkMatterResonant
+                                                                                  //by including kScDarkMatterResonant and kScDarkMatter
+                                                                                  //in ScatteringType.h which is a bookkeeping file.
+  if(!proc_info.IsDarkMatterResonant()) return false;
   if(!xcls.KnownResonance())  return false;
 
   int  hitnuc = init_state.Tgt().HitNucPdg();
@@ -521,14 +519,11 @@ bool BSKLNBaseDMRESPXSec2014::ValidProcess(const Interaction * interaction) cons
 
   if (!is_pn) return false;
 
-//____________?????????????
+
   int  probe   = init_state.ProbePdg();
   bool is_dm   = proc_info.IsDarkMatter();
-  //______????????????????
-  bool nu_weak = (pdg::IsNeutralLepton(probe) && is_weak);
-  bool l_em    = (pdg::IsChargedLepton(probe) && is_em  );
 
-  if (!nu_weak && !l_em) return false;
+  if(!is_dm) return false;
 
   return true;
 }
@@ -555,7 +550,7 @@ void RSHelicityAmplModelDMI::LoadConfig(void)
   fQchiV = 0.5*(QchiL + QchiR);
   fQchiA = 0.5*(- QchiL + QchiR);
 
-  // velocity dependence of interaction
+  // velocity dependence of interaction: fermion/scalar DM
   this->GetParamDef("velocity-mode", fVelMode, 0 );
 
   // mediator coupling
