@@ -63,46 +63,32 @@ private:
       const RSHelicityAmplModelDMI * fHAmplModelDMp;
       const RSHelicityAmplModelDMI * fHAmplModelDMn;
 
-//Update for DM:
-//_________________________________________________________________________
-      // configuration data
       const XSecIntegratorI * fXSecIntegrator;
 
+//_________________________________________________________________________
+      // configuration data
+
+//For Overlaping the DIS and RES regimes:
       bool     fUsingDisResJoin;   ///< use a DIS/RES joining scheme?
       double   fWcut;              ///< apply DIS/RES joining scheme < Wcut
       double   fN2ResMaxNWidths;   ///< limits allowed phase space for n=2 res
       double   fN0ResMaxNWidths;   ///< limits allowed phase space for n=0 res
       double   fGnResMaxNWidths;   ///< limits allowed phase space for other res
-
-
-      bool     fWghtBW;            ///< weight with resonance breit-wigner?
-      bool     fNormBW;            ///< normalize resonance breit-wigner to 1?
-      double   fZeta;              ///< FKR parameter Zeta
-      double   fOmega;             ///< FKR parameter Omega
-      double   fMa2;               ///< (axial mass)^2
-      double   fMv2;               ///< (vector mass)^2
-      double   fSin48w;            ///< sin^4(Weingberg angle)
-      double   fVud2;              ///< |Vud|^2(square of magnitude ud-element of CKM-matrix)
-
-
-      bool     fUsingNuTauScaling; ///< use NeuGEN nutau xsec reduction factors?
-
-
+//For Pauli Blocking:
       string fKFTable;             ///< table of Fermi momentum (kF) constants for various nuclei
       bool fUseRFGParametrization; ///< use parametrization for fermi momentum insted of table?
       bool fUsePauliBlocking;      ///< account for Pauli blocking?
-
-      double   fXSecScaleCC;       ///< external CC xsec scaling factor
-      double   fXSecScaleNC;       ///< external NC xsec scaling factor
-
-      bool fKLN;
-      bool fBRS;
-
-      bool fGA;
-      bool fGV;
-
-
-
+//For Breit-Wigner distribution:
+      bool     fWghtBW;            ///< weight with resonance breit-wigner?
+      bool     fNormBW;            ///< normalize resonance breit-wigner to 1?
+//For Form Factors:
+      bool fGA;                    ///< axial transition form factor
+      bool fGV;                    ///< vector transition form factor
+      double   fMa2;               ///< (axial mass)^2
+      double   fMv2;               ///< (vector mass)^2
+//For Kinematics of 4D QHO:
+      double   fZeta;              ///< FKR parameter Zeta
+      double   fOmega;             ///< FKR parameter Omega
 
   };
 
