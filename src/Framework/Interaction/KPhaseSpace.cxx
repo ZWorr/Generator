@@ -107,9 +107,9 @@ double KPhaseSpace::Threshold(void) const
     double Ethresh = (mtot*mtot - Mi*Mi - mi*mi)/2/Mi;
     return Ethresh;
   }
-  
+
   if (pi.IsNorm() ) return 0;
- 
+
   if (pi.IsSingleKaon()) {
     int kaon_pdgc = xcls.StrangeHadronPdg();
     double Mi   = tgt.HitNucP4Ptr()->M(); // initial nucleon mass
@@ -149,6 +149,7 @@ double KPhaseSpace::Threshold(void) const
      pi.IsDarkMatterElastic()       ||
      pi.IsInverseBetaDecay()        ||
      pi.IsResonant()                ||
+     pi.IsDarkMatterResonant()      ||                                          //Added for Res DM.
      pi.IsDeepInelastic()           ||
      pi.IsDarkMatterDeepInelastic() ||
      pi.IsDiffractive())
@@ -184,7 +185,7 @@ double KPhaseSpace::Threshold(void) const
     double smin = TMath::Power(Wmin+ml,2.);
     double Ethr = 0.5*(smin-Mn2)/Mn;
     // threshold is different for dark matter case
-    if(pi.IsDarkMatterElastic() || pi.IsDarkMatterDeepInelastic()) {
+    if(pi.IsDarkMatterElastic() || pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant()) {    //Added ResDM here since it takes ml into account.
       // Correction to minimum kinematic variables
       Wmin = Mn;
       smin = TMath::Power(Wmin+ml,2);
@@ -307,6 +308,7 @@ bool KPhaseSpace::IsAboveThreshold(void) const
      pi.IsDarkMatterElastic()       ||
      pi.IsInverseBetaDecay()        ||
      pi.IsResonant()                ||
+     pi.IsDarkMatterResonant()      ||                                          //RESDM added here because of similarity to Res and DMDIS
      pi.IsDeepInelastic()           ||
      pi.IsDarkMatterDeepInelastic() ||
      pi.IsDiffractive()             ||
@@ -345,7 +347,7 @@ bool KPhaseSpace::IsAllowed(void) const
   // RES
   //   Check the running W vs the W limits
   //   & the running Q2 vs Q2 limits for the given W
-  if(pi.IsResonant()) {
+  if(pi.IsResonant() || pi.IsDarkMatterResonant()) {                            //Res DM is added here.
     Range1D_t Wl  = this->WLim();
     Range1D_t Q2l = this->Q2Lim_W();
     double    W   = kine.W();
@@ -453,7 +455,7 @@ Range1D_t KPhaseSpace::WLim(void) const
   bool is_em = pi.IsEM();
   bool is_qel  = pi.IsQuasiElastic()  || pi.IsInverseBetaDecay() || pi.IsDarkMatterElastic();
   bool is_inel = pi.IsDeepInelastic() || pi.IsResonant() || pi.IsDiffractive();
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic();
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();    //Res DM is added here since DarkWLim takes mass of lepton into account when calculating s
 
   if(is_qel) {
     double MR = fInteraction->RecoilNucleon()->Mass();
@@ -529,7 +531,7 @@ Range1D_t KPhaseSpace::Q2Lim_W(void) const
   bool is_inel  = pi.IsDeepInelastic() || pi.IsResonant() || pi.IsDiffractive();
   bool is_coh   = pi.IsCoherentProduction();
   bool is_dme   = pi.IsDarkMatterElastic();
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic();
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();  //ResDM has same DarkQ2Lim as DMDIS
 
   if(!is_qel && !is_inel && !is_coh && !is_dme && !is_dmdis) return Q2l;
 
@@ -586,7 +588,7 @@ Range1D_t KPhaseSpace::Q2Lim(void) const
   bool is_coh   = pi.IsCoherentProduction();
   bool is_cevns = pi.IsCoherentElastic();
   bool is_dme   = pi.IsDarkMatterElastic();
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic();
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();   //ResDM same Q2Lim as DMDIS
 
   if(!is_qel && !is_inel && !is_coh && !is_cevns && !is_dme && !is_dmdis) return Q2l;
 
@@ -710,7 +712,7 @@ Range1D_t KPhaseSpace::XLim(void) const
     return xl;
   }
   //DMDIS
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic();
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();  //RESDM has same DarkXLim as DMDIS
   if(is_dmdis) {
     const InitialState & init_state  = fInteraction->InitState();
     double Ev  = init_state.ProbeE(kRfHitNucRest);
@@ -762,7 +764,7 @@ Range1D_t KPhaseSpace::YLim(void) const
     return yl;
   }
   //DMDIS
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic();
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();   //ResDM has same DarkYLim as DMDIS
   if(is_dmdis) {
     const InitialState & init_state = fInteraction->InitState();
     double Ev  = init_state.ProbeE(kRfHitNucRest);
@@ -822,7 +824,7 @@ Range1D_t KPhaseSpace::YLim_X(void) const
 
   const ProcessInfo & pi = fInteraction->ProcInfo();
   bool is_em = pi.IsEM();
-
+                                                                                
   //RES+DIS
   bool is_inel = pi.IsDeepInelastic() || pi.IsResonant();
   if(is_inel) {
@@ -835,7 +837,7 @@ Range1D_t KPhaseSpace::YLim_X(void) const
     return yl;
   }
   //DMDIS
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic();
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();  //RESDM has same DarkYLim_X as DMDIS
   if(is_dmdis) {
     const InitialState & init_state = fInteraction->InitState();
     double Ev  = init_state.ProbeE(kRfHitNucRest);
@@ -1000,7 +1002,7 @@ double KPhaseSpace::Threshold_SPP_iso(void) const
 {
   const InitialState & init_state = fInteraction->InitState();
   PDGLibrary * pdglib = PDGLibrary::Instance();
-  
+
   // imply isospin symmetry
   double mpi  = (pdglib->Find(kPdgPiP)->Mass() + pdglib->Find(kPdgPi0)->Mass() + pdglib->Find(kPdgPiM)->Mass())/3;
   double M    = (pdglib->Find(kPdgProton)->Mass() + pdglib->Find(kPdgNeutron)->Mass())/2;
@@ -1024,7 +1026,7 @@ Range1D_t KPhaseSpace::WLim_SPP(void) const
   // kinematic W-limits
   Wl.min = Mf + mpi;
   Wl.max = ECM - mf;
-  
+
   if ( (Wl.max - Wl.min) < (Wl.max + Wl.min)*std::numeric_limits<double>::epsilon() )
   {
       Wl.min = 2*Wl.max*Wl.min/(Wl.max + Wl.min);
@@ -1035,7 +1037,7 @@ Range1D_t KPhaseSpace::WLim_SPP(void) const
       Wl.min *= 1. + std::numeric_limits<double>::epsilon();
       Wl.max *= 1. - std::numeric_limits<double>::epsilon();
   }
-  
+
   return Wl;
 }
 //____________________________________________________________________________
@@ -1054,7 +1056,7 @@ Range1D_t KPhaseSpace::WLim_SPP_iso(void) const
   // kinematic W-limits
   Wl.min = M + mpi;
   Wl.max = ECM - mf;
-  
+
   if ( (Wl.max - Wl.min) < (Wl.max + Wl.min)*std::numeric_limits<double>::epsilon() )
   {
       Wl.min = 2*Wl.max*Wl.min/(Wl.max + Wl.min);
@@ -1065,7 +1067,7 @@ Range1D_t KPhaseSpace::WLim_SPP_iso(void) const
       Wl.min *= 1. + std::numeric_limits<double>::epsilon();
       Wl.max *= 1. - std::numeric_limits<double>::epsilon();
   }
-  
+
   return Wl;
 }
 //____________________________________________________________________________
@@ -1092,7 +1094,7 @@ Range1D_t KPhaseSpace::Q2Lim_W_SPP (void) const
   // kinematic Q2-limits
   Q2l.min = 2*(Ei_CM*Ef_CM - Pi_CM*Pf_CM) - mi2 - mf2;
   Q2l.max = 2*(Ei_CM*Ef_CM + Pi_CM*Pf_CM) - mi2 - mf2;
-  
+
   if ( (Q2l.max - Q2l.min) < (Q2l.max + Q2l.min)*std::numeric_limits<double>::epsilon() )
   {
       Q2l.min = 2*Q2l.max*Q2l.min/(Q2l.max + Q2l.min);
@@ -1119,11 +1121,11 @@ Range1D_t KPhaseSpace::Q2Lim_W_SPP_iso(void) const
   double mi2 = mi*mi;
   double mf2 = mf*mf;
   double W = kinematics::W(fInteraction);
-  
+
   double Ei = init_state.ProbeE(kRfHitNucRest);
   double s = M*(M + 2*Ei) + mi2;
   double ECM = TMath::Sqrt(s);
-  
+
   double Ei_CM  = (s + mi2 - M*M)/2/ECM;
   double Ef_CM  = (s + mf2 - W*W)/2/ECM;
   double Pi_CM  = (Ei_CM - mi)<0?0:TMath::Sqrt(Ei_CM*Ei_CM - mi2);
@@ -1131,7 +1133,7 @@ Range1D_t KPhaseSpace::Q2Lim_W_SPP_iso(void) const
   // kinematic Q2-limits
   Q2l.min = 2*(Ei_CM*Ef_CM - Pi_CM*Pf_CM) - mi2 - mf2;
   Q2l.max = 2*(Ei_CM*Ef_CM + Pi_CM*Pf_CM) - mi2 - mf2;
-  
+
   if ( (Q2l.max - Q2l.min) < (Q2l.max + Q2l.min)*std::numeric_limits<double>::epsilon() )
   {
       Q2l.min = 2*Q2l.max*Q2l.min/(Q2l.max + Q2l.min);
@@ -1142,8 +1144,7 @@ Range1D_t KPhaseSpace::Q2Lim_W_SPP_iso(void) const
       Q2l.min *= 1. + std::numeric_limits<double>::epsilon();
       Q2l.max *= 1. - std::numeric_limits<double>::epsilon();
   }
-  
+
   return Q2l;
 }
 //____________________________________________________________________________
-
