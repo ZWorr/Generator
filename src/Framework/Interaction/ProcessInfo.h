@@ -64,6 +64,7 @@ public:
   bool IsDeepInelastic           (void) const;
   bool IsDarkMatterDeepInelastic (void) const;
   bool IsResonant                (void) const;
+  bool IsDarkMatterResonant      (void) const;//added by Zach
   bool IsCoherentProduction      (void) const;
   bool IsCoherentElastic         (void) const;
   bool IsSinglePion              (void) const;
