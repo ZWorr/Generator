@@ -2,56 +2,41 @@
 /*
 Dark Matter Resonant Scattering Helicity Amplitudes for neutron Interactions
 
-RSHelicityAmplModelEMn.cxx -> RSHelicityAmplModelDMn.cxx
-
-Changes made to RSHelicityAmplModelEMn.cxx:
-  #include "Physics/Resonance/XSection/RSHelicityAmplModelEMn.h" -> #include "Physics/Resonance/XSection/RSHelicityAmplModelDMn.h"
-  "EM" -> "DM"
-  RSHelicityAmplModelI -> RSHelicityAmplModelDMI
-  FKR -> FKRDM and fkr -> fkrdm
-  New terms specific to DM: fz0Plus and fz0Minus
-
-  From "AhrensDMELPXSec.cxx"
-  {QuV,QuA,QdV,QdA} -> {fQuV,fQuA,fQdV,fQdA}
-
-
-
-
 Zachary W. Orr, Colorado State University
 */
 //____________________________________________________________________________
 
-#include "Framework/Algorithm/AlgConfigPool.h" //No change? <- why just for the n?
-#include "Framework/ParticleData/BaryonResUtils.h" //No change? (FKRDM.cxx)
-#include "Framework/Conventions/Constants.h" //No change? (FKRDM.cxx)
-#include "Framework/Messenger/Messenger.h" //No change? (FKRDM.cxx)
-#include "Physics/Resonance/XSection/RSHelicityAmplModelDMn.h"//Specific to DM
-#include "Physics/Resonance/XSection/RSHelicityAmplDM.h" //Specific to DM <- why just for n?
+#include "Framework/Algorithm/AlgConfigPool.h"
+#include "Framework/ParticleData/BaryonResUtils.h"
+#include "Framework/Conventions/Constants.h"
+#include "Framework/Messenger/Messenger.h"
+#include "Physics/BoostedDarkMatter/XSection/RSHelicityAmplModelDMn.h"
+#include "Physics/BoostedDarkMatter/XSection/RSHelicityAmplDM.h" 
 
 using namespace genie;
 using namespace genie::constants;
 
 //____________________________________________________________________________
-RSHelicityAmplModelEMn::RSHelicityAmplModelEMn() :
-RSHelicityAmplModelI("genie::RSHelicityAmplModelEMn")
+RSHelicityAmplModelDMn::RSHelicityAmplModelDMn() :
+RSHelicityAmplModelDMI("genie::RSHelicityAmplModelDMn")
 {
 
 }
 //____________________________________________________________________________
-RSHelicityAmplModelEMn::RSHelicityAmplModelEMn(string config) :
-RSHelicityAmplModelI("genie::RSHelicityAmplModelEMn", config)
+RSHelicityAmplModelDMn::RSHelicityAmplModelDMn(string config) :
+RSHelicityAmplModelDMI("genie::RSHelicityAmplModelDMn", config)
 {
 
 }
 //____________________________________________________________________________
-RSHelicityAmplModelEMn::~RSHelicityAmplModelEMn()
+RSHelicityAmplModelDMn::~RSHelicityAmplModelDMn()
 {
 
 }
 //____________________________________________________________________________
-const RSHelicityAmpl &
-   RSHelicityAmplModelEMn::Compute(
-           Resonance_t res, const FKR & fkr) const
+const RSHelicityAmplDM &
+   RSHelicityAmplModelDMn::Compute(
+           Resonance_t res, const FKRDM & fkrdm) const
 {
   switch(res) {
 
@@ -74,8 +59,8 @@ const RSHelicityAmpl &
     fAmpl.fMinus1 = k1_Sqrt6 * fkrdm.Lamda * (fkrdm.Ra * (fQuA + 5 * fQdA) - fkrdm.Rv * (fQuV + 5 * fQdV)) + kSqrt3 * fkrdm.Ta * (fQdA - fQuA) + kSqrt3 * fkrdm.Tv * (fQuV - fQdV);
     fAmpl.fPlus1 = -k1_Sqrt6 * fkrdm.Lamda * (fkrdm.Ra * (fQuA + 5 * fQdA) + fkrdm.Rv * (fQuV + 5 * fQdV)) + kSqrt3 * fkrdm.Ta * (fQuA - fQdA) + kSqrt3 * fkrdm.Tv * (fQuV - fQdV);
     fAmpl.fPlus3 = 0;
-    fAmpl.f0Plus = k1_Sqrt6 * (3 * fkrdm.Lamda * S * (fQdV - fQuV) - 3 * fkrdm.Bs * (fQuA + 5 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQuA + 5 * fQdA));
-    fAmpl.f0Minus = k1_Sqrt6 * (3 * fkrdm.Lamda * S * (fQuV - fQdV) - 3 * fkrdm.Bs * (fQuA + 5 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQuA + 5 * fQdA));
+    fAmpl.f0Plus = k1_Sqrt6 * (3 * fkrdm.Lamda * fkrdm.S * (fQdV - fQuV) - 3 * fkrdm.Bs * (fQuA + 5 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQuA + 5 * fQdA));
+    fAmpl.f0Minus = k1_Sqrt6 * (3 * fkrdm.Lamda * fkrdm.S * (fQuV - fQdV) - 3 * fkrdm.Bs * (fQuA + 5 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQuA + 5 * fQdA));
     fAmpl.fz0Plus = -k1_Sqrt6 * ((fQuA + 5 * fQdA) * (3 * fkrdm.Bz - fkrdm.Lamda * fkrdm.Cz));
     fAmpl.fz0Minus = -k1_Sqrt6 * ((fQuA + 5 * fQdA) * (3 * fkrdm.Bz - fkrdm.Lamda * fkrdm.Cz));
 
@@ -87,8 +72,8 @@ const RSHelicityAmpl &
     fAmpl.fMinus1 = (1/2) * k1_Sqrt3 * (2 * fkrdm.Lamda * (fkrdm.Rv * (5 * fQdV + fQuV) - fkrdm.Ra * (5 * fQdA + fQuA)) + 3 * kSqrt2 * (fkrdm.Tv * (fQuV - fQdV) + fkrdm.Ta * (fQdA - fQuA)));
     fAmpl.fPlus1 = (1/2) * k1_Sqrt3 * (-2 * fkrdm.Lamda * (fkrdm.Ra * fQuA + fkrdm.Rv * (5 * fQdV + fQuV)) + fQdA * (3 * kSqrt2 * fkrdm.Ta - 10 * fkrdm.Lamda * fkrdm.Ra) + 3 * kSqrt2 * fkrdm.Tv * (fQdV - fQuV) - 3 * kSqrt2 * fQuA * fkrdm.Ta);
     fAmpl.fPlus3 = -k3_Sqrt2 * (fkrdm.Tv * (fQdV - fQuV) + fkrdm.Ta * (fQdA - fQuA));
-    fAmpl.f0Plus = -fkrdm.Lamda * k1_Sqrt3 * (3 * S * (fQdV - fQuV) + fkrdm.Cs * (fQuA + 5 * fQdA));
-    fAmpl.f0Minus = fkrdm.Lamda * k1_Sqrt3 * (3 * S * (fQuV - fQdV) + fkrdm.Cs * (fQuA + 5 * fQdA));
+    fAmpl.f0Plus = -fkrdm.Lamda * k1_Sqrt3 * (3 * fkrdm.S * (fQdV - fQuV) + fkrdm.Cs * (fQuA + 5 * fQdA));
+    fAmpl.f0Minus = fkrdm.Lamda * k1_Sqrt3 * (3 * fkrdm.S * (fQuV - fQdV) + fkrdm.Cs * (fQuA + 5 * fQdA));
     fAmpl.fz0Plus = -fkrdm.Lamda * fkrdm.Cz * k1_Sqrt3 * (fQuA + 5 * fQdA);
     fAmpl.fz0Minus = fkrdm.Lamda * fkrdm.Cz * k1_Sqrt3 * (fQuA + 5 * fQdA);
 
@@ -139,8 +124,8 @@ const RSHelicityAmpl &
     fAmpl.fMinus1 = k1_Sqrt6 * fkrdm.Lamda * (fkrdm.Ra * (fQdA - fQuA) + fkrdm.Rv * (fQuV - fQdV)) + kSqrt3 * fkrdm.Ta * (fQuA - fQdA) + kSqrt3 * fkrdm.Tv * (fQdV - fQuV);
     fAmpl.fPlus1 = k1_Sqrt6 * fkrdm.Lamda * (fkrdm.Ra * (fQuA - fQdA) + fkrdm.Rv * (fQuV - fQdV)) + kSqrt3 * fkrdm.Ta * (fQdA - fQuA) + kSqrt3 * fkrdm.Tv * (fQdV - fQuV);
     fAmpl.fPlus3 = 0;
-    fAmpl.f0Plus = k1_Sqrt6 * (3 * fkrdm.Lamda * S * (fQuV - fQdV) + 3 * fkrdm.Bs * (fQuA - fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQdA - fQuA));
-    fAmpl.f0Minus = k1_Sqrt6 * (3 * fkrdm.Lamda * S * (fQdV - fQuV) + 3 * fkrdm.Bs * (fQuA - fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQdA - fQuA));
+    fAmpl.f0Plus = k1_Sqrt6 * (3 * fkrdm.Lamda * fkrdm.S * (fQuV - fQdV) + 3 * fkrdm.Bs * (fQuA - fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQdA - fQuA));
+    fAmpl.f0Minus = k1_Sqrt6 * (3 * fkrdm.Lamda * fkrdm.S * (fQdV - fQuV) + 3 * fkrdm.Bs * (fQuA - fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQdA - fQuA));
     fAmpl.fz0Plus = -k1_Sqrt6 * (fQdA - fQuA) * (3 * fkrdm.Bz - fkrdm.Lamda * fkrdm.Cz);
     fAmpl.fz0Minus = -k1_Sqrt6 * (fQdA - fQuA) * (3 * fkrdm.Bz - fkrdm.Lamda * fkrdm.Cz);
 
@@ -152,8 +137,8 @@ const RSHelicityAmpl &
     fAmpl.fMinus1 = (1/2) * k1_Sqrt3 * ((fQuA - fQdA) * (2 * fkrdm.Lamda * fkrdm.Ra + 3 * kSqrt2 * fkrdm.Ta) + (fQdV - fQuV) * (2 * fkrdm.Lamda * fkrdm.Rv + 3 * kSqrt2 * fkrdm.Tv));
     fAmpl.fPlus1 = (1/2) * k1_Sqrt3 * ((fQuA - fQdA) * (2 * fkrdm.Lamda * fkrdm.Ra + 3 * kSqrt2 * fkrdm.Ta) - (fQdV - fQuV) * (2 * fkrdm.Lamda * fkrdm.Rv + 3 * kSqrt2 * fkrdm.Tv));
     fAmpl.fPlus3 = -3 * k1_Sqrt2 * (fkrdm.Tv * (fQdV - fQuV) + fkrdm.Ta * (fQdA - fQuA));
-    fAmpl.f0Plus = fkrdm.Lamda * k1_Sqrt3 * (3 * S * (fQdV - fQuV) + fkrdm.Cs * (fQuA - fQdA));
-    fAmpl.f0Minus = fkrdm.Lamda * k1_Sqrt3 * (3 * S * (fQdV - fQuV) + fkrdm.Cs * (fQdA - fQuA));
+    fAmpl.f0Plus = fkrdm.Lamda * k1_Sqrt3 * (3 * fkrdm.S * (fQdV - fQuV) + fkrdm.Cs * (fQuA - fQdA));
+    fAmpl.f0Minus = fkrdm.Lamda * k1_Sqrt3 * (3 * fkrdm.S * (fQdV - fQuV) + fkrdm.Cs * (fQdA - fQuA));
     fAmpl.fz0Plus = fkrdm.Lamda * fkrdm.Cz * k1_Sqrt3 * (fQuA - fQdA);
     fAmpl.fz0Minus = fkrdm.Lamda * fkrdm.Cz * k1_Sqrt3 * (fQdA - fQuA);
 
@@ -164,11 +149,11 @@ const RSHelicityAmpl &
       double L2  = TMath::Power(fkrdm.Lamda, 2);
 
       fAmpl.fMinus3 = 0;
-      fAmpl.fMinus1 = (1/2) * k1_Sqrt3 * L2 * (fkrdm.Ra * (fQuA - 4 fQdA) - fkrdm.Rv * (fQuV - 4 * fQdV));
-      fAmpl.fPlus1 = (1/2) * k1_Sqrt3 * L2 * (fkrdm.Ra * (fQuA - 4 fQdA) + fkrdm.Rv * (fQuV - 4 * fQdV));
+      fAmpl.fMinus1 = (1/2) * k1_Sqrt3 * L2 * (fkrdm.Ra * (fQuA - 4 * fQdA) - fkrdm.Rv * (fQuV - 4 * fQdV));
+      fAmpl.fPlus1 = (1/2) * k1_Sqrt3 * L2 * (fkrdm.Ra * (fQuA - 4 * fQdA) + fkrdm.Rv * (fQuV - 4 * fQdV));
       fAmpl.fPlus3 = 0;
-      fAmpl.f0Plus = (fkrdm.Lamda/2) * k1_Sqrt3 * (-3 * fkrdm.Lamda * S * (fQuV + 2 * fQdV) - 2 * fkrdm.Bs * (fQuA - 4 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQuA - 4 * fQdA));
-      fAmpl.f0Minus = (fkrdm.Lamda/2) * k1_Sqrt3 * (-3 * fkrdm.Lamda * S * (fQuV + 2 * fQdV) + 2 * fkrdm.Bs * (fQuA - 4 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (4 * fQdA - fQuA));
+      fAmpl.f0Plus = (fkrdm.Lamda/2) * k1_Sqrt3 * (-3 * fkrdm.Lamda * fkrdm.S * (fQuV + 2 * fQdV) - 2 * fkrdm.Bs * (fQuA - 4 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQuA - 4 * fQdA));
+      fAmpl.f0Minus = (fkrdm.Lamda/2) * k1_Sqrt3 * (-3 * fkrdm.Lamda * fkrdm.S * (fQuV + 2 * fQdV) + 2 * fkrdm.Bs * (fQuA - 4 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (4 * fQdA - fQuA));
       fAmpl.fz0Plus = (fkrdm.Lamda/2) * k1_Sqrt3 * ((fQuA - 4 * fQdA) * (fkrdm.Lamda * fkrdm.Cz - 2 * fkrdm.Bz));
       fAmpl.fz0Minus = -(fkrdm.Lamda/2) * k1_Sqrt3 * ((fQuA - 4 * fQdA) * (fkrdm.Lamda * fkrdm.Cz - 2 * fkrdm.Bz));
 
@@ -195,8 +180,8 @@ const RSHelicityAmpl &
     fAmpl.fMinus1 = k1_Sqrt15 * (fkrdm.Lamda/2) * (2 * fkrdm.Lamda * (fkrdm.Ra * (fQuA - 4 * fQdA) - fkrdm.Rv * (fQuV - 4 * fQdV)) + 9 * kSqrt2 * (fkrdm.Tv * (fQuV + 2 * fQdV) - fkrdm.Ta * (fQuA + 2 * fQdA)));
     fAmpl.fPlus1 = k1_Sqrt15 * (fkrdm.Lamda/2) * (9 * kSqrt2 * (fkrdm.Tv * (fQuV + 2 * fQdV) + fkrdm.Ta * (fQuA + 2 * fQdA)) - 2 * fkrdm.Lamda * (fkrdm.Ra * (fQuA - 4 * fQdA) + fkrdm.Rv * (fQuV - 4 * fQdV)));
     fAmpl.fPlus3 = -(1/kSqrt10) * 3 * fkrdm.Lamda * (fkrdm.Ta * (fQuA + 2 * fQdA) + fkrdm.Tv * (fQuV + 2 * fQdV));
-    fAmpl.f0Plus = fkrdm.Lamda * k1_Sqrt15 * (-3 * fkrdm.Lamda * S * (fQuV + 2 * fQdV) - 5 * fkrdm.Bs * (fQuA - 4 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQuA - 4 * fQdA));
-    fAmpl.f0Minus = fkrdm.Lamda * k1_Sqrt15 * (3 * fkrdm.Lamda * S * (fQuV + 2 * fQdV) - 5 * fkrdm.Bs * (fQuA - 4 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQuA - 4 * fQdA));
+    fAmpl.f0Plus = fkrdm.Lamda * k1_Sqrt15 * (-3 * fkrdm.Lamda * fkrdm.S * (fQuV + 2 * fQdV) - 5 * fkrdm.Bs * (fQuA - 4 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQuA - 4 * fQdA));
+    fAmpl.f0Minus = fkrdm.Lamda * k1_Sqrt15 * (3 * fkrdm.Lamda * fkrdm.S * (fQuV + 2 * fQdV) - 5 * fkrdm.Bs * (fQuA - 4 * fQdA) + fkrdm.Lamda * fkrdm.Cs * (fQuA - 4 * fQdA));
     fAmpl.fz0Plus = fkrdm.Lamda * k1_Sqrt15 * ((fQuA - 4 * fQdA) * (fkrdm.Lamda * fkrdm.Cz - 5 * fkrdm.Bz));
     fAmpl.fz0Minus = fkrdm.Lamda * k1_Sqrt15 * ((fQuA - 4 * fQdA) * (fkrdm.Lamda * fkrdm.Cz - 5 * fkrdm.Bz));
 
@@ -210,8 +195,8 @@ const RSHelicityAmpl &
     fAmpl.fMinus1 = k1_Sqrt5 * (fkrdm.Lamda/2) * (kSqrt2 * fkrdm.Lamda * (fkrdm.Rv * (fQuV - 4 * fQdV) - fkrdm.Ra * (fQuA - 4 * fQdA)) + 6 * (fkrdm.Tv * (fQuV + 2 * fQdV) - fkrdm.Ta * (fQuA + 2 * fQdA)));
     fAmpl.fPlus1 = k1_Sqrt5 * (fkrdm.Lamda/2) * (-kSqrt2 * fkrdm.Lamda * (fkrdm.Rv * (fQuV - 4 * fQdV) + fkrdm.Ra * (fQuA - 4 * fQdA)) - 6 * (fkrdm.Tv * (fQuV + 2 * fQdV) + fkrdm.Ta * (fQuA + 2 * fQdA)));
     fAmpl.fPlus3 = -3 * fkrdm.Lamda * kSqrt2_5 * (fkrdm.Tv * (fQuV + 2 * fQdV) + fkrdm.Ta * (fQuA + 2 * fQdA));
-    fAmpl.f0Plus = (1/kSqrt10) * L2 * (3 * S * (fQuV + 2 fQdV) - fkrdm.Cs * (fQuA - 4 * fQdA));
-    fAmpl.f0Minus = (1/kSqrt10) * L2 * (3 * S * (fQuV + 2 fQdV) + fkrdm.Cs * (fQuA - 4 * fQdA));
+    fAmpl.f0Plus = (1/kSqrt10) * L2 * (3 * fkrdm.S * (fQuV + 2 * fQdV) - fkrdm.Cs * (fQuA - 4 * fQdA));
+    fAmpl.f0Minus = (1/kSqrt10) * L2 * (3 * fkrdm.S * (fQuV + 2 * fQdV) + fkrdm.Cs * (fQuA - 4 * fQdA));
     fAmpl.fz0Plus = -(1/kSqrt10) * L2 * fkrdm.Cz * (fQuA - 4 * fQdA);
     fAmpl.fz0Minus = (1/kSqrt10) * L2 * fkrdm.Cz * (fQuA - 4 * fQdA);
 
@@ -285,8 +270,8 @@ const RSHelicityAmpl &
     fAmpl.fMinus1 = (1/2) * k1_Sqrt6 * L2 * (fkrdm.Ra * (fQuA + 5 * fQdA) - fkrdm.Rv * (fQuV + 5 * fQdV));
     fAmpl.fPlus1 = (1/2) * k1_Sqrt6 * L2 * (fkrdm.Ra * (fQuA + 5 * fQdA) + fkrdm.Rv * (fQuV + 5 * fQdV));
     fAmpl.fPlus3 = 0;
-    fAmpl.f0Plus = fkrdm.Lamda * (1/2) * k1_Sqrt6 * (3 * fkrdm.Lamda * S * (fQdV - fQuV) + (fQuA + 5 * fQdA) * (fkrdm.Lamda * fkrdm.Cs - 2 * fkrdm.Bs));
-    fAmpl.f0Minus = -fkrdm.Lamda * (1/2) * k1_Sqrt6 * (3 * fkrdm.Lamda * S * (fQdV - fQuV) + (fQuA + 5 * fQdA) * (fkrdm.Lamda * fkrdm.Cs - 2 * fkrdm.Bs));
+    fAmpl.f0Plus = fkrdm.Lamda * (1/2) * k1_Sqrt6 * (3 * fkrdm.Lamda * fkrdm.S * (fQdV - fQuV) + (fQuA + 5 * fQdA) * (fkrdm.Lamda * fkrdm.Cs - 2 * fkrdm.Bs));
+    fAmpl.f0Minus = -fkrdm.Lamda * (1/2) * k1_Sqrt6 * (3 * fkrdm.Lamda * fkrdm.S * (fQdV - fQuV) + (fQuA + 5 * fQdA) * (fkrdm.Lamda * fkrdm.Cs - 2 * fkrdm.Bs));
     fAmpl.fz0Plus = fkrdm.Lamda * (1/2) * k1_Sqrt6 * (fQuA + 5 * fQdA) * (fkrdm.Lamda * fkrdm.Cz - 2 * fkrdm.Bz);
     fAmpl.fz0Minus = -fkrdm.Lamda * (1/2) * k1_Sqrt6 * (fQuA + 5 * fQdA) * (fkrdm.Lamda * fkrdm.Cz - 2 * fkrdm.Bz);
 
