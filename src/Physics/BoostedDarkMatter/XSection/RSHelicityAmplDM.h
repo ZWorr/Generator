@@ -3,27 +3,6 @@
 Dark Matter Calculations of |f|^2 terms for the cross section, based on the
 procedure of FKR. (header)
 
-"Physics/Resonance/XSection/RSHelicityAmpl.h" -> "Physics/Resonance/XSection/RSHelicityAmplDM.h"
-
-Within RSHelicityAmplDM.h make the following changes to RSHelicityAmpl.h:
-  _RS_HELICITY_AMPL_H_ -> _RS_HELICITY_AMPL_DM_H_
-  RSHelicityAmpl -> RSHelicityAmplDM
-  **************
-  Include a new helicity amplitude term that is specific to DM
-  This new term looks idendical to f0 (plus or minus) but with
-  S->0 , Cs -> Cz , Bs -> Bz.
-  New terms specific to DM are designated by a "z"
-  fz0Minus
-  Ampz0Minus
-  Ampz20Minus
-  fz0Plus
-  Ampz0Plus
-  Ampz20Plus
-  **************
-
-(Note: within Interaction.h we find "Changes required to implement the GENIE Boosted Dark Matter module
-were installed by Josh Berger (Univ. of Wisconsin)" so we don't need InteractionDM.h
-
 Zachary W. Orr, Colorado State University
 */
 //____________________________________________________________________________
@@ -60,8 +39,8 @@ Zachary W. Orr, Colorado State University
 
 #include <TMath.h>
 
-#include "Framework/Interaction/Interaction.h" //Boosted DM already incorperated by Josh
-#include "Physics/Resonance/XSection/FKRDM.h" //Specific to DM
+#include "Framework/Interaction/Interaction.h"
+#include "Physics/BoostedDarkMatter/XSection/FKRDM.h"
 
 using std::ostream;
 
