@@ -31,9 +31,10 @@ Zachary W. Orr, Colorado State University
 #include "Physics/NuclearState/NuclearUtils.h"
 
 //_____DM change
-#include "Physics/Resonance/XSection/BSKLNBaseDMRESPXSec2014.h"
-#include "Physics/Resonance/XSection/RSHelicityAmplModelDMI.h"
-#include "Physics/Resonance/XSection/RSHelicityAmplDM.h"
+#include "Physics/BoostedDarkMatter/XSection/BSKLNBaseDMRESPXSec2014.h"
+#include "Physics/BoostedDarkMatter/XSection/RSHelicityAmplModelDMI.h"
+#include "Physics/BoostedDarkMatter/XSection/RSHelicityAmplDM.h"
+#include "Framework/ParticleData/PDGLibrary.h"
 //______
 
 
@@ -54,7 +55,7 @@ XSecAlgorithmI(name, config)
 
 }
 //____________________________________________________________________________
-BSKLNBaseDMRESPXSec2014::~BSKLNBaseRESPXSec2014()
+BSKLNBaseDMRESPXSec2014::~BSKLNBaseDMRESPXSec2014()
 {
 
 }
@@ -62,7 +63,7 @@ BSKLNBaseDMRESPXSec2014::~BSKLNBaseRESPXSec2014()
 
 //_________________________________________________________________________
 
-double BSKLNBaseRESPXSec2014::XSec(
+double BSKLNBaseDMRESPXSec2014::XSec(
     const Interaction * interaction, KinePhaseSpace_t kps) const
 {
   if(! this -> ValidProcess    (interaction) ) return 0.;
@@ -261,34 +262,34 @@ if(fUsingDisResJoin) {
 
 //__________Adjusted for DM____________
 //Lamda = (2/Omega)^(1/2) * Q^(*)
-  fFKR.Lamda  = sq2omg * Qstar;
+  fFKRDM.Lamda  = sq2omg * Qstar;
 
 //T^(V) = [ GV / (3*M) ] * Sqrt( Omega/2 )
-  fFKR.Tv     = GV / (3.*W*sq2omg); //Same for DM
+  fFKRDM.Tv     = GV / (3.*W*sq2omg); //Same for DM
 
 //T^(A) = [ (GA*Z) / (3*M) ] * Sqrt( Omega/2 ) * [ Q^(*) / 2mg^2 ]
-  fFKR.Ta     = ((GA * fZeta)/(3. * W)) * (1./sq2omg) * (Qstar / d);
+  fFKRDM.Ta     = ((GA * fZeta)/(3. * W)) * (1./sq2omg) * (Qstar / d);
 
 //R^(V) = Sqrt(2) * GV * Q^(*) * [ (M + m) / ((M + m)^2 - q^2 ) ]
-  fFKR.Rv     = kSqrt2 * GV * Qstar * ((W + Mnuc)/(2. * W * d));
+  fFKRDM.Rv     = kSqrt2 * GV * Qstar * ((W + Mnuc)/(2. * W * d));
 
 //R^(A) = [ (Sqrt(2) * GA * Z / (6*M) ] * (M + m + ((N * Omega) / 2mg^2) )
-  fFKR.Ra     = ((kSqrt2 * GA * fZeta)/(6. * W)) * (W + Mnuc + (nomg/d));
+  fFKRDM.Ra     = ((kSqrt2 * GA * fZeta)/(6. * W)) * (W + Mnuc + (nomg/d));
 
 //S = [(-q^2) / Q^(*2)] * [ GV / 6*M^2] * (3Mm + q^2 - m^2)
-  fFKR.S      = (-q2/Q2star) * (GV / (6. * W2)) * (3. * W * Mnuc + q2 - Mnuc2);
+  fFKRDM.S      = (-q2/Q2star) * (GV / (6. * W2)) * (3. * W * Mnuc + q2 - Mnuc2);
 
 //B_s = [(Z*GA) / (3*M)] * Sqrt(Omega/2) * (1 + (nu^(*) / 2mg^2))
-  fFKR.Bs     = ( (fZeta * GA)/(3. * W * sq2omg) ) * (1 + (vstar / d));
+  fFKRDM.Bs     = ( (fZeta * GA)/(3. * W * sq2omg) ) * (1 + (vstar / d));
 
 //C_s = [(Z*GA) / (6*M*Q^(*))] * (M^2 - m^2 + N*Omega*( nu^(*) / 2mg^2))
-  fFKR.Cs     = ( (fZeta * GA)/(6. * W * Qstar) ) * (W2 - Mnuc2 + nomg*(vstar / d));
+  fFKRDM.Cs     = ( (fZeta * GA)/(6. * W * Qstar) ) * (W2 - Mnuc2 + nomg*(vstar / d));
 
 //B_z = [(Z*GA) / (3*M)] * Sqrt(Omega/2) * (1/Q^(*)) * (M - m)
-  fFKR.Bz     = ( (fZeta * GA)/(3. * W * Qstar * sq2omg) ) * (W - Mnuc);
+  fFKRDM.Bz     = ( (fZeta * GA)/(3. * W * Qstar * sq2omg) ) * (W - Mnuc);
 
 //C_z =  [(Z*GA) / (6*M)] * (2*M + ( (3*q^2) / 2mg^2) + ( N*Omega / 2mg^2))
-  fFKR.Cz     = ( (fZeta * GA)/(6. * W) ) * (2. * W + ( (3.*q2 + nomg)/d ));
+  fFKRDM.Cz     = ( (fZeta * GA)/(6. * W) ) * (2. * W + ( (3.*q2 + nomg)/d ));
 
 
 //____________________________________________________________________________
@@ -318,7 +319,7 @@ if(fUsingDisResJoin) {
     // Compute the cross section
      assert(hamplmod);
 
-     const RSHelicityAmplDM & hampl = hamplmod->Compute(resonance, fFKR);
+     const RSHelicityAmplDM & hampl = hamplmod->Compute(resonance, fFKRDM);
 
      sigL = (hampl.Amp2Minus3 () + hampl.Amp2Minus1 ());
      sigR = (hampl.Amp2Plus3() + hampl.Amp2Plus1());
@@ -346,10 +347,10 @@ if (fVelMode == 0) {
   //additional term from 4th polarization: - ( (mZ'^2 - q^2)^2 / (mZ'^4) )
   double Xterm = -(TMath::Power((mZprime2 - q2), 2)/TMath::Power(mZprime2, 2));
 
-  L = fQchiA2*E12_Q2_A + fQchiV2*E12_Q2_V + fQchiV*fQchiA*VXA;
-  R = fQchiA2*E12_Q2_A + fQchiV2*E12_Q2_V - fQchiV*fQchiA*VXA;
-  S = 2.*fQchiA2*E12_Q2_SA + 2.*fQchiV2*E12_Q2;
-  Z = fQchiA2*Q2*(Xplus+Xminus)*denom*Xterm;
+  double L = fQchiA2*E12_Q2_A + fQchiV2*E12_Q2_V + fQchiV*fQchiA*VXA;
+  double R = fQchiA2*E12_Q2_A + fQchiV2*E12_Q2_V - fQchiV*fQchiA*VXA;
+  double S = 2.*fQchiA2*E12_Q2_SA + 2.*fQchiV2*E12_Q2;
+  double Z = fQchiA2*Q2*(Xplus+Xminus)*denom*Xterm;
 
      if (is_dm) {
          xsec = sig0*(L*sigL + R*sigR + S*sigS + Z*sigZ);
@@ -362,10 +363,10 @@ if (fVelMode == 0) {
    else if (fVelMode == 2) {
      double fQchiS2 = TMath::Power(fQchiS,2); //QS^2
 
-      RL = fQchiS2*E12_Q2_SA;
-      S = fQchiS2*2.*E12*denom;
+    double RL = fQchiS2*E12_Q2_SA;
+    double S = fQchiS2*2.*E12*denom;
 
-      xsec = sig0*(RL*sigL + RL*sigR + S*sigS)
+      xsec = sig0*(RL*sigL + RL*sigR + S*sigS);
      }
   xsec = TMath::Max(0.,xsec);
 //____________________________________________________________________________
@@ -533,15 +534,23 @@ bool BSKLNBaseDMRESPXSec2014::ValidProcess(const Interaction * interaction) cons
 
 //______________added DM V and A charges
 //____________________________________________________________________________
-void RSHelicityAmplModelDMI::Configure(string config)
+void BSKLNBaseDMRESPXSec2014::Configure(string config)
+{
+  Algorithm::Configure(config);
+  this->LoadConfig();
+}
+
+//____________________________________________________________________________
+void BSKLNBaseDMRESPXSec2014::Configure(const Registry & config)
 {
   Algorithm::Configure(config);
   this->LoadConfig();
 }
 //____________________________________________________________________________
-void RSHelicityAmplModelDMI::LoadConfig(void)
-{
 
+//____________________________________________________________________________
+void BSKLNBaseDMRESPXSec2014::LoadConfig(void)
+{
   // dark matter couplings to mediator
   double QchiL, QchiR;
   this->GetParam( "DarkLeftCharge", QchiL ) ;
@@ -558,26 +567,6 @@ void RSHelicityAmplModelDMI::LoadConfig(void)
 
   // mediator mass
   fMedMass = PDGLibrary::Instance()->Find(kPdgMediator)->Mass();
-}
-
-//____________________________________________________________________________
-void BSKLNBaseDMRESPXSec2014::Configure(const Registry & config)
-{
-  Algorithm::Configure(config);
-  this->LoadConfig();
-}
-//____________________________________________________________________________
-void BSKLNBaseDMRESPXSec2014::Configure(string config)
-{
-  Algorithm::Configure(config);
-  this->LoadConfig();
-}
-
-
-//____________________________________________________________________________
-void BSKLNBaseDMRESPXSec2014::LoadConfig(void)
-{
-
 
   // Load all configuration data or set defaults
 //For Kinematic Expressions:
