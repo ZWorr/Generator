@@ -3,28 +3,16 @@
 Dark Matter model parameters calculated in the same form as
 the Feynmann-Kislinger-Ravndall (FKR) baryon excitation model parameters.
 
-"Physics/Resonance/XSection/FKR.cxx" -> "Physics/Resonance/XSection/FKRDM.cxx"
-
-Within FKRDM.cxx make the following changes from FKR.cxx:
-  #include "Physics/Resonance/XSection/FKR.h" -> #include "Physics/Resonance/XSection/FKRDM.h"
-  "FKR" -> "FKRDM"
-  C -> Cs and Cz
-  B -> Bs and Bz
-
-  (Note: the DM calculation does not
-  currently use variables {Rplus,Rminus,Tplus,Tminus,R,T} but I have
-  left them defined in the code here just incase)
-
 Zachary W. Orr, Colorado State University
 */
 //____________________________________________________________________________
 
 #include <TMath.h>
 
-#include "Framework/ParticleData/BaryonResUtils.h" //No change?
-#include "Framework/Conventions/Constants.h" //No change?
-#include "Framework/Messenger/Messenger.h" //No change?
-#include "Physics/Resonance/XSection/FKRDM.h" //Specific to DM
+#include "Framework/ParticleData/BaryonResUtils.h"
+#include "Framework/Conventions/Constants.h"
+#include "Framework/Messenger/Messenger.h"
+#include "Physics/BoostedDarkMatter/XSection/FKRDM.h"
 
 using std::endl;
 
