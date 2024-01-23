@@ -103,7 +103,7 @@ bool ProcessInfo::IsResonant(void) const
 //____________________________________________________________________________
 bool ProcessInfo::IsDarkMatterResonant(void) const//added by Zach
 {
-  return (fScatteringType == kScDarkMatterResonant);
+  return (fScatteringType == kScDarkMatterResonant); //New Scattering type: kScDarkMatterResonant
 }
 //____________________________________________________________________________
 bool ProcessInfo::IsCoherentProduction(void) const
