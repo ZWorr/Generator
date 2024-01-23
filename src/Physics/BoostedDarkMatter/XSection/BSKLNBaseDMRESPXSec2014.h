@@ -12,7 +12,7 @@ Zachary W. Orr, Colorado State University
 
 #include "Framework/EventGen/XSecAlgorithmI.h"
 #include "Framework/ParticleData/BaryonResonance.h" //Resonance_t
-#include "Physics/Resonance/XSection/FKRDM.h"//Lambda,T,R,B,C,S
+#include "Physics/BoostedDarkMatter/XSection/FKRDM.h"//Lambda,T,R,B,C,S
 
 namespace genie {
 
@@ -23,9 +23,7 @@ namespace genie {
   class BSKLNBaseDMRESPXSec2014: public XSecAlgorithmI {
 
     public:
-      //______________added for DM charges
-          Configure(string config);
-          //______________
+
       virtual ~BSKLNBaseDMRESPXSec2014();
 
       // implement the XSecAlgorithmI interface
@@ -39,24 +37,13 @@ namespace genie {
       void Configure(string config);
 
 
-//______________added for DM charges
-private:
-      LoadConfig(void);
-
-      double fQchiV;
-      double fQchiA;
-      double fQchiS;
-      int    fVelMode;
-      double fMedMass;
-      double fgZp;
-      //______________
-
     protected:
 
       BSKLNBaseDMRESPXSec2014(string name);
       BSKLNBaseDMRESPXSec2014(string name, string config);
 
-      void LoadConfig (void);
+      void  LoadConfig(void);
+
 
       mutable FKRDM fFKRDM;
 
@@ -67,6 +54,13 @@ private:
 
 //_________________________________________________________________________
       // configuration data
+//DM charges
+      double fQchiV;
+      double fQchiA;
+      double fQchiS;
+      int    fVelMode;
+      double fMedMass;
+      double fgZp;
 
 //For Overlaping the DIS and RES regimes:
       bool     fUsingDisResJoin;   ///< use a DIS/RES joining scheme?
