@@ -2,17 +2,10 @@
 /*
 RSHelicityAmplModelDMI: the interface for the Dark Matter helicity Amplitudes
 
-"Physics/Resonance/XSection/RSHelicityAmplModelI.cxx" -> "Physics/Resonance/XSection/RSHelicityAmplModelDMI.cxx"
-
-Within RSHelicityAmplModelDMI.cxx make the following changes from RSHelicityAmplModelI.cxx:
-  #include "Physics/Resonance/XSection/RSHelicityAmplModelI.h" -> #include "Physics/Resonance/XSection/RSHelicityAmplModelDMI.h"
-
-  RSHelicityAmplModelI -> RSHelicityAmplModelDMI
-
 Zachary W. Orr, Colorado State University
 */
 //____________________________________________________________________________
-#include "Physics/Resonance/XSection/RSHelicityAmplModelDMI.h" //Specific to DM
+#include "Physics/BoostedDarkMatter/XSection/RSHelicityAmplModelDMI.h" //Specific to DM
 
 using namespace genie;
 
