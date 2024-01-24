@@ -48,7 +48,7 @@ typedef enum EKinePhaseSpace {
   kPSWfE,
   kPSWfEQ2,
   kPSWfEq2,
-  kPSWQ2fE,
+  kPSWQ2fE,//Resonant Scattering Jacobian checks for this phase space
   kPSWQD2fE,
   kPSW2Q2fE,
   kPSWlogQ2fE,
@@ -67,7 +67,7 @@ typedef enum EKinePhaseSpace {
               // TODO: rename this value when the correct variables are identified
   kPSTAfE,
   kPSEgTlOgfE,
-  kPSDMELEvGen, // Equivalent to kPSQELEvGen for Dark Matter scattering  
+  kPSDMELEvGen, // Equivalent to kPSQELEvGen for Dark Matter scattering
   kPSxQ2fE,
   kPSlog10xlog10Q2fE,
   kPSEDNufE, // Used for Dark Neutrinos, two body final state
@@ -110,7 +110,7 @@ public:
       case(kPSWfE)        : return "<{W}|E>";         break;
       case(kPSWfEQ2)      : return "<{W}|E,Q2>";      break;
       case(kPSWfEq2)      : return "<{W}|E,q2>";      break;
-      case(kPSWQ2fE)      : return "<{W,Q2}|E>";      break;
+      case(kPSWQ2fE)      : return "<{W,Q2}|E>";      break;//Resonant Scattering Jacobian checks for this phase space
       case(kPSWQD2fE)     : return "<{W,QD2}|E>";     break;
       case(kPSW2Q2fE)     : return "<{W2,Q2}|E>";     break;
       case(kPSWlogQ2fE)   : return "<{W,logQ2}|E>";   break;
