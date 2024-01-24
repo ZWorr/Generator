@@ -33,29 +33,6 @@ FermiMomentumTable          string  No    Table of Fermi momentum (kF) constants
 XSec-Integrator             alg     No
 -->
 
-  <param_set name="Default">
-
-    <param type="string" name="CommonParam"> WeakInt,NonResBackground,CKM,FermiGas </param>
-
-    <param type="double" name="RES-DM-XSecScale"> 1.000 </param>
-
-    <!--
-	 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	 Constants in Feynman-Kislinger-Ravndal model for baryon excitation used in the Rein-Sehgal
-	 resonance model
-    -->
-    <param type="double" name="RES-Omega"> 1.05  </param>
-    <param type="double" name="RES-Zeta">  0.76338 </param> <!-- 0.75 -->
-
-
-    <!--
-	 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	 Axial and vector masses for resonance production
-    -->
-    <param type="double" name="RES-Ma"> 1.120 </param>
-    <param type="double" name="RES-Mv"> 0.840 </param>
-
-  </param_set>
 
   <param_set name="WithPauliBlock">
 
