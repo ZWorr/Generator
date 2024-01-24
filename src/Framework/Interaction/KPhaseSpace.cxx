@@ -149,7 +149,7 @@ double KPhaseSpace::Threshold(void) const
      pi.IsDarkMatterElastic()       ||
      pi.IsInverseBetaDecay()        ||
      pi.IsResonant()                ||
-     pi.IsDarkMatterResonant()      ||                                          //Added for Res DM.
+     pi.IsDarkMatterResonant()      ||                                          //New Process: IsDarkMatterResonant
      pi.IsDeepInelastic()           ||
      pi.IsDarkMatterDeepInelastic() ||
      pi.IsDiffractive())
@@ -185,7 +185,7 @@ double KPhaseSpace::Threshold(void) const
     double smin = TMath::Power(Wmin+ml,2.);
     double Ethr = 0.5*(smin-Mn2)/Mn;
     // threshold is different for dark matter case
-    if(pi.IsDarkMatterElastic() || pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant()) {    //Added ResDM here since it takes ml into account.
+    if(pi.IsDarkMatterElastic() || pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant()) {
       // Correction to minimum kinematic variables
       Wmin = Mn;
       smin = TMath::Power(Wmin+ml,2);
@@ -308,7 +308,7 @@ bool KPhaseSpace::IsAboveThreshold(void) const
      pi.IsDarkMatterElastic()       ||
      pi.IsInverseBetaDecay()        ||
      pi.IsResonant()                ||
-     pi.IsDarkMatterResonant()      ||                                          //RESDM added here because of similarity to Res and DMDIS
+     pi.IsDarkMatterResonant()      ||
      pi.IsDeepInelastic()           ||
      pi.IsDarkMatterDeepInelastic() ||
      pi.IsDiffractive()             ||
@@ -347,7 +347,7 @@ bool KPhaseSpace::IsAllowed(void) const
   // RES
   //   Check the running W vs the W limits
   //   & the running Q2 vs Q2 limits for the given W
-  if(pi.IsResonant() || pi.IsDarkMatterResonant()) {                            //Res DM is added here.
+  if(pi.IsResonant() || pi.IsDarkMatterResonant()) {
     Range1D_t Wl  = this->WLim();
     Range1D_t Q2l = this->Q2Lim_W();
     double    W   = kine.W();
@@ -455,7 +455,7 @@ Range1D_t KPhaseSpace::WLim(void) const
   bool is_em = pi.IsEM();
   bool is_qel  = pi.IsQuasiElastic()  || pi.IsInverseBetaDecay() || pi.IsDarkMatterElastic();
   bool is_inel = pi.IsDeepInelastic() || pi.IsResonant() || pi.IsDiffractive();
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();    //Res DM is added here since DarkWLim takes mass of lepton into account when calculating s
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();
 
   if(is_qel) {
     double MR = fInteraction->RecoilNucleon()->Mass();
@@ -531,7 +531,7 @@ Range1D_t KPhaseSpace::Q2Lim_W(void) const
   bool is_inel  = pi.IsDeepInelastic() || pi.IsResonant() || pi.IsDiffractive();
   bool is_coh   = pi.IsCoherentProduction();
   bool is_dme   = pi.IsDarkMatterElastic();
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();  //ResDM has same DarkQ2Lim as DMDIS
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();
 
   if(!is_qel && !is_inel && !is_coh && !is_dme && !is_dmdis) return Q2l;
 
@@ -588,7 +588,7 @@ Range1D_t KPhaseSpace::Q2Lim(void) const
   bool is_coh   = pi.IsCoherentProduction();
   bool is_cevns = pi.IsCoherentElastic();
   bool is_dme   = pi.IsDarkMatterElastic();
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();   //ResDM same Q2Lim as DMDIS
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();
 
   if(!is_qel && !is_inel && !is_coh && !is_cevns && !is_dme && !is_dmdis) return Q2l;
 
@@ -712,7 +712,7 @@ Range1D_t KPhaseSpace::XLim(void) const
     return xl;
   }
   //DMDIS
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();  //RESDM has same DarkXLim as DMDIS
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();
   if(is_dmdis) {
     const InitialState & init_state  = fInteraction->InitState();
     double Ev  = init_state.ProbeE(kRfHitNucRest);
@@ -764,7 +764,7 @@ Range1D_t KPhaseSpace::YLim(void) const
     return yl;
   }
   //DMDIS
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();   //ResDM has same DarkYLim as DMDIS
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();
   if(is_dmdis) {
     const InitialState & init_state = fInteraction->InitState();
     double Ev  = init_state.ProbeE(kRfHitNucRest);
@@ -824,7 +824,7 @@ Range1D_t KPhaseSpace::YLim_X(void) const
 
   const ProcessInfo & pi = fInteraction->ProcInfo();
   bool is_em = pi.IsEM();
-                                                                                
+
   //RES+DIS
   bool is_inel = pi.IsDeepInelastic() || pi.IsResonant();
   if(is_inel) {
@@ -837,7 +837,7 @@ Range1D_t KPhaseSpace::YLim_X(void) const
     return yl;
   }
   //DMDIS
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();  //RESDM has same DarkYLim_X as DMDIS
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();  
   if(is_dmdis) {
     const InitialState & init_state = fInteraction->InitState();
     double Ev  = init_state.ProbeE(kRfHitNucRest);
