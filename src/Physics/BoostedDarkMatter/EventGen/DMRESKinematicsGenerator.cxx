@@ -76,7 +76,7 @@ void DMRESKinematicsGenerator::ProcessEventRecord(GHepRecord * evrec) const
   interaction->SetBit(kISkipProcessChk);
 
   //-- DM process
-  bool is_em = interaction->ProcInfo().IsEM();
+  bool is_DM = interaction->ProcInfo().IsDarkMatterResonant();
 
   //-- Compute the W limits
   //  (the physically allowed W's, unless an external cut is imposed)
@@ -140,17 +140,23 @@ void DMRESKinematicsGenerator::ProcessEventRecord(GHepRecord * evrec) const
      }
      else
      {
+//______________________________________________________________________________
+//______________________________________________________________________________
+//______________________________________________________________________________
         // neutrino scattering
         // Selecting unweighted event kinematics using an importance sampling
         // method. Q2 with be transformed to QD2 to take out the dipole form.
         interaction->KinePtr()->SetW(W.min);
         Range1D_t Q2 = kps.Q2Lim_W();
         double Q2min  = -99.;
-        if (is_em)
+        if (is_DM)
             Q2min  = Q2.min + kASmallNum;
         else
             Q2min  = 0 + kASmallNum;
         double Q2max  = Q2.max - kASmallNum;
+//______________________________________________________________________________
+//______________________________________________________________________________
+//______________________________________________________________________________
 
         // In unweighted mode - use transform that takes out the dipole form
         double QD2min = utils::kinematics::Q2toQD2(Q2max);
@@ -285,8 +291,11 @@ double DMRESKinematicsGenerator::ComputeMaxXSec(
 
   const InitialState & init_state = interaction -> InitState();
   double E = init_state.ProbeE(kRfHitNucRest);
-  bool is_em = interaction->ProcInfo().IsEM();
-  double Q2Thres = is_em ? utils::kinematics::electromagnetic::kMinQ2Limit : controls::kMinQ2Limit;
+  bool is_DM = interaction->ProcInfo().IsDarkMatterResonant();
+// src/Framework/Utils/KineUtils.cxx (569 - 605)
+// Accounts for incoming lepton mass... so it should be the same for the DM current.
+// otherwise look at (915 for DarkQ2Lim_W)
+  double Q2Thres = is_DM ? utils::kinematics::electromagnetic::kMinQ2Limit : controls::kMinQ2Limit;
 
   double md;
   if(!interaction->ExclTag().KnownResonance()) md=1.23;
@@ -320,7 +329,7 @@ double DMRESKinematicsGenerator::ComputeMaxXSec(
       int NQ2  = 25;
       int NQ2b =  4;
 
-      Range1D_t rQ2 = kps.Q2Lim_W();
+      Range1D_t rQ2 = kps.Q2Lim_W();                                        
       if( rQ2.max < Q2Thres || rQ2.min <=0 ) continue;
       if( rQ2.max-rQ2.min<0.02 ) {NQ2=5; NQ2b=3;}
 
