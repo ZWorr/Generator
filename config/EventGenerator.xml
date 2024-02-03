@@ -115,44 +115,34 @@ XSecModel                   alg     Yes  Cross section model used at the thread 
   </param_set>
 
   <param_set name="RES-DMv0">
-    <!-- Unchanged for DM: -->
      <param type="string" name="VldContext"> </param>
      <param type="int"    name="NModules">   10                                                    </param>
      <param type="alg"    name="Module-0">   genie::InitialStateAppender/Default                   </param>
      <param type="alg"    name="Module-1">   genie::VertexGenerator/Default                        </param>
      <param type="alg"    name="Module-2">   genie::FermiMover/Default                             </param>
-     <!-- Updated for DM: Removed "SPP" from params otherwise unchanged from RESKinematicsGenerator -->
      <param type="alg"    name="Module-3">   genie::DMRESKinematicsGenerator/RES                   </param>
-     <!-- Updated for DM: practiaclly unchanged from RESPrimaryLeptonGenerator -->
      <param type="alg"    name="Module-4">   genie::DMRESOutgoingDarkGenerator/Default              </param>
-     <!-- Unchanged for DM: -->
-     <param type="alg"    name="Module-5">   genie::RESHadronicSystemGenerator/Default             </param>
+     <param type="alg"    name="Module-5">   genie::DMRESHadronicSystemGenerator/Default            </param>
      <param type="alg"    name="Module-6">   genie::NucDeExcitationSim/Default                     </param>
      <param type="alg"    name="Module-7">   genie::HadronTransporter/Default                      </param>
      <param type="alg"    name="Module-8">   genie::NucBindEnergyAggregator/Default                </param>
      <param type="alg"    name="Module-9">   genie::UnstableParticleDecayer/AfterHadronTransport   </param>
-     <!-- Updated for DM: added is_DM to RESInteractionListGenerator and removed others -->
      <param type="alg"    name="ILstGen">    genie::DMRESInteractionListGenerator/DM-Default       </param>
   </param_set>
 
   <param_set name="RES-DMv2">
-    <!-- Unchanged for DM: -->
      <param type="string" name="VldContext"> </param>
      <param type="int"    name="NModules">   10                                                    </param>
      <param type="alg"    name="Module-0">   genie::InitialStateAppender/Default                   </param>
      <param type="alg"    name="Module-1">   genie::VertexGenerator/Default                        </param>
      <param type="alg"    name="Module-2">   genie::FermiMover/Default                             </param>
-     <!-- Updated for DM: Removed "SPP" from params otherwise unchanged from RESKinematicsGenerator -->
      <param type="alg"    name="Module-3">   genie::DMRESKinematicsGenerator/RES                   </param>
-     <!-- Updated for DM: practiaclly unchanged from RESPrimaryLeptonGenerator -->
      <param type="alg"    name="Module-4">   genie::DMRESOutgoingDarkGenerator/Default              </param>
-     <!-- Unchanged for DM: -->
-     <param type="alg"    name="Module-5">   genie::RESHadronicSystemGenerator/Default             </param>
+     <param type="alg"    name="Module-5">   genie::DMRESHadronicSystemGenerator/Default             </param>
      <param type="alg"    name="Module-6">   genie::NucDeExcitationSim/Default                     </param>
      <param type="alg"    name="Module-7">   genie::HadronTransporter/Default                      </param>
      <param type="alg"    name="Module-8">   genie::NucBindEnergyAggregator/Default                </param>
      <param type="alg"    name="Module-9">   genie::UnstableParticleDecayer/AfterHadronTransport   </param>
-     <!-- Update for DM: added is_DM to RESInteractionListGenerator and removed others -->
      <param type="alg"    name="ILstGen">    genie::DMRESInteractionListGenerator/DM-Default         </param>
   </param_set>
 
@@ -728,6 +718,22 @@ XSecModel                   alg     Yes  Cross section model used at the thread 
      <param type="alg"    name="Module-3">   genie::DMEOutgoingDarkGenerator/Default   </param>
      <param type="alg"    name="Module-4">   genie::DMETargetRemnantGenerator/Default   </param>
      <param type="alg"    name="ILstGen">    genie::DMEInteractionListGenerator/DME  </param>
+  </param_set>
+
+  <param_set name="RES-DM">
+     <param type="string" name="VldContext"> </param>
+     <param type="int"    name="NModules">   10                                                    </param>
+     <param type="alg"    name="Module-0">   genie::InitialStateAppender/Default                   </param>
+     <param type="alg"    name="Module-1">   genie::VertexGenerator/Default                        </param>
+     <param type="alg"    name="Module-2">   genie::FermiMover/Default                             </param>
+     <param type="alg"    name="Module-3">   genie::DMRESKinematicsGenerator/RES                   </param>
+     <param type="alg"    name="Module-4">   genie::DMRESOutgoingDarkGenerator/Default              </param>
+     <param type="alg"    name="Module-5">   genie::DMRESHadronicSystemGenerator/Default             </param>
+     <param type="alg"    name="Module-6">   genie::NucDeExcitationSim/Default                     </param>
+     <param type="alg"    name="Module-7">   genie::HadronTransporter/Default                      </param>
+     <param type="alg"    name="Module-8">   genie::NucBindEnergyAggregator/Default                </param>
+     <param type="alg"    name="Module-9">   genie::UnstableParticleDecayer/AfterHadronTransport   </param>
+     <param type="alg"    name="ILstGen">    genie::DMRESInteractionListGenerator/DM-Default       </param>
   </param_set>
 
   <!-- Inverse Beta Decay Event Generator -->
