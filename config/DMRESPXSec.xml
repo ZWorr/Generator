@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<alg_conf>
 
 <!--
 Configuration for the Rein-Sehgal RES excitation d^xsec / dQ^2 dW xsec algorithm
@@ -33,38 +32,32 @@ RFG-UseParametrization      bool    No    use parametrization for Fermi momentum
 FermiMomentumTable          string  No    Table of Fermi momentum (kF) constants for various nuclei       CommonParam[FermiGas]
 XSec-Integrator             alg     No
 -->
-<param_set name="Velocity0">
-  <param_set name="Default">
 
+<alg_conf>
+<param_set name="Velocity0">
     <param type="string" name="CommonParam"> WeakInt,NonResBackground,CKM,FermiGas,BoostedDarkMatter </param>
 
     <param type="alg"  name="XSec-Integrator">  genie::DMRESXSec/Default    </param>
-    <param type="int" name="velocity-mode">   0
+
+    <param type="int" name="velocity-mode">   0         </param>
     <param type="double" name="RES-DM-XSecScale"> 1.000 </param>
     <param type="double" name="RES-Omega"> 1.05  </param>
     <param type="double" name="RES-Zeta">  0.76338 </param> <!-- 0.75 -->
     <param type="double" name="RES-Ma"> 1.120 </param>
     <param type="double" name="RES-Mv"> 0.840 </param>
-
-  </param_set>
-
 </param_set>
 
 <param_set name="Velocity2">
-  <param_set name="Default">
-
     <param type="string" name="CommonParam"> WeakInt,NonResBackground,CKM,FermiGas,BoostedDarkMatter </param>
 
     <param type="alg"  name="XSec-Integrator">  genie::DMRESXSec/Default    </param>
-    <param type="int" name="velocity-mode">   2
+
+    <param type="int" name="velocity-mode">   2         </param>
     <param type="double" name="RES-DM-XSecScale"> 1.000 </param>
     <param type="double" name="RES-Omega"> 1.05  </param>
     <param type="double" name="RES-Zeta">  0.76338 </param> <!-- 0.75 -->
     <param type="double" name="RES-Ma"> 1.120 </param>
     <param type="double" name="RES-Mv"> 0.840 </param>
-
-  </param_set>
-
 </param_set>
 
 </alg_conf>
