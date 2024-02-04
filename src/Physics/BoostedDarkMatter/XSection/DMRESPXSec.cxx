@@ -313,7 +313,7 @@ if(fGA){
 
   double CA5_0 = 1.2;
   double CA5 = CA5_0 *  TMath::Power( 1./(1-q2/fMa2), 2);
-  //  GA = 0.5 * TMath::Sqrt(3.) * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR) * (1- (W2 +q2 -Mnuc2)/8./Mnuc2) * CA5/fZeta;
+    GA = 0.5 * TMath::Sqrt(3.) * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR) * (1- (W2 +q2 -Mnuc2)/8./Mnuc2) * CA5/fZeta;
   GA = 0.5 * TMath::Sqrt(3.) * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR) * (1- (W2 +q2 -Mnuc2)/8./Mnuc2) * CA5;
 
   LOG("DMRESPXSec",pINFO) <<"GA= " <<GA << "  C5A= " <<CA5;
@@ -321,7 +321,7 @@ if(fGA){
 
 
 
-  // Apply given scaling factor
+  //Apply given scaling factor
   double xsec_scale = 1.;
   if      (is_DM) { xsec_scale = fXSecScaleDM; }
   xsec *= xsec_scale;
