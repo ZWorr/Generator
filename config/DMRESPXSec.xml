@@ -37,7 +37,7 @@ XSec-Integrator             alg     No
 <param_set name="Velocity0">
     <param type="string" name="CommonParam"> WeakInt,NonResBackground,CKM,FermiGas,BoostedDarkMatter </param>
 
-    <param type="alg"  name="XSec-Integrator">  genie::DMRESXSec/Default    </param>
+    <param type="alg"  name="XSec-Integrator">  genie::DMRESXSecFast/Default    </param>
 
     <param type="int" name="velocity-mode">   0         </param>
     <param type="double" name="RES-DM-XSecScale"> 1.000 </param>
@@ -48,15 +48,16 @@ XSec-Integrator             alg     No
     <!--
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   Set to true to use tuning to axial, vector form factors by MiniBoone (J. Nowak)
-    -->
+
     <param type="bool" name="minibooneGA">  true </param>
     <param type="bool" name="minibooneGV">  true </param>
+    -->
 </param_set>
 
 <param_set name="Velocity2">
     <param type="string" name="CommonParam"> WeakInt,NonResBackground,CKM,FermiGas,BoostedDarkMatter </param>
 
-    <param type="alg"  name="XSec-Integrator">  genie::DMRESXSec/Default    </param>
+    <param type="alg"  name="XSec-Integrator">  genie::DMRESXSecFast/Default    </param>
 
     <param type="int" name="velocity-mode">   2         </param>
     <param type="double" name="RES-DM-XSecScale"> 1.000 </param>
@@ -67,9 +68,10 @@ XSec-Integrator             alg     No
     <!--
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   Set to true to use tuning to axial, vector form factors by MiniBoone (J. Nowak)
-    -->
+
     <param type="bool" name="minibooneGA">  true </param>
     <param type="bool" name="minibooneGV">  true </param>
+    -->
 </param_set>
 
 </alg_conf>
