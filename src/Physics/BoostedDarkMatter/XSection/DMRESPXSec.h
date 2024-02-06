@@ -75,8 +75,8 @@ private:
   int    fVelMode;             ///< DM (scalar/fermion)
   double fMedMass;             ///< DM mediator mass
   double fgZp;                 ///< DM mediator coupling
-  bool fGA;                    ///< axial transition form factor
-  bool fGV;                    ///< vector transition form factor
+//  bool fGA;                    ///< axial transition form factor
+//  bool fGV;                    ///< vector transition form factor
   bool     fWghtBW;            ///< weight with resonance breit-wigner?
   bool     fNormBW;            ///< normalize resonance breit-wigner to 1?
   double   fZeta;              ///< FKR parameter Zeta
