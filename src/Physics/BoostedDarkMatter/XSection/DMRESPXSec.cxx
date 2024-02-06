@@ -172,6 +172,43 @@ double DMRESPXSec::XSec(
   double GA  = Go * TMath::Power( 1./(1-q2/fMa2), 2);
 
 
+  //____________________________________________________________________________
+  /*
+  if(fGV){
+
+    LOG("DMRESPXSec",pDEBUG) <<"Using new GV";
+    double CV0 =  1./(1-q2/fMv2/4.);
+    double CV3 =  2.13 * CV0 * TMath::Power( 1-q2/fMv2,-2);
+    double CV4 = -1.51 * CV0 * TMath::Power( 1-q2/fMv2,-2);
+    double CV5 =  0.48 * CV0 * TMath::Power( 1-q2/fMv2/0.766, -2);
+
+    double GV3 =  0.5 / TMath::Sqrt(3) * ( CV3 * (W + Mnuc)/Mnuc
+                  + CV4 * (W2 + q2 -Mnuc2)/2./Mnuc2
+                  + CV5 * (W2 - q2 -Mnuc2)/2./Mnuc2 );
+
+    double GV1 = - 0.5 / TMath::Sqrt(3) * ( CV3 * (Mnuc2 -q2 +Mnuc*W)/W/Mnuc
+                 + CV4 * (W2 +q2 - Mnuc2)/2./Mnuc2
+                 + CV5 * (W2 -q2 - Mnuc2)/2./Mnuc2 );
+
+    GV = 0.5 * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR)
+         * TMath::Sqrt( 3 * GV3*GV3 + GV1*GV1);
+  }
+
+  if(fGA){
+    LOG("DMRESPXSec",pDEBUG) << "Using new GA";
+
+    double CA5_0 = 1.2;
+    double CA5 = CA5_0 *  TMath::Power( 1./(1-q2/fMa2), 2);
+      GA = 0.5 * TMath::Sqrt(3.) * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR) * (1- (W2 +q2 -Mnuc2)/8./Mnuc2) * CA5/fZeta;
+    GA = 0.5 * TMath::Sqrt(3.) * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR) * (1- (W2 +q2 -Mnuc2)/8./Mnuc2) * CA5;
+
+    LOG("DMRESPXSec",pINFO) <<"GA= " <<GA << "  C5A= " <<CA5;
+  }
+  */
+  //____________________________________________________________________________
+
+
+
   double d      = (TMath::Power(W+Mnuc,2.) - q2)/(2. * W);
   double sq2omg = TMath::Sqrt(2./fOmega);
   double nomg   = IR * fOmega;
@@ -287,38 +324,6 @@ if (fVelMode == 0) {
   double rf = 1.0;
   Spline * spl = 0;
   xsec *= rf;
-//___________________________________________________________________________________
-if(fGV){
-
-  LOG("DMRESPXSec",pDEBUG) <<"Using new GV";
-  double CV0 =  1./(1-q2/fMv2/4.);
-  double CV3 =  2.13 * CV0 * TMath::Power( 1-q2/fMv2,-2);
-  double CV4 = -1.51 * CV0 * TMath::Power( 1-q2/fMv2,-2);
-  double CV5 =  0.48 * CV0 * TMath::Power( 1-q2/fMv2/0.766, -2);
-
-  double GV3 =  0.5 / TMath::Sqrt(3) * ( CV3 * (W + Mnuc)/Mnuc
-                + CV4 * (W2 + q2 -Mnuc2)/2./Mnuc2
-                + CV5 * (W2 - q2 -Mnuc2)/2./Mnuc2 );
-
-  double GV1 = - 0.5 / TMath::Sqrt(3) * ( CV3 * (Mnuc2 -q2 +Mnuc*W)/W/Mnuc
-               + CV4 * (W2 +q2 - Mnuc2)/2./Mnuc2
-               + CV5 * (W2 -q2 - Mnuc2)/2./Mnuc2 );
-
-  GV = 0.5 * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR)
-       * TMath::Sqrt( 3 * GV3*GV3 + GV1*GV1);
-}
-
-if(fGA){
-  LOG("DMRESPXSec",pDEBUG) << "Using new GA";
-
-  double CA5_0 = 1.2;
-  double CA5 = CA5_0 *  TMath::Power( 1./(1-q2/fMa2), 2);
-    GA = 0.5 * TMath::Sqrt(3.) * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR) * (1- (W2 +q2 -Mnuc2)/8./Mnuc2) * CA5/fZeta;
-  GA = 0.5 * TMath::Sqrt(3.) * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR) * (1- (W2 +q2 -Mnuc2)/8./Mnuc2) * CA5;
-
-  LOG("DMRESPXSec",pINFO) <<"GA= " <<GA << "  C5A= " <<CA5;
-}
-
 
 
   //Apply given scaling factor
@@ -485,8 +490,8 @@ void DMRESPXSec::LoadConfig(void)
   this->GetParamDef( "BreitWignerWeight", fWghtBW, true ) ;
   this->GetParamDef( "BreitWignerNorm",   fNormBW, true);
 
-  this->GetParam( "minibooneGA", fGA    ) ;   //< axial transition form factor
-  this->GetParam( "minibooneGV", fGV    ) ;   //< vector transition form factor
+//  this->GetParam( "minibooneGA", fGA    ) ;   //< axial transition form factor
+//  this->GetParam( "minibooneGV", fGV    ) ;   //< vector transition form factor
 
 
   this->GetParam("FermiMomentumTable", fKFTable);
