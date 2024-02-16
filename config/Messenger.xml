@@ -86,6 +86,7 @@
   <priority msgstream="DMELEvent">             NOTICE </priority>
   <priority msgstream="DMELKinematics">        WARN   </priority>
   <priority msgstream="DMELXSec">              NOTICE </priority>
+  <priority msgstream="DMRes">                 INFO   </priority>
   <priority msgstream="EventGenerator">        WARN   </priority>
   <priority msgstream="EffectiveSF">           NOTICE </priority>
   <priority msgstream="Elastic">               INFO   </priority>
@@ -230,7 +231,7 @@
   <priority msgstream="HEDISKinematics">       WARN    </priority>
   <priority msgstream="HEDISStrucFunc">        WARN    </priority>
   <priority msgstream="LeptoHad">              ERROR   </priority>
-  <priority msgstream="HNL">                   FATAL </priority> 
+  <priority msgstream="HNL">                   FATAL </priority>
 
   <priority msgstream="gevgen">              NOTICE </priority>
   <priority msgstream="gevgen_dm">           NOTICE </priority>
