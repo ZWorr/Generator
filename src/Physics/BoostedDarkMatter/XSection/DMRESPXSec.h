@@ -75,8 +75,6 @@ private:
   int    fVelMode;             ///< DM (scalar/fermion)
   double fMedMass;             ///< DM mediator mass
   double fgZp;                 ///< DM mediator coupling
-//  bool fGA;                    ///< axial transition form factor
-//  bool fGV;                    ///< vector transition form factor
   bool     fWghtBW;            ///< weight with resonance breit-wigner?
   bool     fNormBW;            ///< normalize resonance breit-wigner to 1?
   double   fZeta;              ///< FKR parameter Zeta
@@ -84,7 +82,6 @@ private:
   double   fMa2;               ///< (axial mass)^2
   double   fMv2;               ///< (vector mass)^2
   bool     fUsingDisResJoin;   ///< use a DIS/RES joining scheme?
-  bool     fUsingNuTauScaling; ///< use NeuGEN nutau xsec reduction factors?
   double   fWcut;              ///< apply DIS/RES joining scheme < Wcut
   double   fN2ResMaxNWidths;   ///< limits allowed phase space for n=2 res
   double   fN0ResMaxNWidths;   ///< limits allowed phase space for n=0 res
@@ -92,8 +89,11 @@ private:
   string fKFTable;             ///< table of Fermi momentum (kF) constants for various nuclei
   bool fUseRFGParametrization; ///< use parametrization for fermi momentum insted of table?
   bool fUsePauliBlocking;      ///< account for Pauli blocking?
-  Spline * fNuTauRdSpl;        ///< xsec reduction spline for nu_tau
-  Spline * fNuTauBarRdSpl;     ///< xsec reduction spline for nu_tau_bar
+
+//  bool     fUsingNuTauScaling; ///< use NeuGEN nutau xsec reduction factors?
+//  Spline * fNuTauRdSpl;        ///< xsec reduction spline for nu_tau
+//  Spline * fNuTauBarRdSpl;     ///< xsec reduction spline for nu_tau_bar
+
   double   fXSecScaleDM;       ///< external DM xsec scaling factor
 
 
