@@ -45,21 +45,21 @@ using namespace genie::constants;
 DMRESPXSec::DMRESPXSec() :
 XSecAlgorithmI("genie::DMRESPXSec")
 {
-  fNuTauRdSpl    = 0;
-  fNuTauBarRdSpl = 0;
+//  fNuTauRdSpl    = 0;
+//  fNuTauBarRdSpl = 0;
 }
 //____________________________________________________________________________
 DMRESPXSec::DMRESPXSec(string config) :
 XSecAlgorithmI("genie::DMRESPXSec", config)
 {
-  fNuTauRdSpl    = 0;
-  fNuTauBarRdSpl = 0;
+//  fNuTauRdSpl    = 0;
+//  fNuTauBarRdSpl = 0;
 }
 //____________________________________________________________________________
 DMRESPXSec::~DMRESPXSec()
 {
-  if(fNuTauRdSpl)    delete fNuTauRdSpl;
-  if(fNuTauBarRdSpl) delete fNuTauBarRdSpl;
+//  if(fNuTauRdSpl)    delete fNuTauRdSpl;
+//  if(fNuTauBarRdSpl) delete fNuTauBarRdSpl;
 }
 //____________________________________________________________________________
 double DMRESPXSec::XSec(
@@ -102,8 +102,6 @@ double DMRESPXSec::XSec(
   bool is_dm     = pdg::IsDarkMatter         (probepdgc);
   bool is_dmbar  = pdg::IsAntiDarkMatter    (probepdgc);
 
-//  bool is_lplus  = pdg::IsPosChargedLepton (probepdgc);
-//  bool is_lminus = pdg::IsNegChargedLepton (probepdgc);
 
   bool is_p      = pdg::IsProton  (nucpdgc);
   bool is_n      = pdg::IsNeutron (nucpdgc);
@@ -172,43 +170,6 @@ double DMRESPXSec::XSec(
   double GA  = Go * TMath::Power( 1./(1-q2/fMa2), 2);
 
 
-  //____________________________________________________________________________
-  /*
-  if(fGV){
-
-    LOG("DMRESPXSec",pDEBUG) <<"Using new GV";
-    double CV0 =  1./(1-q2/fMv2/4.);
-    double CV3 =  2.13 * CV0 * TMath::Power( 1-q2/fMv2,-2);
-    double CV4 = -1.51 * CV0 * TMath::Power( 1-q2/fMv2,-2);
-    double CV5 =  0.48 * CV0 * TMath::Power( 1-q2/fMv2/0.766, -2);
-
-    double GV3 =  0.5 / TMath::Sqrt(3) * ( CV3 * (W + Mnuc)/Mnuc
-                  + CV4 * (W2 + q2 -Mnuc2)/2./Mnuc2
-                  + CV5 * (W2 - q2 -Mnuc2)/2./Mnuc2 );
-
-    double GV1 = - 0.5 / TMath::Sqrt(3) * ( CV3 * (Mnuc2 -q2 +Mnuc*W)/W/Mnuc
-                 + CV4 * (W2 +q2 - Mnuc2)/2./Mnuc2
-                 + CV5 * (W2 -q2 - Mnuc2)/2./Mnuc2 );
-
-    GV = 0.5 * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR)
-         * TMath::Sqrt( 3 * GV3*GV3 + GV1*GV1);
-  }
-
-  if(fGA){
-    LOG("DMRESPXSec",pDEBUG) << "Using new GA";
-
-    double CA5_0 = 1.2;
-    double CA5 = CA5_0 *  TMath::Power( 1./(1-q2/fMa2), 2);
-      GA = 0.5 * TMath::Sqrt(3.) * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR) * (1- (W2 +q2 -Mnuc2)/8./Mnuc2) * CA5/fZeta;
-    GA = 0.5 * TMath::Sqrt(3.) * TMath::Power( 1 - q2/(Mnuc + W)/(Mnuc + W), 0.5-IR) * (1- (W2 +q2 -Mnuc2)/8./Mnuc2) * CA5;
-
-    LOG("DMRESPXSec",pINFO) <<"GA= " <<GA << "  C5A= " <<CA5;
-  }
-  */
-  //____________________________________________________________________________
-
-
-
   double d      = (TMath::Power(W+Mnuc,2.) - q2)/(2. * W);
   double sq2omg = TMath::Sqrt(2./fOmega);
   double nomg   = IR * fOmega;
@@ -228,7 +189,7 @@ double DMRESPXSec::XSec(
 
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
   LOG("FKR", pDEBUG)
-     << "FKR params for RES = " << resname << " : " << fFKR;
+     << "FKR params for RES = " << resname << " : " << fFKRDM;
 #endif
 
   // Calculate the Rein-Sehgal Helicity Amplitudes
@@ -268,6 +229,7 @@ double DMRESPXSec::XSec(
   LOG("DMRes", pDEBUG) << "sig_{L} = " << sigL;
   LOG("DMRes", pDEBUG) << "sig_{R} = " << sigR;
   LOG("DMRes", pDEBUG) << "sig_{S} = " << sigS;
+  LOG("DMRes", pDEBUG) << "sig_{Z} = " << sigZ;
 #endif
 
 //DM Cross Section Calculation:
@@ -320,11 +282,6 @@ if (fVelMode == 0) {
 
 
 //________________________________________________________________________________________
-  // Apply NeuGEN nutau cross section reduction factors
-  double rf = 1.0;
-  Spline * spl = 0;
-  xsec *= rf;
-
 
   //Apply given scaling factor
   double xsec_scale = 1.;
@@ -490,9 +447,6 @@ void DMRESPXSec::LoadConfig(void)
   this->GetParamDef( "BreitWignerWeight", fWghtBW, true ) ;
   this->GetParamDef( "BreitWignerNorm",   fNormBW, true);
 
-//  this->GetParam( "minibooneGA", fGA    ) ;   //< axial transition form factor
-//  this->GetParam( "minibooneGV", fGV    ) ;   //< vector transition form factor
-
 
   this->GetParam("FermiMomentumTable", fKFTable);
   this->GetParam("RFG-UseParametrization", fUseRFGParametrization);
@@ -531,6 +485,7 @@ void DMRESPXSec::LoadConfig(void)
   this->GetParamDef( "MaxNWidthForGNRes", fGnResMaxNWidths, 4.0 ) ;
 
 //______________________________________________________________________________________
+/*
   // NeuGEN reduction factors for nu_tau: a gross estimate of the effect of
   // neglected form factors in the R/S model
   this->GetParamDef( "UseNuTauScalingFactors", fUsingNuTauScaling, true ) ;
@@ -551,7 +506,7 @@ void DMRESPXSec::LoadConfig(void)
            << "Loading bar{nu_tau} xsec reduction spline from: " << filename;
      fNuTauBarRdSpl = new Spline(filename);
   }
-
+*/
 //______________________________________________________________________________________
 
 
