@@ -73,14 +73,6 @@ InteractionList * DMRESInteractionListGenerator::CreateInteractionList(
      return 0;
   }
 
-  int ppdg = init_state.ProbePdg();
-  if( !pdg::IsDarkMatter(ppdg)) {
-     LOG("IntLst", pWARN)
-       << "Can not handle probe! Returning NULL InteractionList "
-       << "for init-state: " << init_state.AsString();
-     return 0;
-  }
-
   // create a process information object
   ProcessInfo proc_info(kScDarkMatterResonant, inttype);
 
