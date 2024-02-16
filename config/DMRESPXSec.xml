@@ -45,13 +45,6 @@ XSec-Integrator             alg     No
     <param type="double" name="RES-Zeta">  0.76338 </param> <!-- 0.75 -->
     <param type="double" name="RES-Ma"> 1.120 </param>
     <param type="double" name="RES-Mv"> 0.840 </param>
-    <!--
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  Set to true to use tuning to axial, vector form factors by MiniBoone (J. Nowak)
-
-    <param type="bool" name="minibooneGA">  true </param>
-    <param type="bool" name="minibooneGV">  true </param>
-    -->
 </param_set>
 
 <param_set name="Velocity2">
@@ -65,13 +58,7 @@ XSec-Integrator             alg     No
     <param type="double" name="RES-Zeta">  0.76338 </param> <!-- 0.75 -->
     <param type="double" name="RES-Ma"> 1.120 </param>
     <param type="double" name="RES-Mv"> 0.840 </param>
-    <!--
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  Set to true to use tuning to axial, vector form factors by MiniBoone (J. Nowak)
 
-    <param type="bool" name="minibooneGA">  true </param>
-    <param type="bool" name="minibooneGV">  true </param>
-    -->
 </param_set>
 
 </alg_conf>
