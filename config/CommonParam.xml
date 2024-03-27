@@ -276,14 +276,16 @@ Or changing the name of this parameter set
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         Set the coupling of dark matter to nucleons
     -->
-    <param type="double" name="ZpCoupling"> 0.1 </param>
-    <param type="double" name="DarkLeftCharge"> 1.0 </param>
-    <param type="double" name="DarkRightCharge"> 1.0 </param>
+    <!--consistency check for DM->EM and DM->NC: input params for -m -g -z -->
+    <!-- EM: m~5.109989461e-04 g~.303 z~1e-10           NC: m~0.000001 g~0.608  z~massZ/massDM = 911876 (Zmass = 91.1876 GeV)-->
+    <param type="double" name="ZpCoupling"> 0.1 </param><!--DM-RES:1.0-->
+    <param type="double" name="DarkLeftCharge"> 1.0 </param><!--DM-RES:1.0    EMRES:1 NCRES:1  Note:(off by 2 from spin-average)?-->
+    <param type="double" name="DarkRightCharge"> 0.0 </param><!--DM-RES:1.0   EMRES:1 NCRES:0                                    -->
     <param type="double" name="DarkScalarCharge"> 1.0 </param>
-    <param type="double" name="UpLeftCharge"> 1.0 </param>
-    <param type="double" name="UpRightCharge"> 1.0 </param>
-    <param type="double" name="DownLeftCharge"> 1.0 </param>
-    <param type="double" name="DownRightCharge"> 1.0 </param>
+    <param type="double" name="UpLeftCharge"> -0.308393  </param> <!--DM-RES:1.0   EMRES:2/3 =0.6666666       NCRES:-2x(2/3)=-0.308393   WeinbergAngle=0.501716712132 2x=0.46259  -->
+    <param type="double" name="UpRightCharge"> 0.691607  </param><!--DM-RES:1.0     EMRES:2/3              NCRES:1-2x(2/3)=0.691607        ""                       -->
+    <param type="double" name="DownLeftCharge"> 1.1542 </param><!--DM-RES:1.0    EMRES:-1/3=-0.3333333      NCRES:1-2x(-1/3)=1.1542          ""                       -->
+    <param type="double" name="DownRightCharge"> 0.154197 </param><!--DM-RES:1.0     EMRES:-1/3             NCRES:-2x(-1/3)=0.154197         ""                       -->
     <param type="double" name="StrangeLeftCharge"> 1.0 </param>
     <param type="double" name="StrangeRightCharge"> 1.0 </param>
     <param type="double" name="CharmLeftCharge"> 1.0 </param>
