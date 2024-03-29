@@ -18,39 +18,39 @@
 	<knot> <E>    0.08516 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.11130 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.19014 </E> <xsec> 1.2390777314e-16 </xsec> </knot>
+	<knot> <E>    0.24851 </E> <xsec> 6.2242290935e-15 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 1.2131772350e-13 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 9.9844790393e-13 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 3.2169635145e-12 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 6.6212711459e-12 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 1.0900982436e-11 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.5777950120e-11 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 2.0820957280e-11 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 2.5677597213e-11 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 3.0158217873e-11 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 3.4143236215e-11 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 3.7575328131e-11 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 4.0453217592e-11 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 4.2815376028e-11 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 4.4722386920e-11 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 4.6242445219e-11 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 4.7442272531e-11 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 4.8382376900e-11 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 4.9114805004e-11 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 4.9682964381e-11 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 5.0122279829e-11 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 5.0461103878e-11 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 5.0721923959e-11 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 5.0922418737e-11 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 5.1076360464e-11 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 5.1194460745e-11 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 5.1285010415e-11 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 5.1354397799e-11 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 5.1407552161e-11 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 5.1425297296e-11 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 5.1425297296e-11 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 5.1425297296e-11 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:10;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -66,37 +66,37 @@
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 8.3021730082e-18 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 8.1956993775e-17 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 6.1137635365e-16 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 3.9624310577e-15 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 2.6443815546e-14 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.9047303903e-13 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 5.7353605829e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 1.0393533227e-12 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.4966513970e-12 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 1.9117859394e-12 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 2.2756640875e-12 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 2.5867014144e-12 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 2.8467158644e-12 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 3.0599381947e-12 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 3.2320447061e-12 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 3.3692284011e-12 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 3.4775229748e-12 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 3.5623738007e-12 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 3.6284756642e-12 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 3.6797508027e-12 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 3.7193912823e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 3.7499598137e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 3.7734890820e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 3.7915728604e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 3.8054565592e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 3.8161074099e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 3.8242725338e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 3.8305294730e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 3.8326186905e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 3.8326186905e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 3.8326186905e-12 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:11;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -114,35 +114,35 @@
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 1.1334490395e-17 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 2.2526794748e-16 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 6.5488851779e-15 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.8391176036e-13 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 6.0325637254e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 1.0593512554e-12 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.4865777086e-12 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 1.8792760121e-12 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 2.2373409751e-12 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 2.5567018109e-12 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 2.8335308837e-12 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 3.0670863848e-12 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 3.2597231608e-12 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 3.4157881378e-12 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 3.5404990772e-12 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 3.6391100408e-12 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 3.7164600337e-12 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 3.7767691950e-12 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 3.8235734011e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 3.8597701440e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 3.8876916366e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 3.9091859002e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 3.9257081496e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 3.9383948962e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 3.9481276192e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 3.9555898069e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 3.9580822324e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 3.9580822324e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 3.9580822324e-12 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:12;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -159,36 +159,36 @@
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 1.7231637758e-17 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 1.2124720388e-16 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 6.9861215136e-16 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 3.6109836118e-15 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.7255503919e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 4.3480217502e-14 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 7.1197084460e-14 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 9.5239537907e-14 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 1.1469767111e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 1.3010612942e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 1.4222260604e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 1.5171347343e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 1.5912188555e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 1.6488469200e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 1.6935292417e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 1.7280805081e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 1.7547358569e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 1.7752611744e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 1.7910440922e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 1.8031657961e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 1.8124672369e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 1.8196001078e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 1.8250667444e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 1.8292547527e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 1.8324623555e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 1.8349183130e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 1.8367985369e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 1.8374260084e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 1.8374260084e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 1.8374260084e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:13;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -205,36 +205,36 @@
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 2.0392378347e-17 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 1.4696571763e-16 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 8.6714579957e-16 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 4.5840277986e-15 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 2.2352956662e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 5.7836884162e-14 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 9.7119635251e-14 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.3339177198e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 1.6527370044e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 1.9286912749e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 2.1640167932e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 2.3611065628e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 2.5232346272e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 2.6545140245e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 2.7594455742e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 2.8424698289e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 2.9076409128e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 2.9584861566e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 2.9979728476e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 3.0285282194e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 3.0521083600e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 3.0702692410e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 3.0842335540e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 3.0949584344e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 3.1031882921e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 3.1094987857e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 3.1143353077e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 3.1159503940e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 3.1159503940e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 3.1159503940e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:14;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -253,34 +253,34 @@
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 1.2937056149e-17 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 2.2134332780e-16 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 3.1816295734e-15 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.1634882694e-14 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 2.2418810112e-14 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 3.3694072139e-14 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 4.4993119129e-14 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 5.5969896005e-14 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 6.6187017578e-14 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 7.5292206022e-14 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 8.3113170438e-14 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 8.9640547876e-14 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 9.4970925826e-14 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 9.9253841795e-14 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 1.0265360965e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 1.0532793877e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 1.0741751869e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 1.0904182489e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 1.1029960527e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 1.1127080287e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 1.1201902525e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 1.1259451815e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 1.1303662053e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 1.1337590293e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 1.1363610510e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 1.1372302814e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 1.1372302814e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 1.1372302814e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:15;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -299,34 +299,34 @@
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 9.2185027525e-18 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 1.7259540601e-16 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 2.5930566252e-15 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 8.9594470040e-15 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 1.6392262664e-14 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 2.3441389877e-14 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 2.9809978736e-14 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 3.5474481556e-14 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 4.0415969592e-14 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 4.4625964241e-14 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 4.8132124332e-14 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 5.0996241941e-14 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 5.3299992458e-14 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 5.5131076869e-14 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 5.6573185978e-14 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 5.7701040569e-14 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 5.8578524457e-14 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 5.9258452096e-14 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 5.9783696901e-14 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 6.0188537409e-14 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 6.0500008336e-14 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 6.0739329201e-14 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 6.0923035856e-14 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 6.1063934192e-14 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 6.1171943072e-14 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 6.1208015085e-14 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 6.1208015085e-14 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 6.1208015085e-14 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:16;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -386,39 +386,39 @@
 	<knot> <E>    0.08516 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.11130 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.19014 </E> <xsec> 1.8672255618e-17 </xsec> </knot>
+	<knot> <E>    0.24851 </E> <xsec> 2.9536978624e-16 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 1.7888108722e-15 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 7.4160667741e-15 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 2.5582859298e-14 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 8.5711067505e-14 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 3.1327497931e-13 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 8.6057167957e-13 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.6646074661e-12 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 2.5849400368e-12 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 3.5206714730e-12 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 4.4105427465e-12 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 5.2164255822e-12 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 5.9182343084e-12 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 6.5107367076e-12 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 6.9991375688e-12 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 7.3944662260e-12 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 7.7100776389e-12 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 7.9594606625e-12 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 8.1549716439e-12 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 8.3073389447e-12 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 8.4255587045e-12 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 8.5169678035e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 8.5874642656e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 8.6417302090e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 8.6834387156e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 8.7154609431e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 8.7400271601e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 8.7588602839e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 8.7732922554e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 8.7781111760e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 8.7781111760e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 8.7781111760e-12 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:2;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -434,37 +434,37 @@
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 3.1074620701e-18 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 5.5609079953e-17 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 6.7309538986e-16 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 1.2447733215e-14 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 1.8222161125e-13 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 6.6719317547e-13 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.3048820845e-12 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 1.9079329322e-12 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 2.4086965459e-12 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 2.8051410108e-12 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 3.1146190125e-12 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 3.3554505886e-12 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 3.5426685016e-12 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 3.6880345103e-12 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 3.8007027625e-12 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 3.8878442740e-12 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 3.9551065190e-12 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 4.0069221375e-12 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 4.0467684514e-12 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 4.0773672022e-12 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 4.1008351652e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 4.1188176566e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 4.1325891478e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 4.1431310496e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 4.1511991985e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 4.1573736876e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 4.1620983539e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 4.1657137139e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 4.1669199021e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 4.1669199021e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 4.1669199021e-12 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:3;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -478,39 +478,39 @@
 	<knot> <E>    0.08516 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.11130 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.19014 </E> <xsec> 8.4843975235e-19 </xsec> </knot>
+	<knot> <E>    0.24851 </E> <xsec> 3.7469888155e-17 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 2.2613859253e-16 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 9.1044286185e-16 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 2.9258685960e-15 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 8.3963876905e-15 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 2.5137619883e-14 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 8.3489772722e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.6885638059e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 2.4503997288e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 3.0479375683e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 3.5069253634e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 3.8620607430e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 4.1389500540e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 4.3553908644e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 4.5244201100e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 4.6560723545e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 4.7582935143e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 4.8374384288e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 4.8985622006e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 4.9456702871e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 4.9819193336e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 5.0097750226e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 5.0311590946e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 5.0475632251e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 5.0601387063e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 5.0697747995e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 5.0771562604e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 5.0828086869e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 5.0871364496e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 5.0885807951e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 5.0885807951e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 5.0885807951e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:4;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -528,35 +528,35 @@
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 1.1302048364e-17 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 1.2664849766e-16 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 1.6894526719e-15 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 3.5985833488e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.1515618720e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 1.8546331975e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 2.3770548607e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 2.7776305287e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 3.1048933958e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 3.3802362341e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 3.6117513171e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 3.8038524565e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 3.9607575185e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 4.0870974186e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 4.1876475553e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 4.2669356783e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 4.3290115735e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 4.3773495924e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 4.4148314353e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 4.4438027281e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 4.4661429144e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 4.4833368136e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 4.4965514861e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 4.5066974163e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 4.5144803339e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 4.5204472384e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 4.5224401619e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 4.5224401619e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 4.5224401619e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:5;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -573,36 +573,36 @@
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 4.2021254673e-19 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 3.3480875518e-17 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 4.0848317594e-16 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 6.6365756377e-15 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 9.5470624313e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 2.6990382649e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 4.3114432052e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 5.5767126917e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 6.5564284332e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 7.3300605107e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 7.9489383288e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 8.4448959603e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 8.8405577730e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 9.1540767472e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 9.4008138323e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 9.5938500283e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 9.7441273889e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 9.8606548604e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 9.9507393326e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 1.0020211126e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 1.0073687273e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 1.0114794552e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 1.0146357198e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 1.0170571430e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 1.0189137044e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 1.0203363776e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 1.0214262240e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 1.0217900608e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 1.0217900608e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 1.0217900608e-12 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:6;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -616,39 +616,39 @@
 	<knot> <E>    0.08516 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.11130 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.19014 </E> <xsec> 2.0119428295e-18 </xsec> </knot>
+	<knot> <E>    0.24851 </E> <xsec> 8.7897721411e-17 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 5.1373106271e-16 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 1.9783653425e-15 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 6.0929873682e-15 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 1.7206121734e-14 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 5.5638021569e-14 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.7746156433e-13 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 3.2186087209e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 4.4393429401e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 5.4005448730e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 6.1569162214e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 6.7633278496e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 7.2559523860e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 7.6571825316e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 7.9824589694e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 8.2440402840e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 8.4525392278e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 8.6173617363e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 8.7467120812e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 8.8476054113e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 8.9259167760e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 8.9864582938e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 9.0331213418e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 9.0690113064e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 9.0965721069e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 9.1177156123e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 9.1339255247e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 9.1463460671e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 9.1558602221e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 9.1590363162e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 9.1590363162e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 9.1590363162e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:7;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -665,36 +665,36 @@
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 1.0938924378e-17 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 8.7805198665e-17 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 6.8531142721e-16 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 7.0293682507e-15 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 6.6479854710e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.9192889753e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 3.3298395345e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 4.5900556406e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 5.6244368961e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 6.4521007235e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 7.1096695304e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 7.6301463144e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 8.0404836342e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 8.3625231016e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 8.6140964803e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 8.8097961582e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 8.9614535863e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 9.0785986762e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 9.1688488317e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 9.2382261149e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 9.2914712454e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 9.3322918797e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 9.3635627953e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 9.3875083091e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 9.4058406701e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 9.4198724760e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 9.4306120904e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 9.4341955856e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 9.4341955856e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 9.4341955856e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:8;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -710,37 +710,37 @@
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 1.4155495718e-17 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 1.5281621483e-16 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 1.3507156087e-15 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 9.6475531443e-15 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 3.7696606780e-14 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 8.9636943961e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.5495800597e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 2.1835922959e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 2.7145080696e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 3.1326720505e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 3.4587184736e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 3.7155073359e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 3.9199616270e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 4.0835375896e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 4.2142435321e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 4.3181582862e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 4.4002275163e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 4.4645883385e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 4.5147258911e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 4.5535564507e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 4.5834824380e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 4.6064616884e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 4.6240661625e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 4.6375352694e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 4.6478355344e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 4.6557120998e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 4.6617352068e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 4.6663417277e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 4.6678781221e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 4.6678781221e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 4.6678781221e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2112;proc:DarkMatter,DM-RES;res:9;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -756,37 +756,37 @@
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 8.3788606654e-18 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 9.4849395968e-17 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 8.3127710403e-16 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 6.7770325744e-15 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 5.2096773444e-14 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 2.2375186172e-13 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 5.2616924745e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 8.8629663886e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.2649262186e-12 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 1.6484896065e-12 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 2.0232442454e-12 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 2.3731826397e-12 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 2.6858325041e-12 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 2.9550095256e-12 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 3.1801329664e-12 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 3.3643018129e-12 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 3.5124987336e-12 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 3.6302769462e-12 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 3.7230106408e-12 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 3.7955206482e-12 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 3.8519168886e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 3.8956059535e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 3.9293515075e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 3.9553558943e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 3.9753608210e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 3.9907310859e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 4.0025279503e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 4.0115759324e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 4.0145986411e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 4.0145986411e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 4.0145986411e-12 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:0;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -800,39 +800,39 @@
 	<knot> <E>    0.08516 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.11130 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.19014 </E> <xsec> 8.6248374947e-17 </xsec> </knot>
+	<knot> <E>    0.24851 </E> <xsec> 4.6907860591e-15 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 9.3785820832e-14 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 7.9456437483e-13 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 2.5948496456e-12 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 5.3721019313e-12 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 8.8709601157e-12 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.2862770278e-11 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.6994510233e-11 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 2.0975116489e-11 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 2.4648333970e-11 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 2.7915800387e-11 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 3.0730281125e-11 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 3.3090543637e-11 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 3.5028000407e-11 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 3.6592245179e-11 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 3.7839151330e-11 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 3.8823409725e-11 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 3.9594631610e-11 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 4.0195498282e-11 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 4.0661610833e-11 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 4.1022025791e-11 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 4.1300000255e-11 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 4.1513981153e-11 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 4.1678471174e-11 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 4.1804768674e-11 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 4.1901661314e-11 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 4.1975950882e-11 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 4.2032878409e-11 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 4.2076487935e-11 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 4.2091046619e-11 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 4.2091046619e-11 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 4.2091046619e-11 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:10;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -848,37 +848,37 @@
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 6.5541649155e-18 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 6.8173816179e-17 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 5.3049385104e-16 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 3.5548275650e-15 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 2.4452397095e-14 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.8287973921e-13 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 5.3805503390e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 9.2897349174e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.2774222523e-12 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 1.5714035563e-12 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 1.8171106241e-12 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 2.0212250481e-12 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 2.1889895179e-12 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 2.3251445874e-12 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 2.4343168410e-12 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 2.5209499477e-12 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 2.5891287455e-12 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 2.6424316908e-12 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 2.6838919259e-12 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 2.7160167792e-12 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 2.7408326429e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 2.7599585645e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 2.7746743944e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 2.7859812738e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 2.7946602636e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 2.8013173112e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 2.8064201271e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 2.8103300748e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 2.8116355561e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 2.8116355561e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 2.8116355561e-12 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:11;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -896,35 +896,35 @@
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 3.6495959149e-18 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 9.5210625204e-17 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 3.4469858932e-15 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.1944331903e-13 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 4.4232778482e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 8.1752488940e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.1686723823e-12 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 1.4830809821e-12 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 1.7621595146e-12 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 2.0061399279e-12 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 2.2147436774e-12 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 2.3890895148e-12 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 2.5319427656e-12 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 2.6471279126e-12 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 2.7388552055e-12 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 2.8112032852e-12 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 2.8678494346e-12 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 2.9119585633e-12 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 2.9461592803e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 2.9725924714e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 2.9929739362e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 3.0086592534e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 3.0207137983e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 3.0299685966e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 3.0370676851e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 3.0425101773e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 3.0443279216e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 3.0443279216e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 3.0443279216e-12 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:12;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -941,36 +941,36 @@
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 1.3694509109e-17 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 9.7075440517e-17 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 5.6181198490e-16 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 2.9105884526e-15 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.3969419175e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 3.5399089391e-14 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 5.8089412426e-14 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 7.7779753918e-14 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 9.3716736927e-14 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 1.0633673169e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 1.1626018271e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 1.2403296615e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 1.3010005455e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 1.3481932835e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 1.3847834830e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 1.4130767428e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 1.4349038046e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 1.4517109653e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 1.4646346610e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 1.4745603161e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 1.4821765931e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 1.4880171539e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 1.4924933451e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 1.4959225593e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 1.4985489940e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 1.5005599664e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 1.5020995178e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 1.5026132992e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 1.5026132992e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 1.5026132992e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:13;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -987,36 +987,36 @@
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 1.6201878022e-17 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 1.1763132196e-16 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 6.9712066847e-16 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 3.6936601598e-15 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.8088402123e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 4.7063071587e-14 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 7.9195114768e-14 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.0887330136e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 1.3495892798e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 1.5753580024e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 1.7678723867e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 1.9290953229e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 2.0617102619e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 2.1690860363e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 2.2549074237e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 2.3228087252e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 2.3761072452e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 2.4176887760e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 2.4499806399e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 2.4749682075e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 2.4942513697e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 2.5091026985e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 2.5205221528e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 2.5292924888e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 2.5360224814e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 2.5411828940e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 2.5451379568e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 2.5464586910e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 2.5464586910e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 2.5464586910e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:14;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -1035,34 +1035,34 @@
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 1.0272405731e-17 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 1.7630701138e-16 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 2.5612926373e-15 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 9.4531313671e-15 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 1.8264150690e-14 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 2.7479741174e-14 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 3.6715560620e-14 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 4.5688519034e-14 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 5.4040746097e-14 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 6.1483988512e-14 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 6.7877295678e-14 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 7.3213020006e-14 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 7.7570165631e-14 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 8.1071021485e-14 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 8.3849941777e-14 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 8.6035867267e-14 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 8.7743814749e-14 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 8.9071452436e-14 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 9.0099500762e-14 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 9.0893306192e-14 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 9.1504861089e-14 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 9.1975235221e-14 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 9.2336582952e-14 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 9.2613891373e-14 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 9.2826564231e-14 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 9.2897609600e-14 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 9.2897609600e-14 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 9.2897609600e-14 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:15;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -1081,34 +1081,34 @@
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 7.3286966927e-18 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 1.3763100500e-16 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 2.0925134964e-15 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 7.2987079471e-15 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 1.3389590381e-14 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.9167045648e-14 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 2.4385509290e-14 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 2.9025757053e-14 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 3.3072754318e-14 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 3.6520000944e-14 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 3.9390490601e-14 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 4.1735061935e-14 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 4.3620743084e-14 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 4.5119429363e-14 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 4.6299688201e-14 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 4.7222715585e-14 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 4.7940819374e-14 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 4.8497236637e-14 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 4.8927061926e-14 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 4.9258351927e-14 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 4.9513232927e-14 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 4.9709071014e-14 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 4.9859398687e-14 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 4.9974695676e-14 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 5.0063078951e-14 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 5.0092596491e-14 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 5.0092596491e-14 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 5.0092596491e-14 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:16;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -1168,39 +1168,39 @@
 	<knot> <E>    0.08516 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.11130 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.19014 </E> <xsec> 1.7785903622e-17 </xsec> </knot>
+	<knot> <E>    0.24851 </E> <xsec> 3.1469940297e-16 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 2.0138230659e-15 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 8.5604525548e-15 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 2.9898780009e-14 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 1.0258511230e-13 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 3.9327631031e-13 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.0107868390e-12 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.7287490961e-12 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 2.4184999142e-12 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 3.0510555065e-12 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 3.6173255997e-12 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 4.1117155395e-12 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 4.5324849369e-12 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 4.8824726185e-12 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 5.1681161187e-12 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 5.3977536258e-12 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 5.5802068903e-12 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 5.7238775776e-12 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 5.8362286454e-12 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 5.9236232824e-12 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 5.9913362159e-12 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 6.0436366735e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 6.0839386387e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 6.1149421769e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 6.1387597089e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 6.1570390762e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 6.1710582865e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 6.1818034375e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 6.1900361572e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 6.1927848460e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 6.1927848460e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 6.1927848460e-12 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:2;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -1216,37 +1216,37 @@
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 2.4147893749e-18 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 4.3681139074e-17 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 5.3207619698e-16 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 9.8061055983e-15 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 1.4665769293e-13 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 5.4252978274e-13 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.0653544425e-12 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 1.5604253783e-12 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.9717065134e-12 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 2.2973579576e-12 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 2.5515831278e-12 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 2.7494176909e-12 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 2.9032079101e-12 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 3.0226161043e-12 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 3.1151631438e-12 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 3.1867406782e-12 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 3.2419885042e-12 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 3.2845481888e-12 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 3.3172763353e-12 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 3.3424087383e-12 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 3.3616841667e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 3.3764540746e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 3.3877652770e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 3.3964238628e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 3.4030506372e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 3.4081220573e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 3.4120026666e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 3.4149721475e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 3.4159628520e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 3.4159628520e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 3.4159628520e-12 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:3;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -1260,39 +1260,39 @@
 	<knot> <E>    0.08516 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.11130 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.19014 </E> <xsec> 6.3311756198e-19 </xsec> </knot>
+	<knot> <E>    0.24851 </E> <xsec> 2.8796494609e-17 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 1.7633715103e-16 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 7.0805795857e-16 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 2.2534030386e-15 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 6.3487406768e-15 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 1.8248845152e-14 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 5.6791644385e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.1535701677e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 1.7455069721e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 2.2853449922e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 2.7598324837e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 3.1667213105e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 3.5080387307e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 3.7888391329e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 4.0161610548e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 4.1978264652e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 4.3415372386e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 4.4543418670e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 4.5423524811e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 4.6107001506e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 4.6635937726e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 4.7044151190e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 4.7358543921e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 4.7600312936e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 4.7785999400e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 4.7928484986e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 4.8037749718e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 4.8121489037e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 4.8185644022e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 4.8207062829e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 4.8207062829e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 4.8207062829e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:4;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -1311,34 +1311,34 @@
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 2.1713483822e-17 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 2.4141652459e-16 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 4.8758607396e-15 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 2.5055325993e-14 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 6.5041390030e-14 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.2154369489e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 1.8696042674e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 2.5364621506e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 3.1613538793e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 3.7144077164e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 4.1848987083e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 4.5741188653e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 4.8896899105e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 5.1418404699e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 5.3411498979e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 5.4974294131e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 5.6192436988e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 5.7137623254e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 5.7868524848e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 5.8432308238e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 5.8866313866e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 5.9199930056e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 5.9456103793e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 5.9652631814e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 5.9803313677e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 5.9853642846e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 5.9853642846e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 5.9853642846e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:5;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -1356,35 +1356,35 @@
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 1.3107653277e-17 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 1.6006808575e-16 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 2.7183346735e-15 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 4.2470119633e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.3558100190e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 2.5056705572e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 3.7235442071e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 4.9167434128e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 6.0195977687e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 6.9931601202e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 7.8226736765e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 8.5108328834e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 9.0704188066e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 9.5186783252e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 9.8737728868e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 1.0152697788e-12 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 1.0370397764e-12 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 1.0539507884e-12 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 1.0670389858e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 1.0771405669e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 1.0849212214e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 1.0909043101e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 1.0954996564e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 1.0990260693e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 1.1017301247e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 1.1038026228e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 1.1044947115e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 1.1044947115e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 1.1044947115e-12 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:6;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -1398,39 +1398,39 @@
 	<knot> <E>    0.08516 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.11130 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.19014 </E> <xsec> 1.5098084540e-18 </xsec> </knot>
+	<knot> <E>    0.24851 </E> <xsec> 6.8176074771e-17 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 4.0748931046e-16 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 1.5828271276e-15 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 4.9003549426e-15 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 1.3869389477e-14 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 4.4780521165e-14 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.4367598039e-13 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 2.6163000161e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 3.6144352287e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 4.4005413055e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 5.0191313714e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 5.5150659890e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 5.9179425939e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 6.2460810336e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 6.5121087743e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 6.7260486365e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 6.8965775716e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 7.0313863560e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 7.1371837732e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 7.2197066456e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 7.2837597162e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 7.3332786033e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 7.3714459896e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 7.4008017688e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 7.4233448531e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 7.4406390011e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 7.4538977755e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 7.4640570724e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 7.4718391152e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 7.4744369822e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 7.4744369822e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 7.4744369822e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:7;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -1447,36 +1447,36 @@
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 8.6101533813e-18 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 6.9697857146e-17 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 5.4618543072e-16 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 5.6013830053e-15 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 5.3670880362e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 1.5616390793e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 2.7168369028e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 3.7497787893e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 4.5978625078e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 5.2765380108e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 5.8157658113e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 6.2425844291e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 6.5790864541e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 6.8431795729e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 7.0494858119e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 7.2099717205e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 7.3343400016e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 7.4304059670e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 7.5044164838e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 7.5613100655e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 7.6049743906e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 7.6384499352e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 7.6640941578e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 7.6837311071e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 7.6987649156e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 7.7102719861e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 7.7190792367e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 7.7220179605e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 7.7220179605e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 7.7220179605e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:8;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -1492,37 +1492,37 @@
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 1.0925554496e-17 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 1.1806683614e-16 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 1.0340735217e-15 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 7.2294041214e-15 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 2.6713584951e-14 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 5.9404206525e-14 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 9.7772071097e-14 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 1.3449287125e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.6576689242e-13 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 1.9075982316e-13 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 2.1010656707e-13 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 2.2487185042e-13 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 2.3608193258e-13 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 2.4458513655e-13 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 2.5103980102e-13 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 2.5594540004e-13 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 2.5967874857e-13 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 2.6252307655e-13 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 2.6469202543e-13 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 2.6634728541e-13 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 2.6761117033e-13 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 2.6857664218e-13 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 2.6931446110e-13 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 2.6987842282e-13 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 2.7030959481e-13 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 2.7063931440e-13 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 2.7089146804e-13 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 2.7108433437e-13 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 2.7114866394e-13 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 2.7114866394e-13 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 2.7114866394e-13 </xsec> </knot>
     </spline>
     <spline name="genie::DMRESPXSec/Velocity0/dm;tgt:1000180400;N:2212;proc:DarkMatter,DM-RES;res:9;" nknots="44">
 	<knot> <E>    0.01000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
@@ -1538,37 +1538,37 @@
 	<knot> <E>    0.14548 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.19014 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
 	<knot> <E>    0.24851 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.32481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.42453 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.55486 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.72521 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    0.94786 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.23886 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    1.61921 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.11632 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    2.76605 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    3.61526 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    4.72518 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    6.17586 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>    8.07192 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   10.55008 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   13.78907 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   18.02246 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   23.55554 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   30.78733 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   40.23937 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   52.59328 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   68.73996 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>   89.84385 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  117.42686 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  153.47813 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  200.59753 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  262.18307 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  342.67603 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  447.88116 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  585.38536 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E>  765.10481 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
-	<knot> <E> 1000.00000 </E> <xsec> 0.0000000000e+00 </xsec> </knot>
+	<knot> <E>    0.32481 </E> <xsec> 6.5473154543e-18 </xsec> </knot>
+	<knot> <E>    0.42453 </E> <xsec> 7.5068942619e-17 </xsec> </knot>
+	<knot> <E>    0.55486 </E> <xsec> 6.6231600803e-16 </xsec> </knot>
+	<knot> <E>    0.72521 </E> <xsec> 5.4146146583e-15 </xsec> </knot>
+	<knot> <E>    0.94786 </E> <xsec> 4.1852395159e-14 </xsec> </knot>
+	<knot> <E>    1.23886 </E> <xsec> 1.8108783561e-13 </xsec> </knot>
+	<knot> <E>    1.61921 </E> <xsec> 4.2751896314e-13 </xsec> </knot>
+	<knot> <E>    2.11632 </E> <xsec> 7.2136538043e-13 </xsec> </knot>
+	<knot> <E>    2.76605 </E> <xsec> 1.0304441285e-12 </xsec> </knot>
+	<knot> <E>    3.61526 </E> <xsec> 1.3436373109e-12 </xsec> </knot>
+	<knot> <E>    4.72518 </E> <xsec> 1.6496995514e-12 </xsec> </knot>
+	<knot> <E>    6.17586 </E> <xsec> 1.9355286654e-12 </xsec> </knot>
+	<knot> <E>    8.07192 </E> <xsec> 2.1909153953e-12 </xsec> </knot>
+	<knot> <E>   10.55008 </E> <xsec> 2.4107961864e-12 </xsec> </knot>
+	<knot> <E>   13.78907 </E> <xsec> 2.5946916905e-12 </xsec> </knot>
+	<knot> <E>   18.02246 </E> <xsec> 2.7451319427e-12 </xsec> </knot>
+	<knot> <E>   23.55554 </E> <xsec> 2.8661871104e-12 </xsec> </knot>
+	<knot> <E>   30.78733 </E> <xsec> 2.9623938060e-12 </xsec> </knot>
+	<knot> <E>   40.23937 </E> <xsec> 3.0381423850e-12 </xsec> </knot>
+	<knot> <E>   52.59328 </E> <xsec> 3.0973710614e-12 </xsec> </knot>
+	<knot> <E>   68.73996 </E> <xsec> 3.1434372142e-12 </xsec> </knot>
+	<knot> <E>   89.84385 </E> <xsec> 3.1791236152e-12 </xsec> </knot>
+	<knot> <E>  117.42686 </E> <xsec> 3.2066878023e-12 </xsec> </knot>
+	<knot> <E>  153.47813 </E> <xsec> 3.2279287650e-12 </xsec> </knot>
+	<knot> <E>  200.59753 </E> <xsec> 3.2442692047e-12 </xsec> </knot>
+	<knot> <E>  262.18307 </E> <xsec> 3.2568239392e-12 </xsec> </knot>
+	<knot> <E>  342.67603 </E> <xsec> 3.2664598395e-12 </xsec> </knot>
+	<knot> <E>  447.88116 </E> <xsec> 3.2738503953e-12 </xsec> </knot>
+	<knot> <E>  585.38536 </E> <xsec> 3.2763193973e-12 </xsec> </knot>
+	<knot> <E>  765.10481 </E> <xsec> 3.2763193973e-12 </xsec> </knot>
+	<knot> <E> 1000.00000 </E> <xsec> 3.2763193973e-12 </xsec> </knot>
     </spline>
   </genie_tune>
 </genie_xsec_spline_list>
