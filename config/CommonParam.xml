@@ -277,7 +277,7 @@ Or changing the name of this parameter set
         Set the coupling of dark matter to nucleons
     -->
     <!--consistency check for DM->EM and DM->NC: input params for -m -g -z -->
-    <!-- EM: m~0.0005109989461   g~0.302822   z~0.000001          NC: m~0.000001  g~0.00000803459  z~91187600-->
+    <!-- EM: m~0.0005109989461   g~0.302822   z~0.000001          NC: m~0.000001  g~ 0.644469  z~91187600-->
     <param type="double" name="ZpCoupling"> 1.0 </param><!--DM-RES:1.0-->
     <param type="double" name="DarkLeftCharge"> 1.0 </param><!--DM-RES:1.0    EMRES:1.0 NCRES:1.0  Note:(off by 2 from spin-average)?-->
     <param type="double" name="DarkRightCharge"> 0.0 </param><!--DM-RES:1.0   EMRES:1.0 NCRES:0.0                                    -->
