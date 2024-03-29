@@ -241,7 +241,11 @@ if (fVelMode == 0) {
   double fQchiA2 = TMath::Power(fQchiA, 2); //QA^2
   double fQchiV2 = TMath::Power(fQchiV, 2); //QV^2
   //additional term from 4th polarization: - ( (mZ'^2 - q^2)^2 / (mZ'^4) )
+
   double Xterm = -(TMath::Power((mZprime2 - q2), 2)/TMath::Power(mZprime2, 2));
+  if(mZprime2 == 0) {
+     Xterm=0;
+  }
 
   double L = fQchiA2*E12_Q2_A + fQchiV2*E12_Q2_V + fQchiV*fQchiA*VXA;
   double R = fQchiA2*E12_Q2_A + fQchiV2*E12_Q2_V - fQchiV*fQchiA*VXA;
