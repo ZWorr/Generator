@@ -95,7 +95,10 @@ void DMRESXSecWithCacheFast::CacheResExcitationXSec(
   double * E = new double[nknots]; // knot 'x'
 
   TLorentzVector p4(0,0,0,0);
-
+  //***************************************
+  //Get Dark Matter mass for calculating p4
+  double mchi   = in->InitState().GetProbeP4(kRfHitNucRest)->M(); //DM mass: mx
+  //***************************************
   int nu_code  = in->InitState().ProbePdg();
   int nuc_code = in->InitState().Tgt().HitNucPdg();
   int tgt_code = (nuc_code==kPdgProton) ? kPdgTgtFreeP : kPdgTgtFreeN;
@@ -153,7 +156,12 @@ void DMRESXSecWithCacheFast::CacheResExcitationXSec(
          for(int ie=0; ie<nknots; ie++) {
              double xsec = 0.;
              double Ev   = E[ie];
-             p4.SetPxPyPzE(0,0,Ev,Ev);
+             //***************************************
+             //p4.SetPxPyPzE(0,0,Ev,Ev); <- Neutrino case
+             //p4_DM (px,py,pz,E) = (0,0,|pz|,Ev);  |pz| = Sqrt[E^2 - mx^2];
+             double pz = TMath::Sqrt(TMath::Power(Ev,2)-TMath::Power(mchi,2));
+             p4.SetPxPyPzE(0,0,pz,Ev);
+             //***************************************
              interaction->InitStatePtr()->SetProbeP4(p4);
 
              if(Ev>Ethr+kASmallNum) {
