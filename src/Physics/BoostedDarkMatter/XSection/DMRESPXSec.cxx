@@ -137,6 +137,7 @@ double DMRESPXSec::XSec(
   double mchi2 = TMath::Power(mchi, 2);        // mx^2
   double mZprime2 = TMath::Power(fMedMass, 2); // mZ'^2
   double E      = init_state.ProbeE(kRfHitNucRest);   //E1
+  double E2 = TMath::Power(E,2); //E1^2
 
   // Compute auxiliary & kinematical factors
   double k      = 0.5 * (W2 - Mnuc2)/Mnuc;
@@ -151,16 +152,43 @@ double DMRESPXSec::XSec(
   double Qstar  = TMath::Sqrt(Q2star);
   double Eprime = E - v;
 
-  double E12 = TMath::Power((E + Eprime), 2);
-  double Xminus = (4.*mchi2/q2) - 1;
-  double Xplus = (4.*mchi2/q2) + 1;
-  double denom = 1/(4. * (TMath::Power(E, 2) - mchi2));
+  //common kinematic forms
+  double EE = (E + Eprime);
+  double EE2 = TMath::Power(EE,2);
+  double Q2minus = Q2*(1 - (4.*mchi2/q2));
+  double Q2plus = Q2*(1 + (4.*mchi2/q2));
+  double comdenom = 1/(4.*(E2 - mchi2));
 
-  double E12_Q2 = (E12 - Q2)*denom;
-  double E12_Q2_V = (E12 + Q2*Xplus)*denom;
-  double E12_Q2_A = (E12 - Q2*Xminus)*denom;
-  double E12_Q2_SA = (E12 + Q2*Xminus)*denom;
-  double VXA = (4.*Q*(E + Eprime))*denom;
+  //common factors
+  double gZprime4 = TMath::Power(fgZp, 4);
+  double sigcommon = (1/TMath::Power((mZprime2 + Q2),2));
+  //including dv/dW = W/Mnuc, spin avg Had curr 1/2, Res Rest Frame Had curr W/Mnuc
+  double sig0 = (gZprime4/(16*kPi)) * sigcommon * (W/Mnuc);
+
+ //fermionic DM terms
+  double RLA2term = (EE2 + Q2minus)*comdenom;
+  double RLV2term = (EE2 + Q2plus)*comdenom;
+  double RLVAterm = (4.*Q*EE)*comdenom;
+  double SA2term = (2*(EE2 - Q2minus))*comdenom;
+  double SV2term = (2*(EE2 - Q2))*comdenom;
+ //DM term
+ double mZterm = 0.0;
+ if (mZprime2 != 0.0){mZterm = (mZprime2 - q2)/mZprime2;}
+
+ double mZ2term = TMath::Power(mZterm,2);
+ double ZA2term = (Q2/(-q2))*(8. * mchi2)*mZ2term*comdenom;
+  //X-Sec: sig0
+  //     *{sigL*(QA^2 * RLA2term + QV^2 * RLV2term + QV*QA*RLVAterm)
+  //     + sigR*(QA^2 * RLA2term + QV^2 * RLV2term - QV*QA*RLVAterm)
+  //     + sigS*(QA^2 * SA2term + QV^2 * SV2term)
+  //     + sigZ*(QA^2 * ZA2term)}
+//scalar DM terms
+  double RLTerm = (EE2 - Q2minus)*comdenom;
+  double STerm = (2*EE2)*comdenom;
+  //X-Sec: sig0*QS^2
+  //      *{(sigL + sigR)*RLTerm}
+  //      +{sigS * STerm}
+
 
 
   // Calculate the Feynman-Kislinger-Ravndall parameters
@@ -208,21 +236,18 @@ double DMRESPXSec::XSec(
      << "Helicity Amplitudes for DMRES = " << resname << " : " << hampl;
 #endif
 
-  // Compute the cross section
-  double gZprime4 = TMath::Power(fgZp, 4);
-  double sigcommon = (1/TMath::Power((mZprime2 + Q2),2)) * (-q2/Q2);
-  double sig0 = (gZprime4/(16.*kPi))*sigcommon*TMath::Power((W/Mnuc),2);
-  double scSZ  = -Q2star/q2;
+  // Compute the cross section structure factors
 
   double sigL =0;
   double sigR =0;
   double sigS =0;
   double sigZ =0;
 
+//Including Hadron spin avg and res-rest frame transformations
   sigL = (hampl.Amp2Minus3 () + hampl.Amp2Minus1 ());
   sigR = (hampl.Amp2Plus3() + hampl.Amp2Plus1());
-  sigS = scSZ * (hampl.Amp20Plus () + hampl.Amp20Minus());
-  sigZ = scSZ * (hampl.Ampz20Plus () + hampl.Ampz20Minus());
+  sigS = (Q2star/-q2)*(hampl.Amp20Plus () + hampl.Amp20Minus());
+  sigZ = (Q2star/-q2)*(hampl.Ampz20Plus () + hampl.Ampz20Minus());
 
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
   LOG("DMRes", pDEBUG) << "sig_{0} = " << sig0;
@@ -240,33 +265,28 @@ double DMRESPXSec::XSec(
 if (fVelMode == 0) {
   double fQchiA2 = TMath::Power(fQchiA, 2); //QA^2
   double fQchiV2 = TMath::Power(fQchiV, 2); //QV^2
-  //additional term from 4th polarization: - ( (mZ'^2 - q^2)^2 / (mZ'^4) )
 
-  double Xterm = -(TMath::Power((mZprime2 - q2), 2)/TMath::Power(mZprime2, 2));
-  if(mZprime2 == 0) {
-     Xterm=0;
-  }
-
-  double L = fQchiA2*E12_Q2_A + fQchiV2*E12_Q2_V + fQchiV*fQchiA*VXA;
-  double R = fQchiA2*E12_Q2_A + fQchiV2*E12_Q2_V - fQchiV*fQchiA*VXA;
-  double S = 2.*fQchiA2*E12_Q2_SA + 2.*fQchiV2*E12_Q2;
-  double Z = fQchiA2*Q2*(Xplus+Xminus)*denom*Xterm;
+  double L = fQchiA2*RLA2term + fQchiV2*RLV2term + fQchiV*fQchiA*RLVAterm;
+  double R = fQchiA2*RLA2term + fQchiV2*RLV2term - fQchiV*fQchiA*RLVAterm;
+  double S = fQchiA2*SA2term + fQchiV2*SV2term;
+  double Z = fQchiA2*ZA2term;
 
      if (is_dm) {
-         xsec = sig0*(L*sigL + R*sigR + S*sigS + Z*sigZ);
+         xsec = sig0*((-q2/Q2)*(W/Mnuc)*(L*sigL + R*sigR) + (Mnuc/W)*(S*sigS + Z*sigZ));
      }
      else
      if (is_dmbar) {
-         xsec = sig0*(R*sigL + L*sigR + S*sigS + Z*sigZ);
+         xsec = sig0*((-q2/Q2)*(W/Mnuc)*(R*sigL + L*sigR) + (Mnuc/W)*(S*sigS + Z*sigZ));
      }
+
    }
    else if (fVelMode == 2) {
      double fQchiS2 = TMath::Power(fQchiS,2); //QS^2
 
-    double RL = fQchiS2*E12_Q2_SA;
-    double S = fQchiS2*2.*E12*denom;
+    double RL = fQchiS2*RLTerm;
+    double S = fQchiS2*STerm;
 
-      xsec = sig0*(RL*sigL + RL*sigR + S*sigS);
+      xsec = sig0*((-q2/Q2)*(W/Mnuc)*(RL*sigL + RL*sigR) + (Mnuc/W)*S*sigS);
      }
   xsec = TMath::Max(0.,xsec);
 
