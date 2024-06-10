@@ -90,6 +90,8 @@ private:
   bool fUseRFGParametrization; ///< use parametrization for fermi momentum insted of table?
   bool fUsePauliBlocking;      ///< account for Pauli blocking?
 
+    double   fSin48w;            ///< sin^4(Weingberg angle)
+
 //  bool     fUsingNuTauScaling; ///< use NeuGEN nutau xsec reduction factors?
 //  Spline * fNuTauRdSpl;        ///< xsec reduction spline for nu_tau
 //  Spline * fNuTauBarRdSpl;     ///< xsec reduction spline for nu_tau_bar
