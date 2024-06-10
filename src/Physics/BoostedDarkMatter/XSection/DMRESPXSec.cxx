@@ -45,21 +45,18 @@ using namespace genie::constants;
 DMRESPXSec::DMRESPXSec() :
 XSecAlgorithmI("genie::DMRESPXSec")
 {
-//  fNuTauRdSpl    = 0;
-//  fNuTauBarRdSpl = 0;
+
 }
 //____________________________________________________________________________
 DMRESPXSec::DMRESPXSec(string config) :
 XSecAlgorithmI("genie::DMRESPXSec", config)
 {
-//  fNuTauRdSpl    = 0;
-//  fNuTauBarRdSpl = 0;
+
 }
 //____________________________________________________________________________
 DMRESPXSec::~DMRESPXSec()
 {
-//  if(fNuTauRdSpl)    delete fNuTauRdSpl;
-//  if(fNuTauBarRdSpl) delete fNuTauBarRdSpl;
+
 }
 //____________________________________________________________________________
 double DMRESPXSec::XSec(
@@ -77,7 +74,10 @@ double DMRESPXSec::XSec(
 
   // Get kinematical parameters
   double W  = kinematics.W();
+  double W2     = TMath::Power(W,    2);       //W^2
   double q2 = kinematics.q2();
+  double sqrtq2 = TMath::Sqrt(-q2);            //Sqrt(-q^2)
+
 
   // Under the DIS/RES joining scheme, xsec(RES)=0 for W>=Wcut
   if(fUsingDisResJoin) {
@@ -129,65 +129,59 @@ double DMRESPXSec::XSec(
   }
 
   //Auxillary Kinematic factors
-  double W2     = TMath::Power(W,    2);       //W^2
-  double Mnuc   = target.HitNucMass();   //Nucleon mass
-  double mchi   = init_state.GetProbeP4(kRfHitNucRest)->M(); //DM mass: mx
-  double Mnuc2  = TMath::Power(Mnuc, 2);       //m^2
-  double sqrtq2 = TMath::Sqrt(-q2);            //Sqrt(-q^2)
-  double mchi2 = TMath::Power(mchi, 2);        // mx^2
-  double mZprime2 = TMath::Power(fMedMass, 2); // mZ'^2
   double E      = init_state.ProbeE(kRfHitNucRest);   //E1
   double E2 = TMath::Power(E,2); //E1^2
+  double Mnuc   = target.HitNucMass();   //Nucleon mass
+  double Mnuc2  = TMath::Power(Mnuc, 2);       //m^2
+
+
+
+  double fQchiA2 = TMath::Power(fQchiA, 2); //QA^2
+  double fQchiV2 = TMath::Power(fQchiV, 2); //QV^2
+  double fQchiS2 = TMath::Power(fQchiS,2); //QS^2
 
   // Compute auxiliary & kinematical factors
   double k      = 0.5 * (W2 - Mnuc2)/Mnuc;
   double v      = k - 0.5 * q2/Mnuc;
   double v2     = TMath::Power(v, 2);
-  double kstar  = k * (Mnuc/W);
-  double vstar  = kstar + 0.5 * (q2/W);
-  double v2star = TMath::Power(vstar,2);
   double Q2     = v2 - q2;
   double Q      = TMath::Sqrt(Q2);
-  double Q2star = v2star - q2;
-  double Qstar  = TMath::Sqrt(Q2star);
   double Eprime = E - v;
+  double U      = 0.5 * (E + Eprime + Q) / E;
+  double V      = 0.5 * (E + Eprime - Q) / E;
+  double U2     = TMath::Power(U, 2);
+  double V2     = TMath::Power(V, 2);
+  double UV     = U*V;
+//DM:
+// L and R charges
+  double fQchiL = fQchiV+fQchiA;
+  double fQchiR = fQchiV-fQchiA;
+// Masses
+  double mchi   = init_state.GetProbeP4(kRfHitNucRest)->M(); //DM mass: mx
+  double mchi2 = TMath::Power(mchi, 2);        // mx^2
+  double mZprime2 = TMath::Power(fMedMass, 2); // mZ'^2
+  double mZprime4 = TMath::Power(mZprime2, 2); //mZ'^4
+//DM charge auxillary factors
+  double fQchiLmR = fQchiL-fQchiR; // QL - QR
+  double fQchiLR = fQchiL * fQchiR; // QL*QR
+  double fQchiLmR2 = TMath::Power(fQchiLmR, 2); //(QL - QR)^2
+  double fQchiL2 = TMath::Power(fQchiL, 2); //QL^2
+  double fQchiR2 = TMath::Power(fQchiR, 2); //QR^2
+//DM mass auxillary factors
+  double mZ_q2 = TMath::Power(mZprime2 - q2, 2)/mZprime4; //(mZ'^2 - q^2)^2 / mZ'^4
 
-  //common kinematic forms
-  double EE = (E + Eprime);
-  double EE2 = TMath::Power(EE,2);
-  double Q2minus = Q2*(1 - (4.*mchi2/q2));
-  double Q2plus = Q2*(1 + (4.*mchi2/q2));
-  double comdenom = 1/(4.*(E2 - mchi2));
 
-  //common factors
-  double gZprime4 = TMath::Power(fgZp, 4);
-  double sigcommon = (1/TMath::Power((mZprime2 + Q2),2));
-  //including dv/dW = W/Mnuc, spin avg Had curr 1/2, Res Rest Frame Had curr W/Mnuc
-  double sig0 = (gZprime4/(16*kPi)) * sigcommon * (W/Mnuc);
+  double mchiTerm = (mchi2 * Q2)/(E2 * q2); //mchi^2 * Q^2 / E^2 * q^2
 
- //fermionic DM terms
-  double RLA2term = (EE2 + Q2minus)*comdenom;
-  double RLV2term = (EE2 + Q2plus)*comdenom;
-  double RLVAterm = (4.*Q*EE)*comdenom;
-  double SA2term = (2*(EE2 - Q2minus))*comdenom;
-  double SV2term = (2*(EE2 - Q2))*comdenom;
- //DM term
- double mZterm = 0.0;
- if (mZprime2 != 0.0){mZterm = (mZprime2 - q2)/mZprime2;}
 
- double mZ2term = TMath::Power(mZterm,2);
- double ZA2term = (Q2/(-q2))*(8. * mchi2)*mZ2term*comdenom;
-  //X-Sec: sig0
-  //     *{sigL*(QA^2 * RLA2term + QV^2 * RLV2term + QV*QA*RLVAterm)
-  //     + sigR*(QA^2 * RLA2term + QV^2 * RLV2term - QV*QA*RLVAterm)
-  //     + sigS*(QA^2 * SA2term + QV^2 * SV2term)
-  //     + sigZ*(QA^2 * ZA2term)}
-//scalar DM terms
-  double RLTerm = (EE2 - Q2minus)*comdenom;
-  double STerm = (2*EE2)*comdenom;
-  //X-Sec: sig0*QS^2
-  //      *{(sigL + sigR)*RLTerm}
-  //      +{sigS * STerm}
+  double AL = U2*fQchiL2 + V2*fQchiR2 + 2*mchiTerm*fQchiL*fQchiR;
+  double AR = V2*fQchiL2 + U2*fQchiR2 + 2*mchiTerm*fQchiL*fQchiR;
+  double AS = 2*UV*(fQchiL2 + fQchiR2) + mchiTerm*fQchiLmR2;
+  //DM term
+  double AZ = 0.0;
+  if (mZprime2 != 0.0){
+    AZ = -mchiTerm*mZ_q2*fQchiLmR2/mZprime4;
+  }
 
 
 
@@ -196,23 +190,32 @@ double DMRESPXSec::XSec(
   double Go  = TMath::Power(1 - 0.25 * q2/Mnuc2, 0.5-IR);
   double GV  = Go * TMath::Power( 1./(1-q2/fMv2), 2);
   double GA  = Go * TMath::Power( 1./(1-q2/fMa2), 2);
+    //EM cross check: GA->0
+  if(mZprime2 == 0.){
+    GA = 0;
+  }
 
 
-  double d      = (TMath::Power(W+Mnuc,2.) - q2)/(2. * W);
+
+
+
+  double d      = TMath::Power(W+Mnuc,2.) - q2;
   double sq2omg = TMath::Sqrt(2./fOmega);
   double nomg   = IR * fOmega;
+  double mq_w   = Mnuc*Q/W;
+  double mq_w2  = TMath::Power(mq_w, 2);
+  double BC     = (2*W*mq_w) / (W2 - Mnuc2 + q2);
 
-
-  fFKRDM.Lamda  = sq2omg * Qstar;
+  fFKRDM.Lamda  = sq2omg * mq_w;
   fFKRDM.Tv     = GV / (3.*W*sq2omg);
-  fFKRDM.Ta     = ((GA * fZeta)/(3. * W)) * (1./sq2omg) * (Qstar / d);
-  fFKRDM.Rv     = kSqrt2 * GV * Qstar * ((W + Mnuc)/(2. * W * d));
-  fFKRDM.Ra     = ((kSqrt2 * GA * fZeta)/(6. * W)) * (W + Mnuc + (nomg/d));
-  fFKRDM.S      = (-q2/Q2star) * (GV / (6. * W2)) * (3. * W * Mnuc + q2 - Mnuc2);
-  fFKRDM.Bs     = ( (fZeta * GA)/(3. * W * sq2omg) ) * (1 + (vstar / d));
-  fFKRDM.Cs     = ( (fZeta * GA)/(6. * W * Qstar) ) * (W2 - Mnuc2 + nomg*(vstar / d));
-  fFKRDM.Bz     = ( (fZeta * GA)/(3. * W * Qstar * sq2omg) ) * (W - Mnuc);
-  fFKRDM.Cz     = ( (fZeta * GA)/(6. * W) ) * (2. * W + ( (3.*q2 + nomg)/d ));
+  fFKRDM.Rv     = kSqrt2 * mq_w*(W+Mnuc)*GV / d;
+  fFKRDM.S      = (-q2/Q2) * (3*W*Mnuc + q2 - Mnuc2) * GV / (6*Mnuc2);
+  fFKRDM.Ta     = (2./3.) * (fZeta/sq2omg) * mq_w * GA / d;
+  fFKRDM.Ra     = (kSqrt2/6.) * fZeta * (GA/W) * (W+Mnuc + 2*nomg*W/d );
+  fFKRDM.Bs     = fZeta/(3.*W*sq2omg) * (1 + (W2-Mnuc2+q2)/ d) * GA;
+  fFKRDM.Cs     = fZeta/(6.*Q) * (W2 - Mnuc2 + nomg*(W2-Mnuc2+q2)/d) * (GA/Mnuc);
+  fFKRDM.Bz     = BC*fZeta/(3.*W*sq2omg) * (1 + (W2-Mnuc2+q2)/ d + q2/mq_w2) * GA;
+  fFKRDM.Cz     = BC*fZeta/(6.*Q) * (W2 - Mnuc2 + nomg*(W2-Mnuc2+q2)/d + q2*(1 + 3*(W2-Mnuc2+q2)/ d)) * (GA/Mnuc);
 
 
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
@@ -237,17 +240,29 @@ double DMRESPXSec::XSec(
 #endif
 
   // Compute the cross section structure factors
+  double gZp4 = TMath::Power(fgZp, 2);
+  double XoEn = 1-(mchi2/E2); //1 - (mchi/E)^2
+  double XoPropMass = TMath::Power(q2 - mZprime2, 2); //(q^2 - mZ'^2)^2
+  double Xo = gZp4/(XoEn*XoPropMass);
 
-  double sigL =0;
-  double sigR =0;
-  double sigS =0;
-  double sigZ =0;
+  double sig0 = 0.125*(Xo/kPi)*(-q2/Q2)*(W/Mnuc);
+  //For EM cross check, divide by weinberg angle
+  if(mZprime2 == 0){
+    sig0 = sig0/fSin48w;
+  }
+
+  double scLR = W/Mnuc;
+  double scS  = (Mnuc/W)*(-Q2/q2);
+  double sigL = 0.0;
+  double sigR = 0.0;
+  double sigS = 0.0;
+  double sigZ = 0.0;
 
 //Including Hadron spin avg and res-rest frame transformations
-  sigL = (hampl.Amp2Minus3 () + hampl.Amp2Minus1 ());
-  sigR = (hampl.Amp2Plus3() + hampl.Amp2Plus1());
-  sigS = (Q2star/-q2)*(hampl.Amp20Plus () + hampl.Amp20Minus());
-  sigZ = (Q2star/-q2)*(hampl.Ampz20Plus () + hampl.Ampz20Minus());
+  sigL = scLR* (hampl.Amp2Plus3() + hampl.Amp2Plus1());
+  sigR = scLR* (hampl.Amp2Minus3 () + hampl.Amp2Minus1 ());
+  sigS = scS * (hampl.Amp20Plus () + hampl.Amp20Minus());
+  sigZ = scS *(hampl.Ampz20Plus () + hampl.Ampz20Minus());
 
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
   LOG("DMRes", pDEBUG) << "sig_{0} = " << sig0;
@@ -263,31 +278,21 @@ double DMRESPXSec::XSec(
   double xsec = 0.0;
 //Fermions:
 if (fVelMode == 0) {
-  double fQchiA2 = TMath::Power(fQchiA, 2); //QA^2
-  double fQchiV2 = TMath::Power(fQchiV, 2); //QV^2
+  if (is_dm) {
+    xsec = 0.5*sig0*(AL*sigL + AR*sigR + AS*sigS + AZ*sigZ);
+  }
+  else
+  if (is_dmbar) {
+    xsec = 0.5*sig0*(AL*sigR + AR*sigL + AS*sigS + AZ*sigZ);
+  }
+  }
+  //Consistency check with neutrinos: spin_avg = 2 -> 1
+  //mchi->0 = xsec -> 2*xsec
+  if(mchi2 == 0){
+    xsec = 2*xsec;
+  }
 
-  double L = fQchiA2*RLA2term + fQchiV2*RLV2term + fQchiV*fQchiA*RLVAterm;
-  double R = fQchiA2*RLA2term + fQchiV2*RLV2term - fQchiV*fQchiA*RLVAterm;
-  double S = fQchiA2*SA2term + fQchiV2*SV2term;
-  double Z = fQchiA2*ZA2term;
 
-     if (is_dm) {
-         xsec = sig0*((-q2/Q2)*(W/Mnuc)*(L*sigL + R*sigR) + (Mnuc/W)*(S*sigS + Z*sigZ));
-     }
-     else
-     if (is_dmbar) {
-         xsec = sig0*((-q2/Q2)*(W/Mnuc)*(R*sigL + L*sigR) + (Mnuc/W)*(S*sigS + Z*sigZ));
-     }
-
-   }
-   else if (fVelMode == 2) {
-     double fQchiS2 = TMath::Power(fQchiS,2); //QS^2
-
-    double RL = fQchiS2*RLTerm;
-    double S = fQchiS2*STerm;
-
-      xsec = sig0*((-q2/Q2)*(W/Mnuc)*(RL*sigL + RL*sigR) + (Mnuc/W)*S*sigS);
-     }
   xsec = TMath::Max(0.,xsec);
 
   // Check whether the cross section is to be weighted with a
@@ -498,6 +503,9 @@ void DMRESPXSec::LoadConfig(void)
     this->GetParam( "Wcut", fWcut ) ;
   }
 
+  double thw ;
+  this->GetParam( "WeinbergAngle", thw ) ;
+  fSin48w = TMath::Power( TMath::Sin(thw), 4 );
   // NeuGEN limits in the allowed resonance phase space:
   // W < min{ Wmin(physical), (res mass) + x * (res width) }
   // It limits the integration area around the peak and avoids the
