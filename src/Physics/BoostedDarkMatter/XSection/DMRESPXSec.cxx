@@ -288,7 +288,7 @@ if (fVelMode == 0) {
   }
   //Consistency check with neutrinos: spin_avg = 2 -> 1
   //mchi->0 = xsec -> 2*xsec
-  if(mchi2 == 0){
+  if(mchi2 == 0.000001){
     xsec = 2*xsec;
   }
 
