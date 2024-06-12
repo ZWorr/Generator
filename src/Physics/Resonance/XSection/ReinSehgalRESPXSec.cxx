@@ -241,11 +241,11 @@ double ReinSehgalRESPXSec::XSec(
 
   double xsec = 0.0;
   if (is_nu || is_lminus) {
-     xsec = sig0*(U2*sigR + V2*sigL + 2*UV*sigS);//currently flipped u2 and v2 for DM test?: yes
+     xsec = sig0*(V2*sigR + U2*sigL + 2*UV*sigS);
   }
   else
   if (is_nubar || is_lplus) {
-     xsec = sig0*(V2*sigR + U2*sigL + 2*UV*sigS);//currently flipped u2 and v2 for DM test?: yes
+     xsec = sig0*(U2*sigR + V2*sigL + 2*UV*sigS);
   }
   xsec = TMath::Max(0.,xsec);
 
