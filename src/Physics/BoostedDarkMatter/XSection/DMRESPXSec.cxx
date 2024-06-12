@@ -173,15 +173,25 @@ double DMRESPXSec::XSec(
 
   double mchiTerm = (mchi2 * Q2)/(E2 * q2); //mchi^2 * Q^2 / E^2 * q^2
 
-
-  double AL = U2*fQchiL2 + V2*fQchiR2 + 2*mchiTerm*fQchiL*fQchiR;
-  double AR = V2*fQchiL2 + U2*fQchiR2 + 2*mchiTerm*fQchiL*fQchiR;
-  double AS = 2*UV*(fQchiL2 + fQchiR2) + mchiTerm*fQchiLmR2;
+ //Spin average over incident DM = 0.5
+  double AL = 0.5*(U2*fQchiL2 + V2*fQchiR2 + 2*mchiTerm*fQchiL*fQchiR);
+  double AR = 0.5*(V2*fQchiL2 + U2*fQchiR2 + 2*mchiTerm*fQchiL*fQchiR);
+  double AS = 0.5*(2*UV*(fQchiL2 + fQchiR2) + mchiTerm*fQchiLmR2);
   //DM term
   double AZ = 0.0;
   if (mZprime2 != 0.0){
-    AZ = -mchiTerm*mZ_q2*fQchiLmR2/mZprime4;
+    AZ = 0.5*(-mchiTerm*mZ_q2*fQchiLmR2/mZprime4);
   }
+
+  //For Scalar DM: spin average = 1
+ if(fVelMode == 2){
+  AL = fQchiS2 * (UV + (mchi2 * Q2)/(E2 * q2));
+  AR = fQchiS2 * (UV + (mchi2 * Q2)/(E2 * q2));
+  AS = fQchiS2 * (2 * Q2/E2);
+  AZ = 0.0;
+}
+
+
 
 
 
@@ -277,15 +287,15 @@ double DMRESPXSec::XSec(
 //XSec calc:
   double xsec = 0.0;
 //Fermions:
-if (fVelMode == 0) {
+
   if (is_dm) {
-    xsec = 0.5*sig0*(AL*sigL + AR*sigR + AS*sigS + AZ*sigZ);
+    xsec = sig0*(AL*sigL + AR*sigR + AS*sigS + AZ*sigZ);
   }
   else
   if (is_dmbar) {
-    xsec = 0.5*sig0*(AL*sigR + AR*sigL + AS*sigS + AZ*sigZ);
+    xsec = sig0*(AL*sigR + AR*sigL + AS*sigS + AZ*sigZ);
   }
-  }
+
   //Consistency check with neutrinos: spin_avg = 2 -> 1
   //mchi->0 = xsec -> 2*xsec
   if(mchi == 0.000001){
