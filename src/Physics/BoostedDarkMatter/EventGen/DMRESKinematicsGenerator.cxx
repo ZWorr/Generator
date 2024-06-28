@@ -275,7 +275,7 @@ void DMRESKinematicsGenerator::LoadConfig(void)
   // stop ROOT from deleting this object of its own volition
   gROOT->GetListOfFunctions()->Remove(fEnvelope);
 }
-//____________________________________________________________________________
+
 double DMRESKinematicsGenerator::ComputeMaxXSec(
                                        const Interaction * interaction) const
 {
@@ -291,11 +291,14 @@ double DMRESKinematicsGenerator::ComputeMaxXSec(
 
   const InitialState & init_state = interaction -> InitState();
   double E = init_state.ProbeE(kRfHitNucRest);
-  bool is_DM = interaction->ProcInfo().IsDarkMatterResonant();
-// src/Framework/Utils/KineUtils.cxx (569 - 605)
-// Accounts for incoming lepton mass... so it should be the same for the DM current.
-// otherwise look at (915 for DarkQ2Lim_W)
-  double Q2Thres = is_DM ? utils::kinematics::electromagnetic::kMinQ2Limit : controls::kMinQ2Limit;
+
+//___________For DM cross check with EM________________________________________
+// Q2Thres will be set to 1E-4
+//______________________________________________________________________________
+//Original:
+bool is_em = interaction->ProcInfo().IsEM();
+double Q2Thres = is_em ? utils::kinematics::electromagnetic::kMinQ2Limit : controls::kMinQ2Limit;
+//______________________________________________________________________________
 
   double md;
   if(!interaction->ExclTag().KnownResonance()) md=1.23;
@@ -329,7 +332,7 @@ double DMRESKinematicsGenerator::ComputeMaxXSec(
       int NQ2  = 25;
       int NQ2b =  4;
 
-      Range1D_t rQ2 = kps.Q2Lim_W();                                        
+      Range1D_t rQ2 = kps.Q2Lim_W();
       if( rQ2.max < Q2Thres || rQ2.min <=0 ) continue;
       if( rQ2.max-rQ2.min<0.02 ) {NQ2=5; NQ2b=3;}
 
