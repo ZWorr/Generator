@@ -279,7 +279,7 @@ Or changing the name of this parameter set
     <!--consistency check for DM->EM and DM->NC: input params for -m -g -z -->
     <!-- EM: m~0.0005109989461   g~0.302822   z~0.0          NC: m~0.000001  g~ 0.640977  z~91187600-->
     <param type="double" name="ZpCoupling"> 1.0 </param><!--DM-RES:1.0-->
-    <param type="double" name="DarkLeftCharge"> -1.0 </param><!--DM-RES:-1.0    EMRES:1.0 NCRES:0.570283  Note:(off by 2 from spin-average)?-->
+    <param type="double" name="DarkLeftCharge"> 1.0 </param><!--DM-RES:-1.0    EMRES:1.0 NCRES:0.570283  Note:(off by 2 from spin-average)?-->
     <param type="double" name="DarkRightCharge"> 1.0 </param><!--DM-RES:1.0   EMRES:1.0 NCRES:0.0                                    -->
     <param type="double" name="DarkScalarCharge"> 1.0 </param>
     <param type="double" name="UpLeftCharge"> 1.0 </param> <!--DM-RES:1.0   EMRES:2/3 =0.666666       NCRES:0.394411   2x=0.961863  -->
