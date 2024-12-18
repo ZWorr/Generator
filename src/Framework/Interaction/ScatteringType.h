@@ -57,7 +57,7 @@ typedef enum EScatteringType {
   kScDarkMatterDeepInelastic,
   kScDarkMatterElectron,
   kScDarkMatterResonant,
-  kScNorm
+  kScNorm = 110
 } ScatteringType_t;
 
 class ScatteringType
