@@ -6,7 +6,7 @@
  Costas Andreopoulos <constantinos.andreopoulos \at cern.ch>
  University of Liverpool & STFC Rutherford Appleton Laboratory
 
- Changes for Res DM by Zach Orr, Colorado State University
+ Changes for Res-DM by Zach Orr, Colorado State University
 */
 //____________________________________________________________________________
 
@@ -72,14 +72,13 @@ double DMRESPXSec::XSec(
   const Kinematics & kinematics = interaction -> Kine();
   LOG("DMRESPXSec", pDEBUG) << "Using v^" << fVelMode << " dependence";
 
-  // Get kinematical parameters
+//Get Kinematic Parameters:
   double W  = kinematics.W();
   double W2     = TMath::Power(W,    2);       //W^2
   double q2 = kinematics.q2();
-  double sqrtq2 = TMath::Sqrt(-q2);            //Sqrt(-q^2)
 
-
-  // Under the DIS/RES joining scheme, xsec(RES)=0 for W>=Wcut
+//Rejection Sampling from Kinematics:
+// Under the DIS/RES joining scheme, xsec(RES)=0 for W>=Wcut
   if(fUsingDisResJoin) {
     if(W>=fWcut) {
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
@@ -90,13 +89,15 @@ double DMRESPXSec::XSec(
        return 0;
     }
   }
+//Pass: Resonance XSec
 
-  // Get the input baryon resonance
+//Probe Res Interaction:
+// Get the input baryon resonance:
   Resonance_t resonance = interaction->ExclTag().Resonance();
   string      resname   = utils::res::AsString(resonance);
   bool        is_delta  = utils::res::IsDelta (resonance);
 
-  // Get the dark matter, hit nucleon & DM current
+// Get the dark matter, target nucleon & DM current:
   int  nucpdgc   = target.HitNucPdg();
   int  probepdgc = init_state.ProbePdg();
   bool is_dm     = pdg::IsDarkMatter         (probepdgc);
@@ -134,11 +135,11 @@ double DMRESPXSec::XSec(
   double Mnuc   = target.HitNucMass();   //Nucleon mass
   double Mnuc2  = TMath::Power(Mnuc, 2);       //m^2
 
-
-
-  double fQchiA2 = TMath::Power(fQchiA, 2); //QA^2
-  double fQchiV2 = TMath::Power(fQchiV, 2); //QV^2
+  //Scalar Charge
   double fQchiS2 = TMath::Power(fQchiS,2); //QS^2
+  // L and R charges
+  double fQchiL = fQchiV-fQchiA;
+  double fQchiR = fQchiV+fQchiA;
 
   // Compute auxiliary & kinematical factors
   double k      = 0.5 * (W2 - Mnuc2)/Mnuc;
@@ -147,15 +148,14 @@ double DMRESPXSec::XSec(
   double Q2     = v2 - q2;
   double Q      = TMath::Sqrt(Q2);
   double Eprime = E - v;
+
   double U      = 0.5 * (E + Eprime + Q) / E;
   double V      = 0.5 * (E + Eprime - Q) / E;
   double U2     = TMath::Power(U, 2);
   double V2     = TMath::Power(V, 2);
   double UV     = U*V;
-//DM:
-// L and R charges
-  double fQchiL = fQchiV+fQchiA;
-  double fQchiR = fQchiV-fQchiA;
+
+
 // Masses
   double mchi   = init_state.GetProbeP4(kRfHitNucRest)->M(); //DM mass: mx
   double mchi2 = TMath::Power(mchi, 2);        // mx^2
@@ -174,20 +174,20 @@ double DMRESPXSec::XSec(
   double mchiTerm = (mchi2 * Q2)/(E2 * q2); //mchi^2 * Q^2 / E^2 * q^2
 
  //Spin average over incident DM = 0.5
-  double AL = 0.5*(U2*fQchiL2 + V2*fQchiR2 + 2*mchiTerm*fQchiL*fQchiR);
-  double AR = 0.5*(V2*fQchiL2 + U2*fQchiR2 + 2*mchiTerm*fQchiL*fQchiR);
-  double AS = 0.5*(2*UV*(fQchiL2 + fQchiR2) + mchiTerm*fQchiLmR2);
+  double AL = U2*fQchiL2 + V2*fQchiR2 + 2*mchiTerm*fQchiLR;
+  double AR = V2*fQchiL2 + U2*fQchiR2 + 2*mchiTerm*fQchiLR;
+  double AS = 2*UV*(fQchiL2 + fQchiR2) + mchiTerm*fQchiLmR2;
   //DM term
   double AZ = 0.0;
   if (mZprime2 != 0.0){
-    AZ = 0.5*(-mchiTerm*mZ_q2*fQchiLmR2/mZprime4);
+    AZ = -mchiTerm*mZ_q2*fQchiLmR2;
   }
 
   //For Scalar DM: spin average = 1
  if(fVelMode == 2){
-  AL = fQchiS2 * (UV + (mchi2 * Q2)/(E2 * q2));
-  AR = fQchiS2 * (UV + (mchi2 * Q2)/(E2 * q2));
-  AS = fQchiS2 * (2 * Q2/E2);
+  AL = fQchiS2 * (2*UV +  2*mchiTerm);
+  AR = fQchiS2 * (2*UV +  2*mchiTerm);
+  AS = fQchiS2 * (TMath::Power((U+V), 2));
   AZ = 0.0;
 }
 
@@ -210,10 +210,12 @@ double DMRESPXSec::XSec(
 
 
   double d      = TMath::Power(W+Mnuc,2.) - q2;
+  double d2     = W2 - Mnuc2 + q2;
   double sq2omg = TMath::Sqrt(2./fOmega);
   double nomg   = IR * fOmega;
   double mq_w   = Mnuc*Q/W;
-  double mq_w2  = TMath::Power(mq_w, 2);
+
+
   double BC     = (2*W*mq_w) / (W2 - Mnuc2 + q2);
 
   fFKRDM.Lamda  = sq2omg * mq_w;
@@ -224,9 +226,8 @@ double DMRESPXSec::XSec(
   fFKRDM.Ra     = (kSqrt2/6.) * fZeta * (GA/W) * (W+Mnuc + 2*nomg*W/d );
   fFKRDM.Bs     = fZeta/(3.*W*sq2omg) * (1 + (W2-Mnuc2+q2)/ d) * GA;
   fFKRDM.Cs     = fZeta/(6.*Q) * (W2 - Mnuc2 + nomg*(W2-Mnuc2+q2)/d) * (GA/Mnuc);
-  fFKRDM.Bz     = BC*fZeta/(3.*W*sq2omg) * (1 + (W2-Mnuc2+q2)/ d + q2/mq_w2) * GA;
-  fFKRDM.Cz     = BC*fZeta/(6.*Q) * (W2 - Mnuc2 + nomg*(W2-Mnuc2+q2)/d + q2*(1 + 3*(W2-Mnuc2+q2)/ d)) * (GA/Mnuc);
-
+  fFKRDM.Bz     = BC * fFKRDM.Bs + ((2./3.) * (W / Mnuc) * ((fZeta * GA) / (Q * sq2omg)) * (q2 / d2));
+  fFKRDM.Cz     = BC * fFKRDM.Cs + (q2 * fZeta * GA * ((1. / (3. * d2)) + (1. / d)));
 
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
   LOG("FKR", pDEBUG)
@@ -255,14 +256,14 @@ double DMRESPXSec::XSec(
   double XoPropMass = TMath::Power(q2 - mZprime2, 2); //(q^2 - mZ'^2)^2
   double Xo = gZp4/(XoEn*XoPropMass);
 
-  double sig0 = 0.125*(Xo/kPi)*(-q2/Q2)*(W/Mnuc);
+  double sig0 = 0.0625*(Xo/kPi)*(-q2/Q2)*(W/Mnuc);
   //For EM cross check, divide by weinberg angle
-  if(mZprime2 == 0){
-    sig0 = sig0/fSin48w;
-  }
+  //if(mZprime2 == 0){
+  //  sig0 = sig0/fSin48w;
+  //}
 
-  double scLR = W/Mnuc;
-  double scS  = (Mnuc/W)*(-Q2/q2);
+  double scLR = 0.5*W/Mnuc;
+  double scS  = 0.5*(Mnuc/W)*(Q2/(-q2));
   double sigL = 0.0;
   double sigR = 0.0;
   double sigS = 0.0;
@@ -286,7 +287,6 @@ double DMRESPXSec::XSec(
 
 //XSec calc:
   double xsec = 0.0;
-//Fermions:
 
   if (is_dm) {
     xsec = sig0*(AL*sigL + AR*sigR + AS*sigS + AZ*sigZ);
@@ -298,12 +298,18 @@ double DMRESPXSec::XSec(
 
   //Consistency check with neutrinos: spin_avg = 2 -> 1
   //mchi->0 = xsec -> 2*xsec
-  if(mchi == 0.000001){
-    xsec = 2*xsec;
-  }
+  //if(mchi == 0.000001){
+  //    xsec = 2*xsec;
+  //}
 
 
   xsec = TMath::Max(0.,xsec);
+
+
+//________________________________________________________________________________________
+//X-Sec scaling by BreitWigner,Jacobian,free-nucleon,Pauli-Blocking
+//________________________________________________________________________________________
+
 
   // Check whether the cross section is to be weighted with a
   // Breit-Wigner distribution (default: true)
@@ -318,9 +324,6 @@ double DMRESPXSec::XSec(
 #endif
   xsec *= bw;
 
-
-
-//________________________________________________________________________________________
 
   //Apply given scaling factor
   double xsec_scale = 1.;
@@ -411,6 +414,10 @@ double DMRESPXSec::XSec(
 
   return xsec;
 }
+//________________________________________________________________________________________
+//________________________________________________________________________________________
+
+
 //____________________________________________________________________________
 double DMRESPXSec::Integral(const Interaction * interaction) const
 {
@@ -526,29 +533,6 @@ void DMRESPXSec::LoadConfig(void)
   this->GetParamDef( "MaxNWidthForN0Res", fN0ResMaxNWidths, 6.0 ) ;
   this->GetParamDef( "MaxNWidthForGNRes", fGnResMaxNWidths, 4.0 ) ;
 
-//______________________________________________________________________________________
-/*
-  // NeuGEN reduction factors for nu_tau: a gross estimate of the effect of
-  // neglected form factors in the R/S model
-  this->GetParamDef( "UseNuTauScalingFactors", fUsingNuTauScaling, true ) ;
-  if(fUsingNuTauScaling) {
-     if(fNuTauRdSpl)    delete fNuTauRdSpl;
-     if(fNuTauBarRdSpl) delete fNuTauBarRdSpl;
-
-     assert( std::getenv( "GENIE") );
-     string base = std::getenv( "GENIE") ;
-
-     string filename = base + "/data/evgen/rein_sehgal/res/nutau_xsec_scaling_factors.dat";
-     LOG("DMRes", pNOTICE)
-                << "Loading nu_tau xsec reduction spline from: " << filename;
-     fNuTauRdSpl = new Spline(filename);
-
-     filename = base + "/data/evgen/rein_sehgal/res/nutaubar_xsec_scaling_factors.dat";
-     LOG("DMRes", pNOTICE)
-           << "Loading bar{nu_tau} xsec reduction spline from: " << filename;
-     fNuTauBarRdSpl = new Spline(filename);
-  }
-*/
 //______________________________________________________________________________________
 
 
