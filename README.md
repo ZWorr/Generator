@@ -1,5 +1,9 @@
 # The GENIE Event Generator
 
+This code is a fork of the GENIE Generator product.  For the official release of the GENIE code, please visit
+http://www.genie-mc.org for more information.  This fork adds the capability to simulate boosted dark matter
+scattering via resonant baryon production.  It is intended for future merger into an official GENIE release.
+
 The GENIE Generator product is an advanced physics simulation used by nearly all modern neutrino experiments and 
 it plays a key role in the exploitation of neutrino data. This product implements a modern software framework for 
 MC event generators and includes state-of-the-art physics modules for neutrino or charged-lepton interactions 
