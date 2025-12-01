@@ -1,6 +1,5 @@
 # The GENIE Event Generator
 
-
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; padding-right: 12px; vertical-align: top;">
