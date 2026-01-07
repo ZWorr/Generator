@@ -226,8 +226,8 @@ double DMRESPXSec::XSec(
   fFKRDM.Ra     = (kSqrt2/6.) * fZeta * (GA/W) * (W+Mnuc + 2*nomg*W/d );
   fFKRDM.Bs     = fZeta/(3.*W*sq2omg) * (1 + (W2-Mnuc2+q2)/ d) * GA;
   fFKRDM.Cs     = fZeta/(6.*Q) * (W2 - Mnuc2 + nomg*(W2-Mnuc2+q2)/d) * (GA/Mnuc);
-  fFKRDM.Bz     = BC * fFKRDM.Bs + ((2./3.) * (W / Mnuc) * ((fZeta * GA) / (Q * sq2omg)) * (q2 / d2));
-  fFKRDM.Cz     = BC * fFKRDM.Cs + (q2 * fZeta * GA * ((1. / (3. * d2)) + (1. / d)));
+  fFKRDM.Bz     = ((fZeta * GA) * (W - Mnuc)) / (2 * W * mq_w * sq2omg);
+  fFKRDM.Cz     = ((fZeta * GA)/3) * (1 + ((3*q2 + nomg) / d));
 
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
   LOG("FKR", pDEBUG)
@@ -251,8 +251,8 @@ double DMRESPXSec::XSec(
 #endif
 
   // Compute the cross section structure factors
-  double gZp4 = TMath::Power(fgZp, 2);
-  double XoEn = 1-(mchi2/E2); //1 - (mchi/E)^2
+  double gZp4 = TMath::Power(fgZp, 4.0);
+  double XoEn = 1.0-(mchi2/E2); //1 - (mchi/E)^2
   double XoPropMass = TMath::Power(q2 - mZprime2, 2); //(q^2 - mZ'^2)^2
   double Xo = gZp4/(XoEn*XoPropMass);
 

@@ -278,18 +278,27 @@ Or changing the name of this parameter set
     -->
     <!--consistency check for DMRES: DM->EM and DM->NC: input params for -m -g -z -->
     <!-- EM: m~0.0005109989461   g~0.302822   z~0.0          NC: m~0.000001  g~ 0.640977  z~91187600-->
+    <!-- Model type :DM Rain QDM_L = QDM_R = 1: IsoMax(Maximal Isospin symmetry violation)    QuL = 1  ;  QdL = -1 ;  QcL = 1  ;  QsL = -1 ;  QuR = 1  ;  QdR = -1 ;  QcR = 1  ;  QsR = -1
+         Model type :DM Rain QDM_L = QDM_R = 1: IsoMin(Isospin symmetry conserving)           QuL = 1  ;  QdL = 1  ;  QcL = 1  ;  QsL = 1  ;  QuR = 1  ;  QdR = 1  ;  QcR = 1  ;  QsR = 1
+         Model type :DM Solar QDM_L = -QDM_R = 1: IsoMin(Isospin symmetry conserving)           QuL = 1  ;  QdL = 1  ;  QcL = 1  ;  QsL = 1  ;  QuR = -1  ;  QdR = -1  ;  QcR = -1  ;  QsR = -1
+         Model type :DM Solar QDM_L = -QDM_R = 1: IsoMax(Maximal Isospin symmetry violation)    QuL = 1  ;  QdL = -1  ;  QcL = 1  ;  QsL = -1  ;  QuR = -1  ;  QdR = 1  ;  QcR = -1  ;  QsR = 1
+      -->
+
+      <!-- Current Setting: DM Solar , IsoMin-->
     <param type="double" name="ZpCoupling"> 1.0 </param>
     <param type="double" name="DarkLeftCharge"> 1.0 </param><!--DM:-1.0    EMRES:1.0 NCRES:0.570283  Note:(off by 2 from spin-average)?-->
-    <param type="double" name="DarkRightCharge"> 1.0 </param><!--DM:1.0   EMRES:1.0 NCRES:0.0                                    -->
+    <param type="double" name="DarkRightCharge"> -1.0 </param><!--DM:1.0   EMRES:1.0 NCRES:0.0                                    -->
     <param type="double" name="DarkScalarCharge"> 1.0 </param>
-    <param type="double" name="UpLeftCharge"> 1.0 </param> <!--    EMRES:2/3 =0.666666       NCRES:0.394411   2x=0.961863  -->
-    <param type="double" name="UpRightCharge"> 1.0 </param><!--   EMRES:2/3                 NCRES:-0.175871      ""-->
-    <param type="double" name="DownLeftCharge"> 1.0 </param><!--   EMRES:-1/3=-0.333333      NCRES:-0.482347      "" -->
-    <param type="double" name="DownRightCharge"> 1.0 </param><!-- EMRES:-1/3                NCRES:0.0879357       ""-->
+
+    <param type="double" name="UpLeftCharge"> 1.0 </param>
+    <param type="double" name="UpRightCharge"> -1.0 </param>
+    <param type="double" name="DownLeftCharge"> 1.0 </param>
+    <param type="double" name="DownRightCharge"> -1.0 </param>
     <param type="double" name="StrangeLeftCharge"> 1.0 </param>
-    <param type="double" name="StrangeRightCharge"> 1.0 </param>
+    <param type="double" name="StrangeRightCharge"> -1.0 </param>
     <param type="double" name="CharmLeftCharge"> 1.0 </param>
-    <param type="double" name="CharmRightCharge"> 1.0 </param>
+    <param type="double" name="CharmRightCharge"> -1.0 </param>
+
     <param type="double" name="ElectronLeftCharge"> 1.0 </param>
     <param type="double" name="ElectronRightCharge"> 1.0 </param>
     <param type="double" name="DMEL-Mp"> 1.441 </param>
