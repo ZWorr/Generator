@@ -8,6 +8,7 @@
 
  Changes required to implement the GENIE Boosted Dark Matter module
  were installed by Josh Berger (Univ. of Wisconsin)
+ and Zachary Orr (Colorado State Univ.)
 */
 //____________________________________________________________________________
 
@@ -149,7 +150,7 @@ double KPhaseSpace::Threshold(void) const
      pi.IsDarkMatterElastic()       ||
      pi.IsInverseBetaDecay()        ||
      pi.IsResonant()                ||
-     pi.IsDarkMatterResonant()      ||                                          //New Process: IsDarkMatterResonant
+     pi.IsDarkMatterResonant()      ||
      pi.IsDeepInelastic()           ||
      pi.IsDarkMatterDeepInelastic() ||
      pi.IsDiffractive())
@@ -837,7 +838,7 @@ Range1D_t KPhaseSpace::YLim_X(void) const
     return yl;
   }
   //DMDIS
-  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();  
+  bool is_dmdis = pi.IsDarkMatterDeepInelastic() || pi.IsDarkMatterResonant();
   if(is_dmdis) {
     const InitialState & init_state = fInteraction->InitState();
     double Ev  = init_state.ProbeE(kRfHitNucRest);
