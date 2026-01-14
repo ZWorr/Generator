@@ -3,6 +3,10 @@
  Copyright (c) 2003-2023, The GENIE Collaboration
  For the full text of the license visit http://copyright.genie-mc.org
 
+ Zachary W. Orr <zachorrt@colostate.edu>
+ Colorado State University
+
+based on code by
  Costas Andreopoulos <constantinos.andreopoulos \at cern.ch>
  University of Liverpool & STFC Rutherford Appleton Laboratory
 
@@ -141,7 +145,7 @@ double DMRESPXSec::XSec(
   double fQchiL = fQchiV-fQchiA;
   double fQchiR = fQchiV+fQchiA;
 
-  // Compute auxiliary & kinematical factors
+  // Compute kinematic factors
   double k      = 0.5 * (W2 - Mnuc2)/Mnuc;
   double v      = k - 0.5 * q2/Mnuc;
   double v2     = TMath::Power(v, 2);
@@ -200,7 +204,6 @@ double DMRESPXSec::XSec(
   double Go  = TMath::Power(1 - 0.25 * q2/Mnuc2, 0.5-IR);
   double GV  = Go * TMath::Power( 1./(1-q2/fMv2), 2);
   double GA  = Go * TMath::Power( 1./(1-q2/fMa2), 2);
-    //EM cross check: GA->0
   if(mZprime2 == 0.){
     GA = 0;
   }
@@ -257,10 +260,6 @@ double DMRESPXSec::XSec(
   double Xo = gZp4/(XoEn*XoPropMass);
 
   double sig0 = 0.0625*(Xo/kPi)*(-q2/Q2)*(W/Mnuc);
-  //For EM cross check, divide by weinberg angle
-  //if(mZprime2 == 0){
-  //  sig0 = sig0/fSin48w;
-  //}
 
   double scLR = 0.5*W/Mnuc;
   double scS  = 0.5*(Mnuc/W)*(Q2/(-q2));
@@ -295,12 +294,6 @@ double DMRESPXSec::XSec(
   if (is_dmbar) {
     xsec = sig0*(AL*sigR + AR*sigL + AS*sigS + AZ*sigZ);
   }
-
-  //Consistency check with neutrinos: spin_avg = 2 -> 1
-  //mchi->0 = xsec -> 2*xsec
-  //if(mchi == 0.000001){
-  //    xsec = 2*xsec;
-  //}
 
 
   xsec = TMath::Max(0.,xsec);
