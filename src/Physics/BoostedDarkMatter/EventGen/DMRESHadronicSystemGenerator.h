@@ -13,9 +13,13 @@
           available decay channels are being used (not just 1 pi channels).
           Is a concrete implementation of the EventRecordVisitorI interface.
 
-\author   Costas Andreopoulos <constantinos.andreopoulos \at cern.ch>
+\author   Zachary W. Orr <zachorrt@colostate.edu>
+          Colorado State University
+
+          based on code by
+          Costas Andreopoulos <constantinos.andreopoulos \at cern.ch>
           University of Liverpool & STFC Rutherford Appleton Laboratory
-\edits by: Zach Orr, Colorado State University
+
 
 \created  November 23, 2004
 
