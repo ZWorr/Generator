@@ -9,8 +9,6 @@
 based on code by
  Costas Andreopoulos <constantinos.andreopoulos \at cern.ch>
  University of Liverpool & STFC Rutherford Appleton Laboratory
-
- Changes for Res-DM by Zach Orr, Colorado State University
 */
 //____________________________________________________________________________
 
@@ -86,7 +84,7 @@ double DMRESPXSec::XSec(
   if(fUsingDisResJoin) {
     if(W>=fWcut) {
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
-       LOG("DMRes", pDEBUG)
+       LOG("DMRES", pDEBUG)
          << "RES/DIS Join Scheme: XSec[RES, W=" << W
          << " >= Wcut=" << fWcut << "] = 0";
 #endif
@@ -110,10 +108,10 @@ double DMRESPXSec::XSec(
 
   bool is_p      = pdg::IsProton  (nucpdgc);
   bool is_n      = pdg::IsNeutron (nucpdgc);
-  bool is_DM     = proc_info.IsDarkMatterResonant();
+  bool is_dmres     = proc_info.IsDarkMatterResonant();
 
   //Need break for is not DM
-    if(!is_DM) {
+    if(!is_dmres) {
     return 0;
     }
 
@@ -173,8 +171,6 @@ double DMRESPXSec::XSec(
   double fQchiR2 = TMath::Power(fQchiR, 2); //QR^2
 //DM mass auxillary factors
   double mZ_q2 = TMath::Power(mZprime2 - q2, 2)/mZprime4; //(mZ'^2 - q^2)^2 / mZ'^4
-
-
   double mchiTerm = (mchi2 * Q2)/(E2 * q2); //mchi^2 * Q^2 / E^2 * q^2
 
  //Spin average over incident DM = 0.5
@@ -194,13 +190,7 @@ double DMRESPXSec::XSec(
   AS = fQchiS2 * (TMath::Power((U+V), 2));
   AZ = 0.0;
 }
-
-
-
-
-
   // Calculate the Feynman-Kislinger-Ravndall parameters
-
   double Go  = TMath::Power(1 - 0.25 * q2/Mnuc2, 0.5-IR);
   double GV  = Go * TMath::Power( 1./(1-q2/fMv2), 2);
   double GA  = Go * TMath::Power( 1./(1-q2/fMa2), 2);
@@ -208,19 +198,12 @@ double DMRESPXSec::XSec(
     GA = 0;
   }
 
-
-
-
-
   double d      = TMath::Power(W+Mnuc,2.) - q2;
   double d2     = W2 - Mnuc2 + q2;
   double sq2omg = TMath::Sqrt(2./fOmega);
   double nomg   = IR * fOmega;
   double mq_w   = Mnuc*Q/W;
-
-
   double BC     = (2*W*mq_w) / (W2 - Mnuc2 + q2);
-
   fFKRDM.Lamda  = sq2omg * mq_w;
   fFKRDM.Tv     = GV / (3.*W*sq2omg);
   fFKRDM.Rv     = kSqrt2 * mq_w*(W+Mnuc)*GV / d;
@@ -234,13 +217,13 @@ double DMRESPXSec::XSec(
 
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
   LOG("FKR", pDEBUG)
-     << "FKR params for RES = " << resname << " : " << fFKRDM;
+     << "FKR params for DMRES = " << resname << " : " << fFKRDM;
 #endif
 
   // Calculate the Rein-Sehgal Helicity Amplitudes
 
   const RSHelicityAmplModelDMI * hamplmod = 0;
-  if(is_DM) {
+  if(is_dmres) {
       if (is_p) { hamplmod = fHAmplModelDMp;}
       else      { hamplmod = fHAmplModelDMn;}
     }
@@ -258,9 +241,7 @@ double DMRESPXSec::XSec(
   double XoEn = 1.0-(mchi2/E2); //1 - (mchi/E)^2
   double XoPropMass = TMath::Power(q2 - mZprime2, 2); //(q^2 - mZ'^2)^2
   double Xo = gZp4/(XoEn*XoPropMass);
-
   double sig0 = 0.0625*(Xo/kPi)*(-q2/Q2)*(W/Mnuc);
-
   double scLR = 0.5*W/Mnuc;
   double scS  = 0.5*(Mnuc/W)*(Q2/(-q2));
   double sigL = 0.0;
@@ -275,18 +256,17 @@ double DMRESPXSec::XSec(
   sigZ = scS *(hampl.Ampz20Plus () + hampl.Ampz20Minus());
 
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
-  LOG("DMRes", pDEBUG) << "sig_{0} = " << sig0;
-  LOG("DMRes", pDEBUG) << "sig_{L} = " << sigL;
-  LOG("DMRes", pDEBUG) << "sig_{R} = " << sigR;
-  LOG("DMRes", pDEBUG) << "sig_{S} = " << sigS;
-  LOG("DMRes", pDEBUG) << "sig_{Z} = " << sigZ;
+  LOG("DMRES", pDEBUG) << "sig_{0} = " << sig0;
+  LOG("DMRES", pDEBUG) << "sig_{L} = " << sigL;
+  LOG("DMRES", pDEBUG) << "sig_{R} = " << sigR;
+  LOG("DMRES", pDEBUG) << "sig_{S} = " << sigS;
+  LOG("DMRES", pDEBUG) << "sig_{Z} = " << sigZ;
 #endif
 
 //DM Cross Section Calculation:
 
 //XSec calc:
   double xsec = 0.0;
-
   if (is_dm) {
     xsec = sig0*(AL*sigL + AR*sigR + AS*sigS + AZ*sigZ);
   }
@@ -294,8 +274,6 @@ double DMRESPXSec::XSec(
   if (is_dmbar) {
     xsec = sig0*(AL*sigR + AR*sigL + AS*sigS + AZ*sigZ);
   }
-
-
   xsec = TMath::Max(0.,xsec);
 
 
@@ -312,7 +290,7 @@ double DMRESPXSec::XSec(
 
   }
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
-     LOG("DMRes", pDEBUG)
+     LOG("DMRES", pDEBUG)
        << "BreitWigner(RES=" << resname << ", W=" << W << ") = " << bw;
 #endif
   xsec *= bw;
@@ -320,11 +298,11 @@ double DMRESPXSec::XSec(
 
   //Apply given scaling factor
   double xsec_scale = 1.;
-  if      (is_DM) { xsec_scale = fXSecScaleDM; }
+  if      (is_dmres) { xsec_scale = fXSecScaleDM; }
   xsec *= xsec_scale;
 
 #ifdef __GENIE_LOW_LEVEL_MESG_ENABLED__
-  LOG("DMRes", pINFO)
+  LOG("DMRES", pINFO)
     << "\n d2xsec/dQ2dW"  << "[" << interaction->AsString()
           << "](W=" << W << ", q2=" << q2 << ", E=" << E << ") = " << xsec;
 #endif
@@ -338,7 +316,6 @@ double DMRESPXSec::XSec(
 
   // If requested return the free nucleon xsec even for input nuclear tgt
   if( interaction->TestBit(kIAssumeFreeNucleon) ) return xsec;
-
 
   int Z = target.Z();
   int A = target.A();
@@ -435,10 +412,10 @@ bool DMRESPXSec::ValidProcess(const Interaction * interaction) const
   if (!is_pn) return false;
 
   int  probe   = init_state.ProbePdg();
-  bool is_DM = proc_info.IsDarkMatterResonant();
+  bool is_dmres = proc_info.IsDarkMatterResonant();
   bool is_dm   = proc_info.IsDarkMatter();
 
-  if (!is_dm && !is_DM) return false;
+  if (!is_dm && !is_dmres) return false;
 
   return true;
 }

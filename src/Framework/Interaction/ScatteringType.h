@@ -90,7 +90,7 @@ public:
       case(kScDarkMatterElastic) :       return "DMEL";      break;
       case(kScDarkMatterDeepInelastic) : return "DMDIS";     break;
       case(kScDarkMatterElectron) :      return "DME";       break;
-      case(kScDarkMatterResonant) :      return "RESDM";       break;
+      case(kScDarkMatterResonant) :      return "DMRES";     break;
       default :                          return "Unknown";   break;
     }
     return "Unknown";

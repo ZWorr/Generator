@@ -19,6 +19,10 @@
           Costas Andreopoulos <constantinos.andreopoulos \at cern.ch>
           University of Liverpool & STFC Rutherford Appleton Laboratory
 
+          adjusted for Dark Matter by
+          Zachary W. Orr <zachorr@colostate.edu>
+          Colorado State University
+
 \created  March 01, 2017
 
 \cpright  Copyright (c) 2003-2023, The GENIE Collaboration

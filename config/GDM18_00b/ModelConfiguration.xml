@@ -138,7 +138,7 @@ University of Liverpool
   <param type="alg" name="XSecModel@genie::EventGenerator/DMEL">         genie::AhrensDMELPXSec/Velocity2          </param>
   <param type="alg" name="XSecModel@genie::EventGenerator/DMDIS">         genie::QPMDMDISPXSec/Velocity2            </param>
   <param type="alg" name="XSecModel@genie::EventGenerator/DME">            genie::DMElectronPXSec/Velocity2      </param>
-  <param type="alg" name="XSecModel@genie::EventGenerator/RES-DM">         genie::DMRESPXSec/Velocity2       </param>
+  <param type="alg" name="XSecModel@genie::EventGenerator/DMRES">         genie::DMRESPXSec/Velocity2       </param>
 
 
  </param_set>
