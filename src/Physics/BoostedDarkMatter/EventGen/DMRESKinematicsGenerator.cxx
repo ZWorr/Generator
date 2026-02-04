@@ -84,7 +84,7 @@ void DMRESKinematicsGenerator::ProcessEventRecord(GHepRecord * evrec) const
   Range1D_t W = kps.Limits(kKVW);
 
   if(W.max <=0 || W.min>=W.max) {
-     LOG("RESKinematics", pWARN) << "No available phase space";
+     LOG("DMRESKinematics", pWARN) << "No available phase space";
      evrec->EventFlags()->SetBitNumber(kKineGenErr, true);
      genie::exceptions::EVGThreadException exception;
      exception.SetReason("No available phase space");

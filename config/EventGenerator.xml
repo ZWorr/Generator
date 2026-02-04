@@ -114,7 +114,7 @@ XSecModel                   alg     Yes  Cross section model used at the thread 
      <param type="alg"    name="ILstGen">    genie::DMDISInteractionListGenerator/DM-Default       </param>
   </param_set>
 
-  <param_set name="RES-DMv0">
+  <!-- <param_set name="DMRESv0">
      <param type="string" name="VldContext"> </param>
      <param type="int"    name="NModules">   10                                                    </param>
      <param type="alg"    name="Module-0">   genie::InitialStateAppender/Default                   </param>
@@ -130,7 +130,7 @@ XSecModel                   alg     Yes  Cross section model used at the thread 
      <param type="alg"    name="ILstGen">    genie::DMRESInteractionListGenerator/DM-Default       </param>
   </param_set>
 
-  <param_set name="RES-DMv2">
+  <param_set name="DMRESv2">
      <param type="string" name="VldContext"> </param>
      <param type="int"    name="NModules">   10                                                    </param>
      <param type="alg"    name="Module-0">   genie::InitialStateAppender/Default                   </param>
@@ -144,7 +144,7 @@ XSecModel                   alg     Yes  Cross section model used at the thread 
      <param type="alg"    name="Module-8">   genie::NucBindEnergyAggregator/Default                </param>
      <param type="alg"    name="Module-9">   genie::UnstableParticleDecayer/AfterHadronTransport   </param>
      <param type="alg"    name="ILstGen">    genie::DMRESInteractionListGenerator/DM-Default         </param>
-  </param_set>
+  </param_set> -->
 
  <!--
   EvtLib / EventLibraryInterface
@@ -720,7 +720,7 @@ XSecModel                   alg     Yes  Cross section model used at the thread 
      <param type="alg"    name="ILstGen">    genie::DMEInteractionListGenerator/DME  </param>
   </param_set>
 
-  <param_set name="RES-DM">
+  <param_set name="DMRES">
      <param type="string" name="VldContext"> </param>
      <param type="int"    name="NModules">   10                                                    </param>
      <param type="alg"    name="Module-0">   genie::InitialStateAppender/Default                   </param>
