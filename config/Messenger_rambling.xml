@@ -80,7 +80,6 @@
   <priority msgstream="DMELEvent">             NOTICE </priority>
   <priority msgstream="DMELKinematics">        NOTICE </priority>
   <priority msgstream="DMELXSec">              NOTICE </priority>
-  <!-- EDIT: add notification for DM RES processes -->
   <priority msgstream="DMRES">                 INFO   </priority>
   <priority msgstream="DMRESXSec">             INFO   </priority>
   <priority msgstream="DMRESPXSec">            WARN   </priority>
