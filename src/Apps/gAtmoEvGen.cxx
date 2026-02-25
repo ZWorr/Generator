@@ -368,7 +368,6 @@ int main(int argc, char** argv)
   mcj_driver->SetEventGeneratorList(RunOpt::Instance()->EventGeneratorList());
   mcj_driver->UseFluxDriver(flux_driver);
   mcj_driver->UseGeomAnalyzer(geom_driver);
-  mcj_driver->ForceInteraction();
   mcj_driver->Configure();
   mcj_driver->UseSplines();
   /* Note: For the method of calculating the total number of events using a

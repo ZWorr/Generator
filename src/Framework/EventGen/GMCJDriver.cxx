@@ -654,7 +654,6 @@ void GMCJDriver::BootstrapXSecSplineSummation(void)
     // knots with zero y values (although the GENIE Spline object handles it)
     double min = rE.min;
     double max = TMath::Min(rE.max, fEmax);
-    max = 1.1  * max;
 
     // Because of edge issue (see GENIE docdb 297) these lines are commented out
     //    double dE  = fEmax/10.;
