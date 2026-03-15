@@ -84,7 +84,7 @@ void DMRESKinematicsGenerator::ProcessEventRecord(GHepRecord * evrec) const
   Range1D_t W = kps.Limits(kKVW);
 
   if(W.max <=0 || W.min>=W.max) {
-     LOG("DMRESKinematics", pWARN) << "No available phase space";
+     LOG("RESKinematics", pWARN) << "No available phase space";
      evrec->EventFlags()->SetBitNumber(kKineGenErr, true);
      genie::exceptions::EVGThreadException exception;
      exception.SetReason("No available phase space");
@@ -140,10 +140,7 @@ void DMRESKinematicsGenerator::ProcessEventRecord(GHepRecord * evrec) const
      }
      else
      {
-//______________________________________________________________________________
-//______________________________________________________________________________
-//______________________________________________________________________________
-        // neutrino scattering
+        // dm scattering
         // Selecting unweighted event kinematics using an importance sampling
         // method. Q2 with be transformed to QD2 to take out the dipole form.
         interaction->KinePtr()->SetW(W.min);
@@ -154,9 +151,6 @@ void DMRESKinematicsGenerator::ProcessEventRecord(GHepRecord * evrec) const
         else
             Q2min  = 0 + kASmallNum;
         double Q2max  = Q2.max - kASmallNum;
-//______________________________________________________________________________
-//______________________________________________________________________________
-//______________________________________________________________________________
 
         // In unweighted mode - use transform that takes out the dipole form
         double QD2min = utils::kinematics::Q2toQD2(Q2max);
@@ -177,7 +171,6 @@ void DMRESKinematicsGenerator::ProcessEventRecord(GHepRecord * evrec) const
 
      //-- Computing cross section for the current kinematics
      xsec = fXSecModel->XSec(interaction, kPSWQD2fE);
-
      //-- Decide whether to accept the current kinematics
      if(!fGenerateUniformly)
      {
@@ -291,14 +284,8 @@ double DMRESKinematicsGenerator::ComputeMaxXSec(
 
   const InitialState & init_state = interaction -> InitState();
   double E = init_state.ProbeE(kRfHitNucRest);
-
-//___________For DM cross check with EM________________________________________
-// Q2Thres will be set to 1E-4
-//______________________________________________________________________________
-//Original:
-bool is_em = interaction->ProcInfo().IsEM();
-double Q2Thres = is_em ? utils::kinematics::electromagnetic::kMinQ2Limit : controls::kMinQ2Limit;
-//______________________________________________________________________________
+  bool is_em = interaction->ProcInfo().IsEM();
+  double Q2Thres = is_em ? utils::kinematics::electromagnetic::kMinQ2Limit : controls::kMinQ2Limit;
 
   double md;
   if(!interaction->ExclTag().KnownResonance()) md=1.23;
