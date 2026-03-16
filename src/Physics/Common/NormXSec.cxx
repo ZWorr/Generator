@@ -32,9 +32,8 @@ NormXSec::~NormXSec()
 }
 //____________________________________________________________________________
 double NormXSec::XSec(
-   const Interaction * interaction, KinePhaseSpace_t kps) const
+   const Interaction * interaction, KinePhaseSpace_t /*kps*/) const
 {
-  (void)kps;
   const Target & tgt = interaction->InitState().Tgt();
   double A = tgt.A();
   return A*fNormScale*1e-11;
@@ -47,15 +46,13 @@ double NormXSec::Integral(const Interaction * interaction) const
   return A*fNormScale*1e-11;
 }
 //____________________________________________________________________________
-bool NormXSec::ValidProcess(const Interaction * interaction) const
+bool NormXSec::ValidProcess(const Interaction * /*interaction*/) const
 {
-  (void)interaction;
   return true;
 }
 //____________________________________________________________________________
-bool NormXSec::ValidKinematics(const Interaction * interaction) const
+bool NormXSec::ValidKinematics(const Interaction * /*interaction*/) const
 {
-  (void)interaction;
   return true;
 }
 //____________________________________________________________________________

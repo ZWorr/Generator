@@ -30,10 +30,10 @@ EventRecordVisitorI("genie::NormGenerator")
 
 }
 //___________________________________________________________________________
-NormGenerator::NormGenerator(string config):
+NormGenerator::NormGenerator(string /*config*/):
 EventRecordVisitorI("genie::NormGenerator")
 {
-  (void)config;
+
 }
 //___________________________________________________________________________
 NormGenerator::~NormGenerator()
