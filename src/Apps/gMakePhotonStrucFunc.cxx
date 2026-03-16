@@ -68,7 +68,7 @@ extern "C" void externalsetapfellept_(double* x, double* q, int* irep, double* x
 
 
 // Requires a global cache of pdf_cache LHAPDF::PDF
-void externalsetapfellept_(double* x, double* q, /*int* irep,*/ double* xl, double* xf){
+void externalsetapfellept_(double* x, double* q, int* /*irep*/, double* xl, double* xf){
   
   if (*x >= 1 || *x < 0) {
     for ( int i=0; i<13; i++ ) xf[i] = 0.;

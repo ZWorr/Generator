@@ -208,11 +208,10 @@ double genie::utils::mec::Qvalue(int targetpdg, int nupdg)
 double genie::utils::mec::OldTensorContraction(
   int nupdg, int targetpdg,
   double Enu, double Ml, double Tl, double costhl,
-  int tensorpdg,
+  int /*tensorpdg*/,
   HadronTensorType_t tensor_type,
   char* tensor_model)
 {
-  (void)tensorpdg;
   TLorentzVector v4lep;
   TLorentzVector v4Nu(0,0,Enu,Enu); // assuming traveling along z:
   TLorentzVector v4q;
