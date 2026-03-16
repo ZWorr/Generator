@@ -109,13 +109,13 @@ double PhotonCOHPXSec::XSec(
   return xsec;
 }
 //____________________________________________________________________________
-double PhotonCOHPXSec::F2_Q(double Q, double r) const
+double PhotonCOHPXSec::F2_Q(double Q, double R0) const
 {
   // Analytic Woods-Saxon, A.3 of https://arxiv.org/pdf/1807.10973.pdf
   double FF = 0.0;
   double coth = 1./TMath::TanH(kPi*Q*a);
-  FF = 3.*kPi*a/(TMath::Power(r,2)+TMath::Power(kPi*a,2)) / (Q*r* TMath::SinH(kPi*Q*a));
-  FF *= (kPi*a*coth*TMath::Sin(Q*r) - r * TMath::Cos(Q*r));        
+  FF = 3.*kPi*a/(TMath::Power(R0,2)+TMath::Power(kPi*a,2)) / (Q*R0* TMath::SinH(kPi*Q*a));
+  FF *= (kPi*a*coth*TMath::Sin(Q*R0) - R0 * TMath::Cos(Q*R0));        
   return TMath::Power(FF,2);
 }
 //____________________________________________________________________________
