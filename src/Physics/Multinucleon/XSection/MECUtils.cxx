@@ -212,6 +212,7 @@ double genie::utils::mec::OldTensorContraction(
   HadronTensorType_t tensor_type,
   char* tensor_model)
 {
+  (void)tensorpdg;
   TLorentzVector v4lep;
   TLorentzVector v4Nu(0,0,Enu,Enu); // assuming traveling along z:
   TLorentzVector v4q;

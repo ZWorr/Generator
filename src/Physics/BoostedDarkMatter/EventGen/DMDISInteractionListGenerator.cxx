@@ -151,10 +151,10 @@ multimap<int,bool> DMDISInteractionListGenerator::GetHitQuarks(
 {
 // Set (PDG code, from-sea flag) for all possible hit quarks for the input
 // interaction
-
+  (void)interaction;
   multimap<int,bool> hq;
 
-  const ProcessInfo & proc = interaction->ProcInfo();
+  //const ProcessInfo & proc = interaction->ProcInfo();
 
   if(!fIsCharm) {
     hq.insert(pair<int,bool>(kPdgUQuark,     false));
