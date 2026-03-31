@@ -1000,6 +1000,27 @@ Range1D_t KPhaseSpace::TLim(void) const
   return tl;
 }
 //____________________________________________________________________________
+double KPhaseSpace::Threshold_SPP(bool isMassless) const
+{
+  const InitialState & init_state = fInteraction->InitState();
+  SppChannel_t spp_channel  = SppChannel::FromInteraction(fInteraction);
+  PDGLibrary * pdglib = PDGLibrary::Instance();
+  double mpi  = pdglib->Find( SppChannel::FinStatePion    (spp_channel) )->Mass();
+  double mNi   = pdglib->Find( SppChannel::InitStateNucleon(spp_channel) )->Mass();
+  double mNf   = pdglib->Find( SppChannel::FinStateNucleon (spp_channel) )->Mass();
+
+  double mli = 0, mfi = 0;
+  if (!isMassless)
+  {
+      mli = PDGLibrary::Instance()->Find( init_state.ProbePdg() )->Mass();
+      mfi = fInteraction->FSPrimLepton()->Mass();
+  }
+
+  double mtot = mNf + mfi + mpi; // total mass of FS particles
+  double Ethresh = (mtot*mtot - mNi*mNi - mli*mli)/2/mNi;
+  return Ethresh;
+}
+//____________________________________________________________________________
 double KPhaseSpace::Threshold_SPP_iso(void) const
 {
   const InitialState & init_state = fInteraction->InitState();
@@ -1008,10 +1029,16 @@ double KPhaseSpace::Threshold_SPP_iso(void) const
   // imply isospin symmetry
   double mpi  = (pdglib->Find(kPdgPiP)->Mass() + pdglib->Find(kPdgPi0)->Mass() + pdglib->Find(kPdgPiM)->Mass())/3;
   double M    = (pdglib->Find(kPdgProton)->Mass() + pdglib->Find(kPdgNeutron)->Mass())/2;
-  double mi   = PDGLibrary::Instance()->Find( init_state.ProbePdg() )->Mass();
-  double mf   = fInteraction->FSPrimLepton()->Mass();
-  double mtot = M + mf + mpi; // total mass of FS particles
-  double Ethresh = (mtot*mtot - M*M - mi*mi)/2/M;
+
+  double mli = 0, mfi = 0;
+  if (!isMassless)
+  {
+      mli = PDGLibrary::Instance()->Find( init_state.ProbePdg() )->Mass();
+      mfi = fInteraction->FSPrimLepton()->Mass();
+  }
+
+  double mtot = M + mfi + mpi; // total mass of FS particles
+  double Ethresh = (mtot*mtot - M*M - mli*mli)/2/M;
   return Ethresh;
 }
 //____________________________________________________________________________
@@ -1021,13 +1048,21 @@ Range1D_t KPhaseSpace::WLim_SPP(void) const
   const InitialState & init_state = fInteraction->InitState();
   SppChannel_t spp_channel  = SppChannel::FromInteraction(fInteraction);
   PDGLibrary * pdglib = PDGLibrary::Instance();
-  double Mf   = pdglib->Find( SppChannel::FinStateNucleon(spp_channel) )->Mass();
-  double mpi  = pdglib->Find( SppChannel::FinStatePion(spp_channel) )->Mass();
-  double mf   = fInteraction->FSPrimLepton()->Mass();
+  double mpi  = pdglib->Find( SppChannel::FinStatePion    (spp_channel) )->Mass();
+  //double mNi   = pdglib->Find( SppChannel::InitStateNucleon(spp_channel) )->Mass();
+  double mNf   = pdglib->Find( SppChannel::FinStateNucleon (spp_channel) )->Mass();
+
+  double mfi = 0;
+  if (!isMassless)
+  {
+      //mli = PDGLibrary::Instance()->Find( init_state.ProbePdg() )->Mass();
+      mfi = fInteraction->FSPrimLepton()->Mass();
+  }
+
   double ECM  = init_state.CMEnergy();
   // kinematic W-limits
-  Wl.min = Mf + mpi;
-  Wl.max = ECM - mf;
+  Wl.min = mNf + mpi;
+  Wl.max = ECM - mfi;
 
   if ( (Wl.max - Wl.min) < (Wl.max + Wl.min)*std::numeric_limits<double>::epsilon() )
   {
@@ -1051,13 +1086,19 @@ Range1D_t KPhaseSpace::WLim_SPP_iso(void) const
   // imply isospin symmetry
   double M    = (pdglib->Find(kPdgProton)->Mass() + pdglib->Find(kPdgNeutron)->Mass())/2;
   double mpi  = (pdglib->Find(kPdgPiP)->Mass() + pdglib->Find(kPdgPi0)->Mass() + pdglib->Find(kPdgPiM)->Mass())/3;
-  double mi   = PDGLibrary::Instance()->Find( init_state.ProbePdg() )->Mass();
-  double mf   = fInteraction->FSPrimLepton()->Mass();
-  double Ei   = init_state.ProbeE(kRfHitNucRest);
-  double ECM  = TMath::Sqrt(M*(M + 2*Ei) + mi*mi);
+
+  double mfi = 0;
+  if (!isMassless)
+  {
+      //mli = PDGLibrary::Instance()->Find( init_state.ProbePdg() )->Mass();
+      mfi = fInteraction->FSPrimLepton()->Mass();
+  }
+
+
+  double ECM  = init_state.CMEnergy();
   // kinematic W-limits
   Wl.min = M + mpi;
-  Wl.max = ECM - mf;
+  Wl.max = ECM - mfi;
 
   if ( (Wl.max - Wl.min) < (Wl.max + Wl.min)*std::numeric_limits<double>::epsilon() )
   {
@@ -1079,23 +1120,30 @@ Range1D_t KPhaseSpace::Q2Lim_W_SPP (void) const
   const InitialState & init_state = fInteraction->InitState();
   SppChannel_t spp_channel  = SppChannel::FromInteraction(fInteraction);
   PDGLibrary * pdglib = PDGLibrary::Instance();
-  double Mi   = pdglib->Find( SppChannel::InitStateNucleon(spp_channel) )->Mass();
-  double mi   = pdglib->Find( init_state.ProbePdg() )->Mass();
-  double mf   = fInteraction->FSPrimLepton()->Mass();
-  double mi2  = mi*mi;
-  double mf2  = mf*mf;
+  double mNi   = pdglib->Find( SppChannel::InitStateNucleon(spp_channel) )->Mass();
+
+  double mli = 0, mfi = 0;
+  if (!isMassless)
+  {
+      mli = PDGLibrary::Instance()->Find( init_state.ProbePdg() )->Mass();
+      mfi = fInteraction->FSPrimLepton()->Mass();
+  }
+
+  double mli2  = mli*mli;
+  double mfi2  = mfi*mfi;
   double W    = kinematics::W(fInteraction);
 
-  double ECM = init_state.CMEnergy();
-  double s = ECM*ECM;
+  double Ei  = init_state.ProbeE(kRfHitNucRest);
+  double s   = mNi*(mNi + 2*Ei) + mli2;
+  double ECM = TMath::Sqrt(s);
 
-  double Ei_CM  = (s + mi2 - Mi*Mi)/2/ECM;
-  double Ef_CM  = (s + mf2 - W*W)/2/ECM;
-  double Pi_CM  = (Ei_CM - mi)<0?0:TMath::Sqrt(Ei_CM*Ei_CM - mi2);
-  double Pf_CM  = (Ef_CM - mf)<0?0:TMath::Sqrt(Ef_CM*Ef_CM - mf2);
+  double Ei_CM  = (s + mli2 - mNi*mNi)/2/ECM;
+  double Ef_CM  = (s + mfi2 - W*W)/2/ECM;
+  double Pi_CM  = (Ei_CM - mli)<0?0:TMath::Sqrt(Ei_CM*Ei_CM - mli2);
+  double Pf_CM  = (Ef_CM - mfi)<0?0:TMath::Sqrt(Ef_CM*Ef_CM - mfi2);
   // kinematic Q2-limits
-  Q2l.min = 2*(Ei_CM*Ef_CM - Pi_CM*Pf_CM) - mi2 - mf2;
-  Q2l.max = 2*(Ei_CM*Ef_CM + Pi_CM*Pf_CM) - mi2 - mf2;
+  Q2l.min = 2*(Ei_CM*Ef_CM - Pi_CM*Pf_CM) - mli2 - mfi2;
+  Q2l.max = 2*(Ei_CM*Ef_CM + Pi_CM*Pf_CM) - mli2 - mfi2;
 
   if ( (Q2l.max - Q2l.min) < (Q2l.max + Q2l.min)*std::numeric_limits<double>::epsilon() )
   {
@@ -1118,14 +1166,21 @@ Range1D_t KPhaseSpace::Q2Lim_W_SPP_iso(void) const
   PDGLibrary * pdglib = PDGLibrary::Instance();
   // imply isospin symmetry
   double M   = (pdglib->Find(kPdgProton)->Mass() + pdglib->Find(kPdgNeutron)->Mass())/2;
-  double mi  = pdglib->Find( init_state.ProbePdg() )->Mass();
-  double mf  = fInteraction->FSPrimLepton()->Mass();
+
+  double mli = 0, mfi = 0;
+  if (!isMassless)
+  {
+      mli = PDGLibrary::Instance()->Find( init_state.ProbePdg() )->Mass();
+      mfi = fInteraction->FSPrimLepton()->Mass();
+  }
+
   double mi2 = mi*mi;
   double mf2 = mf*mf;
   double W = kinematics::W(fInteraction);
 
   double Ei = init_state.ProbeE(kRfHitNucRest);
   double s = M*(M + 2*Ei) + mi2;
+
   double ECM = TMath::Sqrt(s);
 
   double Ei_CM  = (s + mi2 - M*M)/2/ECM;
