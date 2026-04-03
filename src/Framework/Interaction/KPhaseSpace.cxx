@@ -92,25 +92,9 @@ double KPhaseSpace::Threshold(void) const
   if( ! pi.IsKnown() ) return 0;
 
   if (pi.IsSinglePion()) {
-    double Mi   = tgt.HitNucP4Ptr()->M(); // initial nucleon mass
-    double Mf   = (xcls.NProtons()==1) ? kProtonMass : kNeutronMass;
-    int pion_pdgc = kPdgPi0;
-    if ( xcls.NPiPlus() == 1 )
-       pion_pdgc = kPdgPiP;
-    else if ( xcls.NPiMinus() == 1 )
-       pion_pdgc = kPdgPiM;
-    else if ( xcls.NPi0() != 1 )
-       throw genie::exceptions::InteractionException("Can't compute threshold");
-    double mpi   = PDGLibrary::Instance()->Find(pion_pdgc)->Mass();
-    double mi    = PDGLibrary::Instance()->Find( init_state.ProbePdg() )->Mass();
-    double mf = ml;
-    double mtot = Mf + mf + mpi; // total mass of FS particles
-    double Ethresh = (mtot*mtot - Mi*Mi - mi*mi)/2/Mi;
-    return Ethresh;
+      return this->Threshold_SPP();
   }
-
   if (pi.IsNorm() ) return 0;
-
   if (pi.IsSingleKaon()) {
     int kaon_pdgc = xcls.StrangeHadronPdg();
     double Mi   = tgt.HitNucP4Ptr()->M(); // initial nucleon mass
